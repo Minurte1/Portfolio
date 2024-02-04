@@ -1,44 +1,18 @@
 import './App.css';
 import Cursor from './public/component/cursor';
-import React, { useState, useEffect, useRef } from 'react';
-
+import React, { useState } from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
+// import 'animate.css/animate.min.css'; // Import CSS của thư viện animate.css (được sử dụng bởi react-animate-on-scroll)
 const App = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const containerNavbarShowRef = useRef(null);
+
 
   const toggleMenu = () => {
-    console.log(showMenu)
+    console.log('Before toggle:', showMenu);
     setShowMenu(!showMenu);
-    // if (showMenu === false) {
-
-    // }
+    console.log('After toggle:', showMenu);
   };
 
-  const handleClickOutside = (event) => {
-    if (containerNavbarShowRef.current && !containerNavbarShowRef.current.contains(event.target)) {
-      // Nếu click ngoài container-NavbarShow, đặt showMenu về false
-      if (showMenu === false) { setShowMenu(true); }
-
-    }
-  };
-
-  useEffect(() => {
-    console.log('useEffect ran');
-    document.addEventListener('click', handleClickOutside);
-
-    return () => {
-      console.log('useEffect cleanup');
-      document.removeEventListener('click', handleClickOutside);
-    };
-  }, []);
-  useEffect(() => {
-    // Thêm hoặc bỏ lớp tối trên body khi showMenu thay đổi
-    if (showMenu) {
-      document.body.classList.remove('menu-closed');
-    } else {
-      document.body.classList.add('menu-closed');
-    }
-  }, [showMenu]);
   return (
     <>
 
@@ -50,25 +24,47 @@ const App = () => {
             <p className='text-logo'>Hoàng Phúc</p>
           </div>
           <div className='Navbar-middle'>
-            <a href=''>Home</a>
-            <a href=''>About</a>
-            <a href=''>Education</a>
-            <a href=''>Skills</a>
-            <a href=''>Projects</a>
-            <a href=''>Work Experience</a>
-            <a href=''>Projects</a>
+            <a href='#home'>Home</a>
+            <a href='#about'>About</a>
+            <a href='#education'>Education</a>
+            <a href='#skill'>Skills</a>
+            <a href='#project'>Projects</a>
+            <a href='#experience'>Work Experience</a>
+            {/* <a href='#project'>Projects</a> */}
           </div>
-          <div className={`Navbar-right ${showMenu ? 'menu-open' : ''}`} onClick={toggleMenu}>
-            <i className="fa-solid fa-bars"></i>
+          <div className={`Navbar-right`}>
+            <i className={`fa-solid fa-bars  ${showMenu ? 'menu-open' : ''}`} onClick={toggleMenu}></i>
           </div>
         </div>
       </div>
       <div className={`overlay ${showMenu ? 'active' : ''}`} onClick={toggleMenu}></div>
-      <div className={`container-NavbarShow ${showMenu ? 'menu-open' : ''}`} ref={containerNavbarShowRef} >
-        <a href='#'>Menu Item 1</a>
-        <a href='#'>Menu Item 2</a>
-        <a href='#'>Menu Item 3</a>
+      <div className={`container-NavbarShow ${showMenu ? 'menu-open' : ''}`}>
+        <p>Menu Item 1</p>
+        <p>Menu Item 2</p>
+        <p>Menu Item 3</p>
       </div>
+
+      {/* <p>àhuas</p>
+      <p>àhuas</p>
+      <p>àhuas</p>
+      <p>àhuas</p>
+      <p>àhuas</p>
+      <p>àhuas</p> <p>àhuas</p> <p>àhuas</p> <p>àhuas</p> */}
+      <img src={require('./public/image/banner-scaled.jpg')} alt="Banner" />
+
+      <section id='home'>
+        <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" duration={2} animateOnce={true}>
+          <h1>Hello, Animated on Scroll!</h1>
+        </ScrollAnimation>
+
+        <ScrollAnimation animateIn="zoomIn" animateOut="zoomOut" duration={1} animateOnce={true}>
+          <p>This is a sample text with scroll animation.</p>
+        </ScrollAnimation>
+      </section>
+      <section id='about'></section>
+      <section id='education'></section>
+      <section id='skill'></section>
+      <section id='about'></section>
     </>
   );
 };
