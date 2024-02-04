@@ -51,15 +51,16 @@ const App = () => {
         <div className='Navbar'>
           <div className='Navbar-left'>
             <img src={require('../src/public/image/logo512.png')} className='img-logoreact' alt='Logo'></img>
-            <p className='text-logo'>Hoàng Phúc</p>
+            <p className='text-logo'>Hoàng Phúc </p>
           </div>
           <div className='Navbar-middle'>
-            <a href='#home'>Home</a>
-            <a href='#about'>About</a>
-            <a href='#education'>Education</a>
-            <a href='#skill'>Skills</a>
-            <a href='#project'>Projects</a>
-            <a href='#experience'>Work Experience</a>
+            <a href='#home'>Home <div className='Navbar-middle-Gach'></div></a>
+            <a href='#project'>Projects <div className='Navbar-middle-Gach'></div></a>
+            <a href='#about'>About <div className='Navbar-middle-Gach'></div></a>
+            <a href='#education'>Education <div className='Navbar-middle-Gach'></div></a>
+            <a href='#skill'>Skills <div className='Navbar-middle-Gach'></div></a>
+
+            <a href='#experience'>Work Experience <div className='Navbar-middle-Gach'></div></a>
             {/* <a href='#project'>Projects</a> */}
           </div>
           <div className={`Navbar-right`}>

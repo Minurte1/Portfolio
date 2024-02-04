@@ -99,10 +99,33 @@
   color: white;
 }
 
+.text-logo:hover {
+  cursor: pointer;
+  color: #55e6a5;
+}
 
 
 .Navbar-middle>a:hover {
+  color: #55e6a5;
+
+
+}
+
+.Navbar-middle>a>.Navbar-middle-Gach {
   color: #092635;
+  display: block;
+  margin-left: 0%;
+  opacity: 0;
+  /* Ẩn phần tử ban đầu */
+  transform: translateX(-100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.Navbar-middle>a:hover>.Navbar-middle-Gach {
+  opacity: 1;
+  /* Hiển thị khi hover */
+  transform: translateX(0%);
+  /* Di chuyển từ trái sang phải khi hover */
 }
 
 a {
@@ -111,8 +134,23 @@ a {
   margin-left: 2%;
   margin-right: 2%;
   color: white;
-
 }
+
+.Navbar-middle-Gach {
+  width: 100%;
+  height: 5px;
+  background-color: #092635;
+  margin-bottom: -5px;
+}
+
+.Navbar-middle>a:hover>.Navbar-middle-Gach {
+  margin-left: 0%;
+}
+
+/* .Navbar-middle>a:hover>.Navbar-middle-Gach {
+  margin-left: 0%;
+
+} */
 
 
 @media (prefers-reduced-motion: no-preference) {
@@ -145,7 +183,7 @@ body.menu-closed {
 
 .fa-bars:hover {
   cursor: pointer;
-  color: tomato;
+  color: #55e6a5;
 }
 
 .overlay {
