@@ -1,12 +1,43 @@
 import './App.css';
-import Cursor from './public/component/cursor';
-import React, { useState } from 'react';
-import ScrollAnimation from 'react-animate-on-scroll';
+// import Cursor from './public/component/cursor';
+import React, { useState, useEffect } from 'react';
+// import ScrollAnimation from 'react-animate-on-scroll';
 // import 'animate.css/animate.min.css'; // Import CSS của thư viện animate.css (được sử dụng bởi react-animate-on-scroll)
 const App = () => {
   const [showMenu, setShowMenu] = useState(false);
 
+  const [speed, setSpeed] = useState(2);
+  useEffect(() => {
+    const intervalId = setInterval(() => {
 
+    }, speed); return () => clearInterval(intervalId);
+  }, [speed]);
+
+  window.onload = function () {
+
+    const text = document.querySelector(".sec-text");
+    if (text) {
+      const load = () => {
+        setTimeout(() => {
+          text.textContent = "Web Developer";
+
+        }, 0)
+        setTimeout(() => {
+          text.textContent = "Web Frontend";
+
+        }, 5900)
+        setTimeout(() => {
+          text.textContent = "Web Backend";
+
+        }, 11900)
+      }
+      load();
+      setInterval(load, 12000)
+    } else {
+      console.error("Element with class 'sec-text' not found");
+    }
+
+  }
   const toggleMenu = () => {
     console.log('Before toggle:', showMenu);
     setShowMenu(!showMenu);
@@ -15,8 +46,7 @@ const App = () => {
 
   return (
     <>
-
-      <Cursor></Cursor>
+      {/* <Cursor></Cursor> */}
       <div className={`container-Navbar`}>
         <div className='Navbar'>
           <div className='Navbar-left'>
@@ -53,14 +83,26 @@ const App = () => {
 
 
       <section id='home'>
-        <img src={require('./public/image/banner-scaled.jpg')} alt="Banner" className='Home-banner' />
+        {/* <img src={require('./public/image/banner-scaled.jpg')} alt="Banner" className='Home-banner' /> */}
+        <div className='Home-banner'></div>
         <div className='home-info'>
-          <p>I am Ho Hoang Phuc Developer Web</p>
+          {/* <p>I am Ho Hoang Phuc Developer Web</p> */}
+          <div className='info-small'>
+            <p>
+              I'm a <strong>Hồ Hoàng Phúc</strong>
+              <p className='sec-text'></p>
+              <p className='text-small'>
+                I am a passionate web developer, committed to creating high-quality websites with the best user experience. With extensive knowledge of programming languages and meticulous attention to detail, I specialize in turning complex ideas into powerful and effective web applications.
+              </p>
+              <button className='downloadCV'>Download CV <i className="fa-solid fa-download"></i></button>
+            </p>
+          </div>
         </div>
         <div className='home-avt'>
-          <img></img>
+          <img src={require('../src/public/image/banner_img_1.png')} alt="Avatar" className='avt' />
         </div>
       </section>
+
       <section id='about'> {/* <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" duration={2} animateOnce={true}>
           <h1>Hello, Animated on Scroll!</h1>
         </ScrollAnimation>
