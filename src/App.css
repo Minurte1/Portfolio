@@ -17,7 +17,7 @@
   position: fixed;
   top: 0;
   left: 0;
-
+  z-index: 2;
 
 
 
@@ -127,6 +127,15 @@ body.menu-closed {
   /* Ngăn chặn cuộn màn hình khi container-NavbarShow được mở */
 }
 
+.fa-bars {
+  color: white;
+}
+
+.fa-bars:hover {
+  cursor: pointer;
+  color: tomato;
+}
+
 .overlay {
   position: fixed;
   top: 0;
@@ -144,4 +153,20 @@ body.menu-closed {
 .overlay.active {
   display: block;
   /* Hiển thị khi active */
+}
+
+.Home-banner {
+  width: 100%;
+  height: 745px;
+  position: relative;
+}
+
+.home-info {
+  width: 50%;
+  height: 100%;
+}
+
+.home-avt {
+  width: 50%;
+  height: 100%;
 }

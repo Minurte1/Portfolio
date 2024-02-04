@@ -50,18 +50,24 @@ const App = () => {
       <p>àhuas</p>
       <p>àhuas</p>
       <p>àhuas</p> <p>àhuas</p> <p>àhuas</p> <p>àhuas</p> */}
-      <img src={require('./public/image/banner-scaled.jpg')} alt="Banner" />
+
 
       <section id='home'>
-        <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" duration={2} animateOnce={true}>
+        <img src={require('./public/image/banner-scaled.jpg')} alt="Banner" className='Home-banner' />
+        <div className='home-info'>
+          <p>I am Ho Hoang Phuc Developer Web</p>
+        </div>
+        <div className='home-avt'>
+          <img></img>
+        </div>
+      </section>
+      <section id='about'> {/* <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" duration={2} animateOnce={true}>
           <h1>Hello, Animated on Scroll!</h1>
         </ScrollAnimation>
 
         <ScrollAnimation animateIn="zoomIn" animateOut="zoomOut" duration={1} animateOnce={true}>
           <p>This is a sample text with scroll animation.</p>
-        </ScrollAnimation>
-      </section>
-      <section id='about'></section>
+        </ScrollAnimation> */}</section>
       <section id='education'></section>
       <section id='skill'></section>
       <section id='about'></section>
