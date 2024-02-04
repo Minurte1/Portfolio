@@ -69,9 +69,9 @@ const App = () => {
       </div>
       <div className={`overlay ${showMenu ? 'active' : ''}`} onClick={toggleMenu}></div>
       <div className={`container-NavbarShow ${showMenu ? 'menu-open' : ''}`}>
-        <p>Menu Item 1</p>
-        <p>Menu Item 2</p>
-        <p>Menu Item 3</p>
+        <div className='NavbarShow-top'><p className='text-logo'>Hoàng Phúc</p> <div className='NavbarShow-top-X' onClick={toggleMenu}><i class="fa-solid fa-x"></i></div></div>
+        <div className='NavbarShow-middle'></div>
+        <div className='NavbarShow-bottom'></div>
       </div>
 
       {/* <p>àhuas</p>
