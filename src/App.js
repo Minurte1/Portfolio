@@ -71,7 +71,7 @@ const App = () => {
       <div className={`overlay ${showMenu ? 'active' : ''}`} onClick={toggleMenu}></div>
       <div className={`container-NavbarShow ${showMenu ? 'menu-open' : ''}`}>
         <div className='NavbarShow-top'><p className='text-logo'>Hoàng Phúc</p> <div className='NavbarShow-top-X' onClick={toggleMenu}><i class="fa-solid fa-x"></i></div></div>
-        <div className='NavbarShow-middle'><p className='NavbarShow-middle-AboutText'>ABOUT US</p> <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor
+        <div className='NavbarShow-middle'><p className='NavbarShow-middle-AboutText'>ABOUT US</p> <p className='NavbarShow-middle-AboutText1' > Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor
           incididunt ut labore et magna aliqua. Ut enim ad minim veniam laboris.</p>
 
 

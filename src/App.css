@@ -402,8 +402,28 @@ body.menu-closed {
 .NavbarShow-middle-AboutText {
 
   margin-bottom: 20px;
+  width: 50%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -40px;
+
+  font-family: "Roboto", sans-serif;
 }
 
+.NavbarShow-middle-AboutText1 {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+  width: 70%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+
+  font-family: "Roboto", sans-serif;
+}
 
 .NavbarShow-bottom {
   background-color: #1b4242;
