@@ -354,7 +354,7 @@ body.menu-closed {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #092635;
+  background-color: #1b4242;
 }
 
 .NavbarShow-top>p {
@@ -393,9 +393,10 @@ body.menu-closed {
 }
 
 .NavbarShow-middle {
-  background-color: #1b4242;
+  background-color: #092635;
   width: 100%;
   height: 150px;
+  padding-bottom: 30px;
 
 }
 
@@ -421,12 +422,53 @@ body.menu-closed {
   justify-content: center;
   align-items: center;
   margin-left: 40px;
-
   font-family: "Roboto", sans-serif;
+  color: #a2a2a2;
+  /* opacity: 0.5; */
+
 }
 
 .NavbarShow-bottom {
-  background-color: #1b4242;
+  background-color: #092635;
   width: 100%;
-  height: 40%;
+  height: 70%;
+  padding-left: 40px;
+}
+
+.NavbarShow-bottom-Tieude {
+  padding-bottom: 20px;
+  padding-top: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.NavbarShow-bottom-input {
+  height: 40px;
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: #1b4242;
+  border-radius: 5px;
+  outline: none;
+}
+
+.NavbarShow-bottom-input:focus {
+  border: 1px solid black;
+  outline: 1px solid black;
+}
+
+.NavbarShow-bottom-button {
+  height: 40px;
+  width: 30%;
+  background-color: #1b4242;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.NavbarShow-bottom-button:hover {
+  background-color: #000000;
+  cursor: pointer;
 }

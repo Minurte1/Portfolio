@@ -1,6 +1,7 @@
 import './App.css';
 // import Cursor from './public/component/cursor';
 import React, { useState, useEffect } from 'react';
+import { toast } from 'react-toastify';
 // import ScrollAnimation from 'react-animate-on-scroll';
 // import 'animate.css/animate.min.css'; // Import CSS của thư viện animate.css (được sử dụng bởi react-animate-on-scroll)
 const App = () => {
@@ -38,6 +39,45 @@ const App = () => {
     }
 
   }
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Kiểm tra điều kiện nhập sai cú pháp
+    if (!isValidName(name) || !isValidEmail(email) || !isValidPhone(phone)) {
+      // Xử lý lỗi ở đây (ví dụ: hiển thị thông báo lỗi)
+      alert('Please enter valid information');
+      toast.success('asfhuiashfu')
+      return;
+    }
+    toast.success('Cảm ơn bạn đã ủng hộ chúng mình')
+    return
+
+    // Xóa nội dung sau khi submit
+    setName('');
+    setEmail('');
+    setPhone('');
+  };
+
+  const isValidName = (value) => {
+    // Kiểm tra tên có đúng cú pháp không (ví dụ)
+    return value.trim() !== '';
+  };
+
+  const isValidEmail = (value) => {
+    // Kiểm tra định dạng email (ví dụ)
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(value);
+  };
+
+  const isValidPhone = (value) => {
+    // Kiểm tra số điện thoại có đúng cú pháp không (ví dụ)
+    const phoneRegex = /^\d{10}$/;
+    return phoneRegex.test(value);
+  };
   const toggleMenu = () => {
     console.log('Before toggle:', showMenu);
     setShowMenu(!showMenu);
@@ -71,18 +111,42 @@ const App = () => {
       <div className={`overlay ${showMenu ? 'active' : ''}`} onClick={toggleMenu}></div>
       <div className={`container-NavbarShow ${showMenu ? 'menu-open' : ''}`}>
         <div className='NavbarShow-top'><p className='text-logo'>Hoàng Phúc</p> <div className='NavbarShow-top-X' onClick={toggleMenu}><i class="fa-solid fa-x"></i></div></div>
-        <div className='NavbarShow-middle'><p className='NavbarShow-middle-AboutText'>ABOUT US</p> <p className='NavbarShow-middle-AboutText1' > Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor
-          incididunt ut labore et magna aliqua. Ut enim ad minim veniam laboris.</p>
-
-
+        <div className='NavbarShow-middle'>
+          <p className='NavbarShow-middle-AboutText'>ABOUT US</p>
+          <p className='NavbarShow-middle-AboutText1' > Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor
+            incididunt ut labore et magna aliqua. Ut enim ad minim veniam laboris.</p>
         </div>
         <div className='NavbarShow-bottom'>
-          <form>
-            <p>GET IN TOUCH</p>
-            <input placeholder='Your Name' type='text'></input><br></br>
-            <input placeholder='Your Email' type='text'></input><br></br>
-            <input placeholder='Your Phone' type='text'></input>
-          </form>
+
+          <p className='NavbarShow-bottom-Tieude'>GET IN TOUCH</p>
+          <input
+            className='NavbarShow-bottom-input'
+            placeholder='Your Name'
+            type='text'
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <br />
+          <input
+            className='NavbarShow-bottom-input'
+            placeholder='Your Email'
+            type='text'
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <br />
+          <input
+            className='NavbarShow-bottom-input'
+            placeholder='Your Phone'
+            type='text'
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+          />
+          <br />
+          <button className='NavbarShow-bottom-button' onClick={handleSubmit}>
+            Submit now
+          </button>
+
         </div>
       </div>
 
