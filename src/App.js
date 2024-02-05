@@ -1,8 +1,8 @@
-import './App.css';
+
 // import Cursor from './public/component/cursor';
 import React, { useState, useEffect } from 'react';
-import { toast } from 'react-toastify';
-// import ScrollAnimation from 'react-animate-on-scroll';
+import { toast } from 'react-toastify'; import './App.css';
+import ScrollAnimation from 'react-animate-on-scroll';
 // import 'animate.css/animate.min.css'; // Import CSS của thư viện animate.css (được sử dụng bởi react-animate-on-scroll)
 const App = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -47,20 +47,31 @@ const App = () => {
     e.preventDefault();
 
     // Kiểm tra điều kiện nhập sai cú pháp
-    if (!isValidName(name) || !isValidEmail(email) || !isValidPhone(phone)) {
-      // Xử lý lỗi ở đây (ví dụ: hiển thị thông báo lỗi)
-      alert('Please enter valid information');
-      toast.success('asfhuiashfu')
+    if (!isValidName(name)) {
+      toast.error('Tên không đúng cú pháp')
       return;
     }
-    toast.success('Cảm ơn bạn đã ủng hộ chúng mình')
-    return
-
-    // Xóa nội dung sau khi submit
+    if (!isValidEmail(email)) {
+      toast.error('Email không đúng cú pháp')
+      return;
+    }
+    if (!isValidPhone(phone)) {
+      toast.error('Số điện thoại không đúng cú pháp')
+      return;
+    }
+    toast.success('Cảm ơn bạn đã nhập thông tin liên hệ với tôi!!')
     setName('');
     setEmail('');
     setPhone('');
   };
+
+
+  // toast.success('Cảm ơn bạn đã ủng hộ chúng mình')
+  // return
+
+  // Xóa nội dung sau khi submit
+
+
 
   const isValidName = (value) => {
     // Kiểm tra tên có đúng cú pháp không (ví dụ)
@@ -178,17 +189,19 @@ const App = () => {
           <img src={require('../src/public/image/banner_img_1.png')} alt="Avatar" className='avt' />
         </div>
       </section>
-
-      <section id='about'> {/* <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" duration={2} animateOnce={true}>
-          <h1>Hello, Animated on Scroll!</h1>
-        </ScrollAnimation>
+      <section id='projects'></section>
+      <section id='about'> <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" duration={2} animateOnce={true}>
+        <h1>Hello, Animated on Scroll!</h1>
+      </ScrollAnimation>
 
         <ScrollAnimation animateIn="zoomIn" animateOut="zoomOut" duration={1} animateOnce={true}>
           <p>This is a sample text with scroll animation.</p>
-        </ScrollAnimation> */}</section>
+        </ScrollAnimation>
+      </section>
       <section id='education'></section>
       <section id='skill'></section>
       <section id='about'></section>
+
     </>
   );
 };

@@ -3,6 +3,10 @@
   padding: 0px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .App {
   width: 100%;
   height: auto;
@@ -451,6 +455,7 @@ body.menu-closed {
   background-color: #1b4242;
   border-radius: 5px;
   outline: none;
+  color: white;
 }
 
 .NavbarShow-bottom-input:focus {
