@@ -6,7 +6,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import './Appresponsive.css'
 // import 'animate.css/animate.min.css'; // Import CSS của thư viện animate.css (được sử dụng bởi react-animate-on-scroll)
 const App = () => {
-  const [showMenu, setShowMenu] = useState(false);
+
 
   const [speed, setSpeed] = useState(2);
   useEffect(() => {
@@ -90,6 +90,7 @@ const App = () => {
     const phoneRegex = /^\d{10}$/;
     return phoneRegex.test(value);
   };
+  const [showMenu, setShowMenu] = useState(false);
   const toggleMenu = () => {
     console.log('Before toggle:', showMenu);
     setShowMenu(!showMenu);
@@ -104,19 +105,21 @@ const App = () => {
     <>
       {/* <Cursor></Cursor> */}
       <div className={`mobile-navbar ${showMenuPhone ? 'open' : ''}`}>
-        <div className="mobile-navbar-circle" onClick={handleMenuPhone}>
+        <div className="mobile-navbar-toggle" onClick={handleMenuPhone}>
           <div className="menu-icon"></div>
+
+        </div> <div className="mobile-navbar-toggle" onClick={toggleMenu}>
+          <div className="menu-icon"></div>
+
         </div>
-        {showMenuPhone && (
-          <div className="mobile-navbar-links">
-            <a href="#home">Home</a>
-            <a href="#project">Projects</a>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#skill">Skills</a>
-            <a href="#experience">Work Experience</a>
-          </div>
-        )}
+        <div className="mobile-navbar-links">
+          <a href="#home">Home</a>
+          <a href="#project">Projects</a>
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#skill">Skills</a>
+          <a href="#experience">Work Experience</a>
+        </div>
       </div>
       <div className={`container-Navbar`}>
         <div className='Navbar'>
@@ -139,6 +142,7 @@ const App = () => {
           </div>
         </div>
       </div>
+      <div className={`overlayne ${showMenuPhone ? 'active' : ''}`} onClick={handleMenuPhone}></div>
       <div className={`overlay ${showMenu ? 'active' : ''}`} onClick={toggleMenu}></div>
       <div className={`container-NavbarShow ${showMenu ? 'menu-open' : ''}`}>
         <div className='NavbarShow-top'><p className='text-logo'>Hoàng Phúc</p> <div className='NavbarShow-top-X' onClick={toggleMenu}><i class="fa-solid fa-x"></i></div></div>
