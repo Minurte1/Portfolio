@@ -93,13 +93,22 @@ const App = () => {
   const [showMenu, setShowMenu] = useState(false);
   const toggleMenu = () => {
     console.log('Before toggle:', showMenu);
+
     setShowMenu(!showMenu);
-    console.log('After toggle:', showMenu);
+
+
+
+
+
+
+
+
   };
   const [showMenuPhone, setShowMenuPhone] = useState(false);
 
   const handleMenuPhone = () => {
     setShowMenuPhone(!showMenuPhone);
+
   };
   return (
     <>
@@ -113,6 +122,8 @@ const App = () => {
 
         </div>
         <div className="mobile-navbar-links">
+
+
           <a href="#home">Home</a>
           <a href="#project">Projects</a>
           <a href="#about">About</a>
