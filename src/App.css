@@ -101,6 +101,8 @@ html {
   margin-left: 5%;
   font-size: 18px;
   color: white;
+  z-index: 30;
+  margin-top: 20px;
 }
 
 .text-logo:hover {
@@ -138,6 +140,7 @@ a {
   margin-left: 2%;
   margin-right: 2%;
   color: white;
+  z-index: 31;
 }
 
 .Navbar-middle-Gach {
@@ -324,6 +327,8 @@ body.menu-closed {
   background-color: #1B4242;
   border: none;
   color: rgb(255, 255, 255);
+  z-index: 200;
+  font-size: 15px;
 }
 
 .downloadCV:hover {
@@ -484,10 +489,6 @@ body.menu-closed {
 
 
 /* Styles cho màn hình lớn (laptop và lớn hơn) */
-@media only screen and (min-width: 1024px) {
 
-
-  .container-Navbar {}
-}
 
 /* Styles cho màn hình trung bình (tablet) */

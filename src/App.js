@@ -1,9 +1,14 @@
 
 // import Cursor from './public/component/cursor';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState, useEffect } from 'react';
 import { toast } from 'react-toastify'; import './App.css';
 import ScrollAnimation from 'react-animate-on-scroll';
-import './Appresponsive.css'
+import './Appresponsive.css';
+import './Appproject.css';
+// Trong tệp src/index.js hoặc tệp nào đó mà bạn sử dụng Bootstrap
+
+
 // import 'animate.css/animate.min.css'; // Import CSS của thư viện animate.css (được sử dụng bởi react-animate-on-scroll)
 const App = () => {
 
@@ -113,14 +118,16 @@ const App = () => {
   return (
     <>
       {/* <Cursor></Cursor> */}
-      <div className={`mobile-navbar ${showMenuPhone ? 'open' : ''}`}>
+      < div div className={`mobile-navbar ${showMenuPhone ? 'open' : ''}`
+      }>
         <div className="mobile-navbar-toggle" onClick={handleMenuPhone}>
           <div className="menu-icon"></div>
 
-        </div> <div className="mobile-navbar-toggle" onClick={toggleMenu}>
+        </div>
+        {/* <div className="mobile-navbar-toggle" onClick={toggleMenu}>
           <div className="menu-icon"></div>
 
-        </div>
+        </div> */}
         <div className="mobile-navbar-links">
 
 
@@ -130,8 +137,9 @@ const App = () => {
           <a href="#education">Education</a>
           <a href="#skill">Skills</a>
           <a href="#experience">Work Experience</a>
+          <a href="#contact">Contact</a>
         </div>
-      </div>
+      </ div>
       <div className={`container-Navbar`}>
         <div className='Navbar'>
           <div className='Navbar-left'>
@@ -224,7 +232,24 @@ const App = () => {
           <img src={require('../src/public/image/banner_img_1.png')} alt="Avatar" className='avt' />
         </div>
       </section>
-      <section id='projects'></section>
+      <section id='projects'>
+        <div className='Container-project'>
+          <p className='Container-project-Text'>My Project</p>
+          <p className='Container-project-Text-2'>Crafting stories through design and innovation</p>
+
+          <div className='row Container-project-Box'>
+            <div className='col-md-4 project-1'>
+
+            </div>
+            <div className='col-md-4 project-2'>
+
+            </div>
+            <div className='col-md-4 project-3'>
+
+            </div>
+          </div>
+        </div>
+      </section>
       <section id='about'> <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" duration={2} animateOnce={true}>
         <h1>Hello, Animated on Scroll!</h1>
       </ScrollAnimation>

@@ -401,6 +401,9 @@
         /* Hoặc text-justify: inter-character; */
     }
 
+    .container-NavbarShow {
+        display: none;
+    }
 
     /* Add any additional styling as needed */
 
