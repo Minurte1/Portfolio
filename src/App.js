@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { toast } from 'react-toastify'; import './App.css';
 import ScrollAnimation from 'react-animate-on-scroll';
+import './Appresponsive.css'
 // import 'animate.css/animate.min.css'; // Import CSS của thư viện animate.css (được sử dụng bởi react-animate-on-scroll)
 const App = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -94,10 +95,29 @@ const App = () => {
     setShowMenu(!showMenu);
     console.log('After toggle:', showMenu);
   };
+  const [showMenuPhone, setShowMenuPhone] = useState(false);
 
+  const handleMenuPhone = () => {
+    setShowMenuPhone(!showMenuPhone);
+  };
   return (
     <>
       {/* <Cursor></Cursor> */}
+      <div className={`mobile-navbar ${showMenuPhone ? 'open' : ''}`}>
+        <div className="mobile-navbar-circle" onClick={handleMenuPhone}>
+          <div className="menu-icon"></div>
+        </div>
+        {showMenuPhone && (
+          <div className="mobile-navbar-links">
+            <a href="#home">Home</a>
+            <a href="#project">Projects</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skill">Skills</a>
+            <a href="#experience">Work Experience</a>
+          </div>
+        )}
+      </div>
       <div className={`container-Navbar`}>
         <div className='Navbar'>
           <div className='Navbar-left'>

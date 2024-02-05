@@ -477,3 +477,17 @@ body.menu-closed {
   background-color: #000000;
   cursor: pointer;
 }
+
+
+/* ---------------RESPONSIVE------------------------ */
+
+
+
+/* Styles cho màn hình lớn (laptop và lớn hơn) */
+@media only screen and (min-width: 1024px) {
+
+
+  .container-Navbar {}
+}
+
+/* Styles cho màn hình trung bình (tablet) */

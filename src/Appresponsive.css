@@ -1,0 +1,283 @@
+@media only screen and (min-width: 1024px) {
+
+
+    .mobile-navbar {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+
+    /* Thêm các quy tắc CSS cho màn hình trung bình ở đây */
+    .container-Navbar {
+        font-size: 18px;
+        /* Ví dụ: điều chỉnh kích thước container hoặc bố cục */
+        width: 100%;
+    }
+
+    .mobile-navbar {
+        display: none;
+    }
+
+    .text-logo {
+        font-size: 12px;
+        margin-right: -10px;
+    }
+
+    a {
+        font-size: 12px;
+    }
+
+    .Navbar-left {}
+
+    .Navbar-right {
+        width: 10%;
+    }
+
+    .Navbar-middle {
+        width: 70%;
+
+    }
+
+    .container-NavbarShow {
+        position: fixed;
+        top: 0;
+        right: -40%;
+        /* Điều chỉnh giá trị này để menu ẩn hoặc hiển thị tùy thuộc vào thiết kế của bạn */
+        height: 100%;
+        width: 40%;
+        /* Điều chỉnh kích thước menu tùy thuộc vào thiết kế của bạn */
+        background-color: #333;
+        color: #fff;
+        transition: right 0.5s;
+        z-index: 100;
+        /* Thêm hiệu ứng chuyển động */
+
+    }
+
+    .menu-open {
+        right: 0;
+    }
+
+    .NavbarShow-top-X {
+        width: 10%;
+        height: 30px;
+    }
+
+    .NavbarShow-middle-AboutText {
+        margin-left: 0%;
+    }
+
+    .NavbarShow-middle-AboutText1 {
+        width: 80%;
+        font-size: 13px;
+    }
+
+    .NavbarShow-bottom-input {
+        width: 70%;
+    }
+
+    .NavbarShow-bottom-button {
+        width: 40%;
+    }
+
+    .Toastify__toast-container {
+        width: 35%;
+
+        /* Điều chỉnh kích thước container */
+        top: 60px;
+        /* Điều chỉnh vị trí top */
+        right: 5%;
+        /* Điều chỉnh vị trí right */
+    }
+
+    .Toastify__toast {
+        /* Điều chỉnh các thuộc tính của toast */
+        font-size: 13px;
+        padding: 10px 15px;
+    }
+
+    .info-small>p {
+        width: 100%;
+        height: auto;
+        font-size: 25px;
+        margin-left: -25%;
+        margin-top: -20%;
+
+    }
+
+    .NavbarShow-top>p {
+        margin-left: 10%;
+        width: 70%;
+        margin-left: 15px;
+        font-size: 16px;
+    }
+
+    .text-small {
+        font-size: 13px;
+    }
+
+    .sec-text {
+        /* width: 50%; */
+        height: auto;
+        font-family: monospace;
+        color: #ffffff;
+        letter-spacing: 3px;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid black;
+        animation: typingne 3s steps(20) infinite alternate,
+            caretne 0.5s steps(2) infinite;
+    }
+
+    @keyframes caretne {
+        from {
+            border-color: transparent;
+        }
+
+        to {
+            border-color: rgb(255, 255, 255);
+        }
+    }
+
+    @keyframes typingne {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 280px;
+            /* Thay đổi giá trị này để khớp với chiều dài thực tế của văn bản */
+        }
+
+    }
+
+
+}
+
+/* Styles cho màn hình nhỏ (điện thoại di động) */
+@media only screen and (max-width: 767px) {
+
+    /* Thêm các quy tắc CSS cho màn hình nhỏ ở đây */
+    .container-Navbar {
+        /* Ví dụ: điều chỉnh kích thước container hoặc bố cục */
+        display: none;
+    }
+
+    .mobile-navbar {
+        display: block;
+    }
+
+    /* MobileNavbar.css */
+
+    /* MobileNavbar.css */
+
+    /* MobileNavbar.css */
+
+    .mobile-navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .mobile-navbar-circle {
+        background-color: #333;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .menu-icon {
+        background-color: white;
+        height: 3px;
+        width: 20px;
+        margin: 3px 0;
+        transition: transform 0.3s;
+    }
+
+    .mobile-navbar-links {
+        display: flex;
+        flex-direction: column;
+        background-color: #333;
+        padding: 10px;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+    }
+
+    .mobile-navbar-links a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        border-bottom: 1px solid #555;
+        transition: background-color 0.3s;
+    }
+
+    .mobile-navbar-links a:hover {
+        background-color: #555;
+    }
+
+    .mobile-navbar.open .menu-icon {
+        transform: rotate(45deg);
+    }
+
+    .home-avt {
+        display: none;
+    }
+
+    .home-info {
+        width: 100%;
+    }
+
+    .sec-text {
+        /* width: 50%; */
+        height: auto;
+        font-family: monospace;
+        color: #ffffff;
+        letter-spacing: 3px;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid black;
+        animation: typingne 3s steps(20) infinite alternate,
+            caretne 0.5s steps(2) infinite;
+    }
+
+    @keyframes caretne {
+        from {
+            border-color: transparent;
+        }
+
+        to {
+            border-color: rgb(255, 255, 255);
+        }
+    }
+
+    @keyframes typingne {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 280px;
+            /* Thay đổi giá trị này để khớp với chiều dài thực tế của văn bản */
+        }
+
+    }
+
+    /* Add any additional styling as needed */
+
+
+    /* Add any additional styling as needed */
+
+}
