@@ -9,7 +9,10 @@ import './Appresponsive.css';
 import './Appproject.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 // Trong tệp src/index.js hoặc tệp nào đó mà bạn sử dụng Bootstrap
 
 
@@ -216,14 +219,14 @@ const App = () => {
       <p>àhuas</p> <p>àhuas</p> <p>àhuas</p> <p>àhuas</p> */}
 
 
-      <section id='home'>
+      <section id='home' >
         {/* <img src={require('./public/image/banner-scaled.jpg')} alt="Banner" className='Home-banner' /> */}
         <div className='Home-banner'></div>
         <div className='home-info'>
           {/* <p>I am Ho Hoang Phuc Developer Web</p> */}
-          <div className='info-small'>
+          <div className='info-small' data-aos="fade-up-right" data-aos-duration="2000">
             <p>
-              I'm a <strong>Hồ Hoàng Phúc</strong>
+              I'm a <strong >Hồ Hoàng Phúc</strong>
               <p className='sec-text'></p>
               <p className='text-small'>
                 I am a passionate web developer, committed to creating high-quality websites with the best user experience. With extensive knowledge of programming languages and meticulous attention to detail, I specialize in turning complex ideas into powerful and effective web applications.
@@ -232,40 +235,42 @@ const App = () => {
             </p>
           </div>
         </div>
-        <div className='home-avt'>
+        <div className='home-avt' data-aos="fade-up-left" data-aos-duration="2000">
           <img src={require('../src/public/image/banner_img_1.png')} alt="Avatar" className='avt' />
         </div>
       </section>
 
-      <section id='projects'>
-        <Container className='Container-project'>
+      <section id='projects' >
+        <ScrollAnimation className='Container-project' animateIn="slideInRight" animateOut="fadeOut" duration={1} animateOnce={true} delay={500}>
+          <Container className='Container-project-wrap'>
+            <p className='Container-project-Text'>My Project</p>
+            <p className='Container-project-Text-2'>Crafting stories through design and innovation</p>
 
-          <p className='Container-project-Text'>My Project</p>
-          <p className='Container-project-Text-2'>Crafting stories through design and innovation</p>
+            <Row className='Container-project-Box' >
+              <Col sm={6} md={4}>
+                <div className='project-1' >
+                  {/* Nội dung cho project-1 */}
+                </div>
+              </Col>
+              <Col sm={6} md={4}>
+                <div className='project-2' >
+                  {/* Nội dung cho project-2 */}
+                </div>
+              </Col>
+              <Col md={4}>
+                <div className='project-3' >
+                  {/* Nội dung cho project-3 */}
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </ScrollAnimation>
 
-          <Row className='Container-project-Box'>
-            <Col sm={6} md={4}>
-              <div className='project-1'>
-                {/* Nội dung cho project-1 */}
-              </div>
-            </Col>
-            <Col sm={6} md={4}>
-              <div className='project-2'>
-                {/* Nội dung cho project-2 */}
-              </div>
-            </Col>
-            <Col md={4}>
-              <div className='project-3'>
-                {/* Nội dung cho project-3 */}
-              </div>
-            </Col>
-          </Row>
 
-        </Container >
       </section>
 
       <section id='about'> <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" duration={2} animateOnce={true}>
-        <h1>Hello, Animated on Scroll!</h1>
+        <h1 >Hello, Animated on Scroll!</h1>
       </ScrollAnimation>
 
         <ScrollAnimation animateIn="zoomIn" animateOut="zoomOut" duration={1} animateOnce={true}>

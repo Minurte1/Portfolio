@@ -8,6 +8,21 @@
 }
 
 .Container-project {
+    width: 100%;
+    height: 100%;
+
+}
+
+.Container-project {
+
+    /* Điểm bắt đầu của hiệu ứng */
+    transition: opacity 1s ease, transform 1s ease;
+    /* Thời gian và kiểu chuyển động */
+}
+
+
+
+.Container-project-wrap {
     width: 80%;
     height: 80%;
     text-align: center;
