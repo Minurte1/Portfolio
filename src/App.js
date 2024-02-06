@@ -2,10 +2,14 @@
 // import Cursor from './public/component/cursor';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState, useEffect } from 'react';
-import { toast } from 'react-toastify'; import './App.css';
+import { toast } from 'react-toastify';
+import './App.css';
 import ScrollAnimation from 'react-animate-on-scroll';
 import './Appresponsive.css';
 import './Appproject.css';
+import { Container, Row, Col } from 'react-bootstrap';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
 // Trong tệp src/index.js hoặc tệp nào đó mà bạn sử dụng Bootstrap
 
 
@@ -232,24 +236,34 @@ const App = () => {
           <img src={require('../src/public/image/banner_img_1.png')} alt="Avatar" className='avt' />
         </div>
       </section>
+
       <section id='projects'>
-        <div className='Container-project'>
+        <Container className='Container-project'>
+
           <p className='Container-project-Text'>My Project</p>
           <p className='Container-project-Text-2'>Crafting stories through design and innovation</p>
 
-          <div className='row Container-project-Box'>
-            <div className='col-md-4 project-1'>
+          <Row className='Container-project-Box'>
+            <Col sm={6} md={4}>
+              <div className='project-1'>
+                {/* Nội dung cho project-1 */}
+              </div>
+            </Col>
+            <Col sm={6} md={4}>
+              <div className='project-2'>
+                {/* Nội dung cho project-2 */}
+              </div>
+            </Col>
+            <Col md={4}>
+              <div className='project-3'>
+                {/* Nội dung cho project-3 */}
+              </div>
+            </Col>
+          </Row>
 
-            </div>
-            <div className='col-md-4 project-2'>
-
-            </div>
-            <div className='col-md-4 project-3'>
-
-            </div>
-          </div>
-        </div>
+        </Container >
       </section>
+
       <section id='about'> <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" duration={2} animateOnce={true}>
         <h1>Hello, Animated on Scroll!</h1>
       </ScrollAnimation>
