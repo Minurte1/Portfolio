@@ -7,6 +7,7 @@ import './App.css';
 import ScrollAnimation from 'react-animate-on-scroll';
 import './Appresponsive.css';
 import './Appproject.css';
+import './AboutUS.css'
 import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import AOS from 'aos';
@@ -269,17 +270,32 @@ const App = () => {
 
       </section>
 
-      <section id='about'> <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" duration={2} animateOnce={true}>
-        <h1 >Hello, Animated on Scroll!</h1>
-      </ScrollAnimation>
+      <section id='about'>
+        <Container className='Container-project-wrap'>
+          <p className='Container-project-Text'>My Project</p>
+          <p className='Container-project-Text-2'>Crafting stories through design and innovation</p>
 
-        <ScrollAnimation animateIn="zoomIn" animateOut="zoomOut" duration={1} animateOnce={true}>
-          <p>This is a sample text with scroll animation.</p>
-        </ScrollAnimation>
+          <Row className='Container-project-Box' >
+            <Col sm={6} md={4}>
+              <div className='project-1' >
+                {/* Nội dung cho project-1 */}
+              </div>
+            </Col>
+            <Col sm={6} md={4}>
+              <div className='project-2' >
+                {/* Nội dung cho project-2 */}
+              </div>
+            </Col>
+            <Col md={4}>
+              <div className='project-3' >
+                {/* Nội dung cho project-3 */}
+              </div>
+            </Col>
+          </Row>
+        </Container>
       </section>
       <section id='education'></section>
       <section id='skill'></section>
-      <section id='about'></section>
 
     </>
   );
