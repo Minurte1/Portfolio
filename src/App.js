@@ -272,7 +272,7 @@ const App = () => {
 
       <section id='about'>
         <Container className='Container-project-wrap'>
-          <p className='Container-project-Text'>My Project</p>
+          <p className='Container-project-Text'>ABOUT ME</p>
           <p className='Container-project-Text-2'>Crafting stories through design and innovation</p>
 
           <Row className='Container-project-Box' >
