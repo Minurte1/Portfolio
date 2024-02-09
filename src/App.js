@@ -134,7 +134,7 @@ const App = () => {
     window.open(pdfUrl);
   };
 
-  const pdfUrl = process.env.PUBLIC_URL + '/public/CV/CV.pdf';
+
   return (
     <>
       {/* <Cursor></Cursor> */}
@@ -217,9 +217,9 @@ const App = () => {
             onChange={(e) => setPhone(e.target.value)}
           />
           <br />
-          <a className='NavbarShow-bottom-button' onClick={handleSubmit}>
+          <button className='NavbarShow-bottom-button' onClick={handleSubmit}>
             Submit now
-          </a>
+          </button>
 
         </div>
       </div>
@@ -244,7 +244,7 @@ const App = () => {
               <p className='text-small'>
                 I am a passionate web developer, committed to creating high-quality websites with the best user experience. With extensive knowledge of programming languages and meticulous attention to detail, I specialize in turning complex ideas into powerful and effective web applications.
               </p>
-              <button className='downloadCV' onClick={onButtonClick}>Download CV <i className="fa-solid fa-download" ></i></button>
+              <a href='Chuong1_TongquanveTMDT.pdf' download="Chuong1_TongquanveTMDT.pdf" className='downloadCV'>Download CV <i className="fa-solid fa-download" ></i></a>
             </p>
           </div>
         </div>
