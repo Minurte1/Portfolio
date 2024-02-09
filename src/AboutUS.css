@@ -1,5 +1,98 @@
 #about {
     width: 100%;
-    height: 1000px;
+    height: 800px;
     background-color: #092635;
+}
+
+.Container-About-wrap {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Container-About-Box {
+    width: 90%;
+    height: 90%;
+    background-color: #092635;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.About-1 {
+
+    width: 100%;
+    height: 100%;
+    background-color: #092635;
+}
+
+.About-1-Text {
+    color: white;
+    font-size: 30px;
+}
+
+.About-1-Text1 {
+    color: white;
+    font-size: 30px;
+}
+
+.About-2 {
+    background-color: #092635;
+    width: 400px;
+    height: 400px;
+
+}
+
+.About-2-Background {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background-color: red;
+}
+
+.About-2-Background1 {
+    width: 400px;
+    height: 400px;
+    background-color: rgba(0, 128, 128, 0.5);
+    /* Màu nền với độ mờ */
+    position: absolute;
+    z-index: 1;
+    /* Đặt phía dưới tấm ảnh */
+}
+
+.About-2-Background-image {
+    width: 400px;
+    height: 400px;
+    /* bottom: 0;
+    left: 0; */
+    top: 0;
+    right: 0;
+    z-index: 2;
+    position: absolute;
+    object-fit: cover;
+}
+
+
+.About-3 {
+    background-color: #092635;
+    width: 100%;
+    height: 100%;
+
+}
+
+.About-3-thanhngang {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: #a2a2a2;
+    top: 10px;
+    left: 0;
+
+}
+
+.About-3-Text {
+    color: white;
 }

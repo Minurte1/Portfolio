@@ -8,7 +8,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import './Appresponsive.css';
 import './Appproject.css';
 import './AboutUS.css'
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
@@ -140,7 +140,7 @@ const App = () => {
 
 
           <a href="#home">Home</a>
-          <a href="#project">Projects</a>
+          <a href="#projects">Projects</a>
           <a href="#about">About</a>
           <a href="#education">Education</a>
           <a href="#skill">Skills</a>
@@ -156,7 +156,7 @@ const App = () => {
           </div>
           <div className='Navbar-middle'>
             <a href='#home'>Home <div className='Navbar-middle-Gach'></div></a>
-            <a href='#project'>Projects <div className='Navbar-middle-Gach'></div></a>
+            <a href='#projects'>Projects <div className='Navbar-middle-Gach'></div></a>
             <a href='#about'>About <div className='Navbar-middle-Gach'></div></a>
             <a href='#education'>Education <div className='Navbar-middle-Gach'></div></a>
             <a href='#skill'>Skills <div className='Navbar-middle-Gach'></div></a>
@@ -271,25 +271,39 @@ const App = () => {
       </section>
 
       <section id='about'>
-        <Container className='Container-project-wrap'>
-          <p className='Container-project-Text'>ABOUT ME</p>
-          <p className='Container-project-Text-2'>Crafting stories through design and innovation</p>
+        <Container className='Container-About-wrap'>
+          <Row className='Container-About-Box'>
+            <Col md={6}>
+              <Card className='About-1'>
 
-          <Row className='Container-project-Box' >
-            <Col sm={6} md={4}>
-              <div className='project-1' >
-                {/* Nội dung cho project-1 */}
-              </div>
+                <Card.Title className='About-1-Text'>ABOUT ME</Card.Title>
+                <Card.Text className='About-1-Text1'>
+                  Transforming visions into
+                  exceptional portfolios
+                </Card.Text>
+
+              </Card>
             </Col>
-            <Col sm={6} md={4}>
-              <div className='project-2' >
-                {/* Nội dung cho project-2 */}
-              </div>
+            <Col md={6}>
+              <Card className='About-2'>
+                <Card.Body className='About-2-Background'>
+
+                  <div className='About-2-Background1'></div>
+                  <img src={require('./public/image/logo.jpg')} alt='logo' className='About-2-Background-image' />
+
+
+                </Card.Body>
+              </Card>
             </Col>
-            <Col md={4}>
-              <div className='project-3' >
-                {/* Nội dung cho project-3 */}
-              </div>
+            <Col md={6}>
+              <Card className='About-3'>
+                <Card.Body>
+                  <div className='About-3-thanhngang'></div>
+                  <span className='About-3-Text'>Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione
+                  </span>
+
+                </Card.Body>
+              </Card>
             </Col>
           </Row>
         </Container>
