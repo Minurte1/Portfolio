@@ -244,7 +244,8 @@ const App = () => {
               <p className='text-small'>
                 I am a passionate web developer, committed to creating high-quality websites with the best user experience. With extensive knowledge of programming languages and meticulous attention to detail, I specialize in turning complex ideas into powerful and effective web applications.
               </p>
-              <a href='Chuong1_TongquanveTMDT.pdf' download="Chuong1_TongquanveTMDT.pdf" className='downloadCV'>Download CV <i className="fa-solid fa-download" ></i></a>
+              <button className='downloadCV'>  <a href='Chuong1_TongquanveTMDT.pdf' download="Chuong1_TongquanveTMDT.pdf">Download CV <i className="fa-solid fa-download" ></i></a></button>
+
             </p>
           </div>
         </div>
@@ -313,6 +314,16 @@ const App = () => {
                   <div className='About-3-thanhngang'></div>
                   <span className='About-3-Text'>Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione
                   </span>
+
+
+                </Card.Body>
+              </Card>
+            </Col>   <Col md={6}>
+              <Card className='About-3'>
+                <Card.Body>
+
+
+                  <button className='downloadCV'>  <a href='Chuong1_TongquanveTMDT.pdf' download="Chuong1_TongquanveTMDT.pdf">Download CV <i className="fa-solid fa-download" ></i></a></button>s
 
                 </Card.Body>
               </Card>
