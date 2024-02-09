@@ -14,7 +14,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import './ResponsiveDT.css'
 import './ResponsiveTablet.css'
-
+import './Education.css'
 // ..
 AOS.init();
 // Trong tệp src/index.js hoặc tệp nào đó mà bạn sử dụng Bootstrap
@@ -331,7 +331,72 @@ const App = () => {
           </Row>
         </Container>
       </section>
-      <section id='education'></section>
+      <section id='education'>
+        <p>EDUCATION</p>
+        <p>Showcasing your talent
+          amplifying your impact</p>
+        <Container className='Container-Education-wrap'>
+          <Row className='Container-Education-Box'>
+            <Col md={6}>
+              <Card className='Education-1'>
+
+                <Card.Title className='Education-1-Text'>ABOUT ME</Card.Title>
+                <Card.Text className='Education-1-Text1'>
+                  Transforming visions into
+                  exceptional portfolios
+                </Card.Text>
+                <div className='Education-3-thanhngang'></div>
+                <span className='Education-3-Text'>Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione
+                </span>
+              </Card>
+            </Col>
+            <Col md={6}>
+              <Card className='Education-2'>
+                <Card.Title className='Education-1-Text'>ABOUT ME</Card.Title>
+                <Card.Text className='Education-1-Text1'>
+                  Transforming visions into
+                  exceptional portfolios
+                </Card.Text>
+                <div className='Education-3-thanhngang'></div>
+                <span className='Education-3-Text'>Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione
+                </span>
+              </Card>
+            </Col>
+            <Col md={6}>
+              <Card className='Education-3'>
+                <Card.Title className='Education-1-Text'>ABOUT ME</Card.Title>
+                <Card.Text className='Education-1-Text1'>
+                  Transforming visions into
+                  exceptional portfolios
+                </Card.Text>
+                <div className='Education-3-thanhngang'></div>
+                <span className='Education-3-Text'>Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione
+                </span>
+
+
+
+              </Card>
+            </Col>
+            <Col md={6}>
+              <Card className='Education-3'>
+
+                <Card.Title className='Education-1-Text'>ABOUT ME</Card.Title>
+                <Card.Text className='Education-1-Text1'>
+                  Transforming visions into
+                  exceptional portfolios
+                </Card.Text>
+
+                <div className='Education-3-thanhngang'></div>
+                <span className='Education-3-Text'>Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione
+                </span>
+
+
+              </Card>
+            </Col>
+          </Row>
+        </Container>
+
+      </section>
       <section id='skill'></section>
 
     </>
