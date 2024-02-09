@@ -1,6 +1,6 @@
 #about {
     width: 100%;
-    height: 800px;
+    height: 700px;
     background-color: #092635;
 }
 
@@ -10,6 +10,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
+
 }
 
 .Container-About-Box {

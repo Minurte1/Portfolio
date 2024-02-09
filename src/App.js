@@ -14,6 +14,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import './ResponsiveDT.css'
 import './ResponsiveTablet.css'
+
 // ..
 AOS.init();
 // Trong tệp src/index.js hoặc tệp nào đó mà bạn sử dụng Bootstrap
@@ -125,6 +126,15 @@ const App = () => {
     setShowMenuPhone(!showMenuPhone);
 
   };
+
+
+  const onButtonClick = () => {
+    const pdfUrl = process.env.PUBLIC_URL + '/CV/CV.pdf';
+    // Mở một cửa sổ mới và tải xuống tệp PDF
+    window.open(pdfUrl);
+  };
+
+  const pdfUrl = process.env.PUBLIC_URL + '/public/CV/CV.pdf';
   return (
     <>
       {/* <Cursor></Cursor> */}
@@ -207,9 +217,9 @@ const App = () => {
             onChange={(e) => setPhone(e.target.value)}
           />
           <br />
-          <button className='NavbarShow-bottom-button' onClick={handleSubmit}>
+          <a className='NavbarShow-bottom-button' onClick={handleSubmit}>
             Submit now
-          </button>
+          </a>
 
         </div>
       </div>
@@ -234,7 +244,7 @@ const App = () => {
               <p className='text-small'>
                 I am a passionate web developer, committed to creating high-quality websites with the best user experience. With extensive knowledge of programming languages and meticulous attention to detail, I specialize in turning complex ideas into powerful and effective web applications.
               </p>
-              <button className='downloadCV'>Download CV <i className="fa-solid fa-download"></i></button>
+              <button className='downloadCV' onClick={onButtonClick}>Download CV <i className="fa-solid fa-download" ></i></button>
             </p>
           </div>
         </div>
