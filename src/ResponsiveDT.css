@@ -1,0 +1,296 @@
+/* Styles cho màn hình nhỏ (điện thoại di động) */
+@media only screen and (max-width: 767px) {
+
+    /* Thêm các quy tắc CSS cho màn hình nhỏ ở đây */
+    .container-Navbar {
+        /* Ví dụ: điều chỉnh kích thước container hoặc bố cục */
+        display: none;
+    }
+
+    .mobile-navbar {
+        display: block;
+    }
+
+    /* MobileNavbar.css */
+
+    /* MobileNavbar.css */
+
+    /* MobileNavbar.css */
+
+    /* MobileNavbar.css */
+
+    .mobile-navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 40%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 103;
+
+    }
+
+    .mobile-navbar.active {
+        display: block;
+    }
+
+    .mobile-navbar-toggle {
+        background-color: #1b4242;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 50%;
+        margin-left: 15px;
+        margin-top: 15px;
+        opacity: 0.5;
+
+
+    }
+
+    .menu-icon {
+        background-color: white;
+        height: 3px;
+        width: 20px;
+        margin: 3px 0;
+        transition: transform 0.3s;
+    }
+
+    .mobile-navbar-links {
+        display: flex;
+        flex-direction: column;
+        background-color: #1b4242;
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        left: -50%;
+        width: 40%;
+        height: 100%;
+        transition: left 0.5s ease-in-out;
+        z-index: 999;
+
+    }
+
+    .mobile-navbar-links a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        /* border-bottom: 1px solid #092635; */
+        transition: background-color 0.3s;
+    }
+
+    .mobile-navbar-links a:hover {
+        background-color: #092635;
+
+    }
+
+    .mobile-navbar.open .mobile-navbar-links {
+        left: 0;
+
+    }
+
+    .home-avt {
+        display: none;
+    }
+
+    .Home-banner {
+        width: 100%;
+        height: 800px;
+        position: absolute;
+        background-color: #092635;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+
+
+    .home-info {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-left: -20%;
+        margin-top: -20%;
+    }
+
+    .sec-text {
+        /* width: 50%; */
+        height: auto;
+        font-family: monospace;
+        color: #ffffff;
+        letter-spacing: 3px;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid black;
+        animation: typingne 3s steps(20) infinite alternate,
+            caretne 0.5s steps(2) infinite;
+    }
+
+    @keyframes caretne {
+        from {
+            border-color: transparent;
+        }
+
+        to {
+            border-color: rgb(255, 255, 255);
+        }
+    }
+
+    @keyframes typingne {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 280px;
+            /* Thay đổi giá trị này để khớp với chiều dài thực tế của văn bản */
+        }
+
+    }
+
+    .overlayne {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Màu tối */
+        z-index: 100;
+        /* Đảm bảo nằm trên tất cả các phần tử khác */
+        display: none;
+        /* Ẩn mặc định */
+    }
+
+    .overlayne.active {
+        display: block;
+        /* Hiển thị khi active */
+    }
+
+    .container-NavbarShow {
+        z-index: 99;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Màu tối */
+        z-index: 100;
+        /* Đảm bảo nằm trên tất cả các phần tử khác */
+        display: none;
+        /* Ẩn mặc định */
+    }
+
+    .overlay.active {
+        display: block;
+        /* Hiển thị khi active */
+    }
+
+    .info-small {
+        height: 70%;
+        margin-top: -20%;
+    }
+
+    .sec-text {
+        /* width: 50%; */
+        height: auto;
+        font-family: monospace;
+        color: #ffffff;
+        letter-spacing: 3px;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid black;
+        animation: typingne 3s steps(20) infinite alternate,
+            caretne 0.5s steps(2) infinite;
+        font-size: 18px;
+    }
+
+    @keyframes caretne {
+        from {
+            border-color: transparent;
+        }
+
+        to {
+            border-color: rgb(255, 255, 255);
+        }
+    }
+
+    @keyframes typingne {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 190px;
+            /* Thay đổi giá trị này để khớp với chiều dài thực tế của văn bản */
+        }
+
+    }
+
+    .info-small>p {
+        font-size: 25px;
+    }
+
+    .text-small {
+
+        width: 100%;
+
+        /* Hoặc text-justify: inter-character; */
+    }
+
+    .container-NavbarShow {
+        display: none;
+    }
+
+    /* Add any additional styling as needed */
+
+
+    /* Add any additional styling as needed */
+    .About-2 {
+        background-color: #092635;
+        width: 200px;
+        height: 230px;
+        margin-top: 20px;
+        margin-left: 0%;
+
+    }
+
+    .About-2-Background {
+        width: 200px;
+        height: 200px;
+        position: relative;
+
+    }
+
+    .About-2-Background1 {
+        width: 200px;
+        height: 200px;
+        background-color: rgba(0, 128, 128, 0.5);
+        /* Màu nền với độ mờ */
+        position: absolute;
+        z-index: 3;
+        /* Đặt phía dưới tấm ảnh */
+    }
+
+    .About-2-Background-image {
+        width: 200px;
+        height: 200px;
+        /* bottom: 0;
+        left: 0; */
+        top: 0;
+        right: 0;
+        z-index: 4;
+        position: absolute;
+        object-fit: cover;
+        margin-right: 0px;
+    }
+
+}

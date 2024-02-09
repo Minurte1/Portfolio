@@ -12,6 +12,8 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import './ResponsiveDT.css'
+import './ResponsiveTablet.css'
 // ..
 AOS.init();
 // Trong tệp src/index.js hoặc tệp nào đó mà bạn sử dụng Bootstrap

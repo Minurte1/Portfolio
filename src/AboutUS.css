@@ -40,31 +40,33 @@
 
 .About-2 {
     background-color: #092635;
-    width: 400px;
+    width: 350px;
     height: 400px;
+    margin-left: 20%;
 
 }
 
 .About-2-Background {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     position: relative;
-    background-color: red;
+
 }
 
 .About-2-Background1 {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     background-color: rgba(0, 128, 128, 0.5);
     /* Màu nền với độ mờ */
     position: absolute;
     z-index: 1;
     /* Đặt phía dưới tấm ảnh */
+
 }
 
 .About-2-Background-image {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     /* bottom: 0;
     left: 0; */
     top: 0;
@@ -72,6 +74,7 @@
     z-index: 2;
     position: absolute;
     object-fit: cover;
+    margin-right: -30px;
 }
 
 
