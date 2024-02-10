@@ -339,7 +339,7 @@ const App = () => {
           <Row className='Container-Education-Box'>
             <Col md={6}>
               <Card className='Education-1'>
-
+                <span className='Education-1-time'>2005 - 2009</span>
                 <Card.Title className='Education-1-Text'>ABOUT ME</Card.Title>
                 <Card.Text className='Education-1-Text1'>
                   Transforming visions into
