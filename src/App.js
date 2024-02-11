@@ -154,7 +154,7 @@ const App = () => {
           <a href="#projects">Projects</a>
           <a href="#about">About</a>
           <a href="#education">Education</a>
-          <a href="#skill">Skills</a>
+          <a href="#skills">Skills</a>
           <a href="#experience">Work Experience</a>
           <a href="#contact">Contact</a>
         </div>
@@ -170,7 +170,7 @@ const App = () => {
             <a href='#projects'>Projects <div className='Navbar-middle-Gach'></div></a>
             <a href='#about'>About <div className='Navbar-middle-Gach'></div></a>
             <a href='#education'>Education <div className='Navbar-middle-Gach'></div></a>
-            <a href='#skill'>Skills <div className='Navbar-middle-Gach'></div></a>
+            <a href='#skills'>Skills <div className='Navbar-middle-Gach'></div></a>
 
             <a href='#experience'>Work Experience <div className='Navbar-middle-Gach'></div></a>
             {/* <a href='#project'>Projects</a> */}
@@ -398,7 +398,9 @@ const App = () => {
         </Container>
 
       </section>
-      <section id='skill'></section>
+      <section id='skills'>
+
+      </section>
 
     </>
   );
