@@ -483,6 +483,23 @@ body.menu-closed {
   cursor: pointer;
 }
 
+.gachngang1 {
+  width: 100%;
+  height: 1px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+}
+
+.gachngang {
+  width: 80%;
+  height: 2px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #1d6c6c;
+}
 
 /* ---------------RESPONSIVE------------------------ */
 

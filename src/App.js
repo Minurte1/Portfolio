@@ -15,6 +15,7 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 import './ResponsiveDT.css'
 import './ResponsiveTablet.css'
 import './Education.css'
+import './Skills.css'
 // ..
 AOS.init();
 // Trong tệp src/index.js hoặc tệp nào đó mà bạn sử dụng Bootstrap
@@ -398,8 +399,9 @@ const App = () => {
         </Container>
 
       </section>
-      <section id='skills'>
 
+      <section id='skills'>
+        <div className='gachngang1'>  <div className='gachngang'></div></div>
       </section>
 
     </>
