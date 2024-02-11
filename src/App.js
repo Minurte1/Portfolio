@@ -237,8 +237,8 @@ const App = () => {
         <div className='Home-banner'></div>
         <div className='home-info'>
           {/* <p>I am Ho Hoang Phuc Developer Web</p> */}
-          <div className='info-small' data-aos="fade-up-right" data-aos-duration="2000">
-            <p>
+          <div className='info-small' >
+            <p data-aos="fade-up-right" data-aos-duration="2000">
               I'm a <strong >Hồ Hoàng Phúc</strong>
               <p className='sec-text'></p>
               <p className='text-small'>
@@ -249,8 +249,8 @@ const App = () => {
             </p>
           </div>
         </div>
-        <div className='home-avt' data-aos="fade-up-left" data-aos-duration="2000">
-          <img src={require('../src/public/image/banner_img_1.png')} alt="Avatar" className='avt' />
+        <div className='home-avt'>
+          <img src={require('../src/public/image/banner_img_1.png')} data-aos="fade-up-left" data-aos-duration="2000" alt="Avatar" className='avt' />
         </div>
       </section>
 
@@ -401,7 +401,61 @@ const App = () => {
       </section>
 
       <section id='skills'>
-        <div className='gachngang1'>  <div className='gachngang'></div></div>
+        <div className='gachngang1'>
+          <div className='gachngang'></div>
+        </div>
+        <p>SKILLS</p>
+        <div className='Kienthucdahoc'>
+          <Container className='Container-Skills-wrap'>
+            <Row className='Container-Skills-Box'>
+              <Col xl={3} lg={4} md={6} sm={12}>
+                <Card className='Skills-1' data-aos="fade-right" data-aos-duration="2000">
+                  <img className='img-react' src={require('../src/public/image/logo512.png')} alt="Reactjs" />
+                  <p className='span-logo'>Reactjs</p>
+                </Card>
+              </Col>
+              <Col xl={3} lg={4} md={6} sm={12}>
+                <Card className='Skills-2' data-aos="fade-left" data-aos-duration="2000">
+                  <img className='img-nodejs' src={require('../src/public/image/icons8-nodejs-480.png')} alt="Nodejs" />
+                  <p className='span-nodejs'>Nodejs</p>
+                </Card>
+              </Col>
+              <Col xl={3} lg={4} md={6} sm={12}>
+                <Card className='Skills-3' data-aos="fade-right" data-aos-duration="2000">
+                  <img className='img-nodejs' src={require('../src/public/image/icons8-javascript-480.png')} alt="Javascript" />
+                  <p className='span-javascript'>Javascript</p>
+                </Card>
+              </Col>
+              <Col xl={3} lg={4} md={6} sm={12}>
+                <Card className='Skills-3' data-aos="fade-left" data-aos-duration="2000">
+                  <img className='img-nodejs' src={require('../src/public/image/icons8-css-480.png')} alt="CSS" />
+                  <p className='span-nodejs'>CSS</p>
+                </Card>
+              </Col>
+              <Col xl={3} lg={4} md={6} sm={12}>
+                <Card className='Skills-3' data-aos="fade-left" data-aos-duration="2000">
+                  <img className='img-nodejs' src={require('../src/public/image/mysql.png')} alt="MySQL" />
+                  <p className='span-nodejs' >MySQL</p>
+                </Card>
+              </Col>
+              <Col xl={3} lg={4} md={6} sm={12}>
+                <Card className='Skills-3' data-aos="fade-left" data-aos-duration="2000">
+                  <img className='img-nodejs' src={require('../src/public/image/c-sharp.png')} alt="C#" />
+                  <p className='span-c' >C#</p>
+                </Card>
+              </Col>
+            </Row>
+          </Container>
+
+
+
+
+
+
+
+
+
+        </div>
       </section>
 
     </>
