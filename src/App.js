@@ -63,7 +63,6 @@ const App = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Kiểm tra điều kiện nhập sai cú pháp
     if (!isValidName(name)) {
       toast.error('Tên không đúng cú pháp')
       return;
@@ -287,7 +286,7 @@ const App = () => {
         <Container className='Container-About-wrap'>
           <Row className='Container-About-Box'>
             <Col md={6}>
-              <Card className='About-1'>
+              <Card className='About-1' data-aos="fade-right" data-aos-duration="2000">
 
                 <Card.Title className='About-1-Text'>ABOUT ME</Card.Title>
                 <Card.Text className='About-1-Text1'>
@@ -298,7 +297,7 @@ const App = () => {
               </Card>
             </Col>
             <Col md={6}>
-              <Card className='About-2'>
+              <Card className='About-2' data-aos="fade-left" data-aos-duration="2000">
                 <Card.Body className='About-2-Background'>
 
                   <div className='About-2-Background1'></div>
@@ -309,7 +308,7 @@ const App = () => {
               </Card>
             </Col>
             <Col md={6}>
-              <Card className='About-3'>
+              <Card className='About-3' data-aos="fade-up" data-aos-duration="2000">
                 <Card.Body>
                   <div className='About-3-thanhngang'></div>
                   <span className='About-3-Text'>Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione
@@ -319,7 +318,7 @@ const App = () => {
                 </Card.Body>
               </Card>
             </Col>   <Col md={6}>
-              <Card className='About-3'>
+              <Card className='About-3' data-aos="fade-up" data-aos-duration="2000">
                 <Card.Body>
 
 
@@ -338,7 +337,7 @@ const App = () => {
         <Container className='Container-Education-wrap'>
           <Row className='Container-Education-Box'>
             <Col md={6}>
-              <Card className='Education-1'>
+              <Card className='Education-1' data-aos="fade-right" data-aos-duration="2000">
                 <span className='Education-1-time'>2005 - 2009</span>
                 <Card.Title className='Education-1-Text'>ABOUT ME</Card.Title>
                 <Card.Text className='Education-1-Text1'>
@@ -351,7 +350,7 @@ const App = () => {
               </Card>
             </Col>
             <Col md={6}>
-              <Card className='Education-2'>
+              <Card className='Education-2' data-aos="fade-left" data-aos-duration="2000">
                 <span className='Education-1-time'>2005 - 2009</span>
                 <Card.Title className='Education-1-Text'>ABOUT ME</Card.Title>
                 <Card.Text className='Education-1-Text1'>
@@ -364,8 +363,8 @@ const App = () => {
               </Card>
             </Col>
             <Col md={6}>
-              <Card className='Education-3'>
-                <span className='Education-1-time'>2005 - 2009</span>
+              <Card className='Education-3' data-aos="fade-right" data-aos-duration="2000">
+                <span className='Education-1-time' >2005 - 2009</span>
                 <Card.Title className='Education-1-Text'>ABOUT ME</Card.Title>
                 <Card.Text className='Education-1-Text1'>
                   Transforming visions into
@@ -380,7 +379,7 @@ const App = () => {
               </Card>
             </Col>
             <Col md={6}>
-              <Card className='Education-3'>
+              <Card className='Education-3' data-aos="fade-left" data-aos-duration="2000">
                 <span className='Education-1-time'>2005 - 2009</span>
                 <Card.Title className='Education-1-Text'>ABOUT ME</Card.Title>
                 <Card.Text className='Education-1-Text1'>
@@ -389,7 +388,7 @@ const App = () => {
                 </Card.Text>
 
                 <div className='Education-3-thanhngang'></div>
-                <span className='Education-3-Text'>Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione
+                <span className='Education-3-Text'>1Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione
                 </span>
 
 
