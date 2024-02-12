@@ -270,6 +270,16 @@
 
     }
 
+    .Container-project {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .About-1-Text1 {
+        font-size: 20px;
+    }
+
     .About-2-Background1 {
         width: 200px;
         height: 200px;
@@ -291,6 +301,45 @@
         position: absolute;
         object-fit: cover;
         margin-right: 0px;
+    }
+
+    .Education-1-time {
+        width: 50%;
+        font-size: 18px;
+        display: inline-block;
+        border: 1px solid #55e6a5;
+        padding: 11px 24px;
+        color: #55e6a5;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    .Education-1-Text {
+        color: white;
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .Education-3-Text {
+        color: white;
+        font-size: 15px;
+    }
+
+    #education {
+        background-color: #09101a;
+        height: 1450px;
+        width: 100%;
+        text-align: center;
+        padding-top: 50px;
+
+    }
+
+    #skills {
+        background-color: #09101a;
+        height: 1500px;
+        width: 100%;
+        text-align: center;
+
     }
 
 }

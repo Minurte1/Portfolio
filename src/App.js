@@ -456,8 +456,34 @@ const App = () => {
                 </Card>
               </Col>
             </Row>
-          </Container>
 
+          </Container>
+          <div className='skills-wrap-text'>
+
+            <div className='skills-text'>
+
+              <p>
+                Tôi là một người học hỏi tích cực và luôn nỗ lực để nắm
+                vững và phát triển kỹ năng trong lĩnh vực công nghệ thông tin.
+                Trong quá trình học tập và làm việc, tôi đã có cơ hội làm quen và
+                làm việc với một số công nghệ quan trọng như ReactJS, Node.js, MySQL, C#, SQL, Bootstrap, HTML,
+                CSS và JavaScript.
+
+              </p><div className='Education-3-thanhngang'></div>
+              <p> ReactJS và Node.js là hai công nghệ tôi đã dành nhiều thời
+                gian để hiểu rõ và áp dụng vào các dự án trên trường học và cá nhân.</p>
+              <p>Link dự án sử dụng Reactjs, Nodejs Express và CSDL MySQL:<a className='linkgit' href='https://github.com/Minurte1/csn-da21tta-hohoangphuc-bangiay-Javascript'>https://github.com/Minurte1/csn-da21tta-hohoangphuc-bangiay-Javascript</a></p>
+              <div className='Education-3-thanhngang'></div>
+              <p>
+                Trong khoảng thời gian học tập trên nhà trường tôi đã có cơ hội làm việc nhóm
+                học tập được ngôn ngữ C# ứng dụng làm dự án phần mềm bằng công nghệ .Net (WinForms) kết nối CSDL SQL Server.
+                Trong đó tôi đóng vai trò là người viết mã nguồn chính cho dự án
+
+              </p> <p>Link dự án sử dụng C# và CSDL SQL Server:
+                <a className='linkgit' href='https://github.com/Minurte1/Application-Sell-Book-by-HTP'>https://github.com/Minurte1/Application-Sell-Book-by-HTP</a></p>
+            </div>
+
+          </div>
 
 
 

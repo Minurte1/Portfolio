@@ -4,6 +4,7 @@
     width: 100%;
     text-align: center;
 
+
 }
 
 #skills>p {
@@ -152,4 +153,22 @@
     color: white;
     margin-top: 5%;
 
+}
+
+.skills-wrap-text {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkgit {
+    color: #55e6a5;
+}
+
+.skills-text {
+    color: white;
+    width: 80%;
+    text-align: left;
 }
