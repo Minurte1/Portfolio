@@ -17,6 +17,7 @@ import './Education.css'
 import './Skills.css'
 import './ResponsiveDT.css'
 import './ResponsiveTablet.css'
+import './Lienhe.css'
 // ..
 AOS.init();
 // Trong tệp src/index.js hoặc tệp nào đó mà bạn sử dụng Bootstrap
@@ -187,9 +188,10 @@ const App = () => {
       <div className={`container-NavbarShow ${showMenu ? 'menu-open' : ''}`}>
         <div className='NavbarShow-top'><p className='text-logo'>Hoàng Phúc</p> <div className='NavbarShow-top-X' onClick={toggleMenu}><i class="fa-solid fa-x"></i></div></div>
         <div className='NavbarShow-middle'>
-          <p className='NavbarShow-middle-AboutText'>ABOUT US</p>
-          <p className='NavbarShow-middle-AboutText1' > Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor
-            incididunt ut labore et magna aliqua. Ut enim ad minim veniam laboris.</p>
+          <p className='NavbarShow-middle-AboutText'>ĐỐI VỚI TÔI</p>
+          <p className='NavbarShow-middle-AboutText1' > Tôi tin rằng sự chuyên nghiệp giúp chúng ta có thể thấu hiểu nhau và tôn trọng nhau, nó giúp chúng
+            ta đi xa hơn
+            trong các dự án làm việc nhóm ở trường học và doanh nghiệp. </p>
         </div>
         <div className='NavbarShow-bottom'>
 
@@ -261,8 +263,8 @@ const App = () => {
       <section id='projects' >
         <ScrollAnimation className='Container-project' animateIn="slideInRight" animateOut="fadeOut" duration={1} animateOnce={true} delay={500}>
           <Container className='Container-project-wrap'>
-            <p className='Container-project-Text'>My Project</p>
-            <p className='Container-project-Text-2'>Crafting stories through design and innovation</p>
+            <p className='Container-project-Text'>DỰ ÁN CỦA TÔI</p>
+            <p className='Container-project-Text-2'>"Học lý thuyết phải đi đôi với thực hành"</p>
 
             <Row className='Container-project-Box' >
               <Col sm={6} md={4}>
@@ -340,7 +342,7 @@ const App = () => {
       </section>
       <section id='education'>
         <p>HỌC VẤN</p>
-        <p>"Học để phát triển, thay đổi để hoàn thiện"</p>
+        <p >"Học để phát triển, thay đổi để hoàn thiện"</p>
         <Container className='Container-Education-wrap'>
           <Row className='Container-Education-Box'>
             <Col md={6}>
@@ -499,7 +501,9 @@ const App = () => {
 
         </div>
       </section>
+      <section id='Lienhe'>
 
+      </section>
     </>
   );
 };

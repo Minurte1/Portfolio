@@ -336,10 +336,21 @@
 
     #skills {
         background-color: #09101a;
-        height: 1500px;
+        height: 2200px;
         width: 100%;
         text-align: center;
 
+    }
+
+
+
+    .skills-wrap-text {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50%;
     }
 
 }
