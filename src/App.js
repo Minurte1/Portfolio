@@ -12,10 +12,11 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
-import './ResponsiveDT.css'
-import './ResponsiveTablet.css'
+
 import './Education.css'
 import './Skills.css'
+import './ResponsiveDT.css'
+import './ResponsiveTablet.css'
 // ..
 AOS.init();
 // Trong tệp src/index.js hoặc tệp nào đó mà bạn sử dụng Bootstrap
@@ -442,6 +443,16 @@ const App = () => {
                 <Card className='Skills-3' data-aos="fade-left" data-aos-duration="2000">
                   <img className='img-nodejs' src={require('../src/public/image/c-sharp.png')} alt="C#" />
                   <p className='span-c' >C#</p>
+                </Card>
+              </Col>    <Col xl={3} lg={4} md={6} sm={12}>
+                <Card className='Skills-3' data-aos="fade-left" data-aos-duration="2000">
+                  <img className='img-nodejs' src={require('../src/public/image/sql-server.png')} alt="SQL" />
+                  <p className='span-c' >SQL Server</p>
+                </Card>
+              </Col>    <Col xl={3} lg={4} md={6} sm={12}>
+                <Card className='Skills-3' data-aos="fade-left" data-aos-duration="2000">
+                  <img className='img-nodejs' src={require('../src/public/image/bootstrap.png')} alt="Boostrap" />
+                  <p className='span-c' >Boostrap</p>
                 </Card>
               </Col>
             </Row>

@@ -31,7 +31,8 @@
     /* display: flex;
     justify-content: center;
     align-items: center; */
-    text-align: left;
+    text-align: center;
+
 }
 
 .Skills-1 {
@@ -39,6 +40,9 @@
     width: 100%;
     height: 90%;
     background-color: #09101a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Skills-1-time {
@@ -68,7 +72,9 @@
     background-color: #09101a;
     width: 100%;
     height: 90%;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -80,7 +86,9 @@
     background-color: #09101a;
     width: 100%;
     height: 90%;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Skills-3-thanhngang {

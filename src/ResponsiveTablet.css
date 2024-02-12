@@ -184,4 +184,16 @@
         margin-right: 0px;
     }
 
+    .Education-1-time {
+        text-align: center;
+        width: 55%;
+        font-size: 18px;
+        display: inline-block;
+        border: 1px solid #55e6a5;
+        padding: 11px 24px;
+        color: #55e6a5;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
 }
