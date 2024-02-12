@@ -339,9 +339,8 @@ const App = () => {
         </Container>
       </section>
       <section id='education'>
-        <p>EDUCATION</p>
-        <p>Showcasing your talent
-          amplifying your impact</p>
+        <p>HỌC VẤN</p>
+        <p>"Học để phát triển, thay đổi để hoàn thiện"</p>
         <Container className='Container-Education-wrap'>
           <Row className='Container-Education-Box'>
             <Col md={6}>
