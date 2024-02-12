@@ -486,7 +486,7 @@ const App = () => {
                   gian để hiểu rõ và áp dụng vào các dự án trên trường học và cá nhân.</p>
                 <p>Link dự án sử dụng Reactjs, Nodejs Express và CSDL MySQL:
                   <a className='linkgit' href='https://github.com/Minurte1/csn-da21tta-hohoangphuc-bangiay-Javascript'>https://github.com/Minurte1/csn-da21tta-hohoangphuc-bangiay-Javascript</a></p></Col>
-              <Col md={4} className='skills-text-card .skills-text-card-bot'> <div className='Skills-3-thanhngang'></div>
+              <Col md={4} className='skills-text-card skills-text-card-bot'> <div className='Skills-3-thanhngang'></div>
                 <p>
                   Trong khoảng thời gian học tập trên nhà trường tôi đã có cơ hội làm việc nhóm
                   học tập được ngôn ngữ C# ứng dụng làm dự án phần mềm bằng công nghệ .Net (WinForms) kết nối CSDL SQL Server.
