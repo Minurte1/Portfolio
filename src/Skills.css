@@ -17,7 +17,7 @@
 
 .Container-Skills-wrap {
     width: 80%;
-    height: 80%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,10 +165,100 @@
 
 .linkgit {
     color: #55e6a5;
+    font-size: 13px;
 }
 
 .skills-text {
     color: white;
     width: 80%;
+    height: auto;
+    height: 100%;
     text-align: left;
+}
+
+.skills-text-card {
+    background-color: black;
+    width: 32%;
+    height: 100%;
+    /* overflow: hidden; */
+    border-radius: 9px;
+}
+
+.skills-text-card-middle {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+/* .skills-text-card-top:hover>.skills-text-card-middle+.skills-text-card-bot {
+    margin-top: 30px;
+} */
+
+
+
+.skills-text-card-top,
+.skills-text-card-middle,
+.skills-text-card-bot {
+    position: relative;
+    transition: margin-top 0.5s ease;
+    /* Thêm transition để tạo hiệu ứng mượt mà */
+}
+
+.skills-text-card-top:hover {
+    margin-top: 30px;
+}
+
+.skills-text-card-middle:hover {
+    margin-top: 30px;
+}
+
+.skills-text-card-bot:hover {
+    margin-top: 30px;
+}
+
+/* Sử dụng pseudo-element để tạo hiệu ứng animation */
+.skills-text-card-top:hover::after,
+.skills-text-card-middle:hover::after,
+.skills-text-card-bot:hover::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    /* Đặt vị trí bắt đầu của pseudo-element */
+    left: 0;
+    width: 100%;
+    height: 30px;
+    /* Độ cao của hiệu ứng */
+    background-color: transparent;
+    /* Màu nền của hiệu ứng */
+    transition: top 0.5s ease;
+    /* Thêm transition để tạo hiệu ứng mượt mà */
+}
+
+.skills-text-card-top:hover::after {
+    top: calc(100% + 30px);
+    /* Di chuyển pseudo-element xuống 30px */
+}
+
+.skills-text-card-middle:hover::after {
+    top: calc(100% + 30px);
+    /* Di chuyển pseudo-element xuống 30px */
+}
+
+.skills-text-card-bot:hover::after {
+    top: calc(100% + 30px);
+    /* Di chuyển pseudo-element xuống 30px */
+}
+
+
+
+
+.Skills-3-thanhngang {
+    /* position: absolute; */
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: #a2a2a2;
+    top: 10px;
+    left: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }

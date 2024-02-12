@@ -327,7 +327,8 @@ const App = () => {
 
                 </Card.Body>
               </Card>
-            </Col>   <Col md={6}>
+            </Col>
+            <Col md={6}>
               <Card className='About-3 About-3-Download' data-aos="fade-up" data-aos-duration="2000">
                 <Card.Body>
 
@@ -420,6 +421,7 @@ const App = () => {
                 <Card className='Skills-1' data-aos="fade-right" data-aos-duration="2000">
                   <img className='img-react' src={require('../src/public/image/logo512.png')} alt="Reactjs" />
                   <p className='span-logo'>Reactjs</p>
+
                 </Card>
               </Col>
               <Col xl={3} lg={4} md={6} sm={12}>
@@ -456,7 +458,8 @@ const App = () => {
                   <img className='img-nodejs' src={require('../src/public/image/sql-server.png')} alt="SQL" />
                   <p className='span-c' >SQL Server</p>
                 </Card>
-              </Col>    <Col xl={3} lg={4} md={6} sm={12}>
+              </Col>
+              <Col xl={3} lg={4} md={6} sm={12}>
                 <Card className='Skills-3' data-aos="fade-left" data-aos-duration="2000">
                   <img className='img-nodejs' src={require('../src/public/image/bootstrap.png')} alt="Boostrap" />
                   <p className='span-c' >Boostrap</p>
@@ -465,40 +468,36 @@ const App = () => {
             </Row>
 
           </Container>
-          <div className='skills-wrap-text'>
 
-            <div className='skills-text'>
+          <Container className='skills-wrap-text'>
 
-              <p>
+            <Row className='skills-text'>
+              <Col sm={6} md={4} className='skills-text-card skills-text-card-top'><div className='Skills-3-thanhngang'></div>   <p>
                 Tôi là một người học hỏi tích cực và luôn nỗ lực để nắm
                 vững và phát triển kỹ năng trong lĩnh vực công nghệ thông tin.
                 Trong quá trình học tập và làm việc, tôi đã có cơ hội làm quen và
                 làm việc với một số công nghệ quan trọng như ReactJS, Node.js, MySQL, C#, SQL, Bootstrap, HTML,
                 CSS và JavaScript.
 
-              </p><div className='Education-3-thanhngang'></div>
-              <p> ReactJS và Node.js là hai công nghệ tôi đã dành nhiều thời
-                gian để hiểu rõ và áp dụng vào các dự án trên trường học và cá nhân.</p>
-              <p>Link dự án sử dụng Reactjs, Nodejs Express và CSDL MySQL:<a className='linkgit' href='https://github.com/Minurte1/csn-da21tta-hohoangphuc-bangiay-Javascript'>https://github.com/Minurte1/csn-da21tta-hohoangphuc-bangiay-Javascript</a></p>
-              <div className='Education-3-thanhngang'></div>
-              <p>
-                Trong khoảng thời gian học tập trên nhà trường tôi đã có cơ hội làm việc nhóm
-                học tập được ngôn ngữ C# ứng dụng làm dự án phần mềm bằng công nghệ .Net (WinForms) kết nối CSDL SQL Server.
-                Trong đó tôi đóng vai trò là người viết mã nguồn chính cho dự án
+              </p>
+              </Col>
+              <Col sm={6} md={4} className='skills-text-card skills-text-card-middle'><div className='Skills-3-thanhngang'></div>
+                <p> ReactJS và Node.js là hai công nghệ tôi đã dành nhiều thời
+                  gian để hiểu rõ và áp dụng vào các dự án trên trường học và cá nhân.</p>
+                <p>Link dự án sử dụng Reactjs, Nodejs Express và CSDL MySQL:
+                  <a className='linkgit' href='https://github.com/Minurte1/csn-da21tta-hohoangphuc-bangiay-Javascript'>https://github.com/Minurte1/csn-da21tta-hohoangphuc-bangiay-Javascript</a></p></Col>
+              <Col md={4} className='skills-text-card .skills-text-card-bot'> <div className='Skills-3-thanhngang'></div>
+                <p>
+                  Trong khoảng thời gian học tập trên nhà trường tôi đã có cơ hội làm việc nhóm
+                  học tập được ngôn ngữ C# ứng dụng làm dự án phần mềm bằng công nghệ .Net (WinForms) kết nối CSDL SQL Server.
+                  Trong đó tôi đóng vai trò là người viết mã nguồn chính cho dự án
 
-              </p> <p>Link dự án sử dụng C# và CSDL SQL Server:
-                <a className='linkgit' href='https://github.com/Minurte1/Application-Sell-Book-by-HTP'>https://github.com/Minurte1/Application-Sell-Book-by-HTP</a></p>
-            </div>
+                </p> <p>Link dự án sử dụng C# và CSDL SQL Server:
+                  <a className='linkgit' href='https://github.com/Minurte1/Application-Sell-Book-by-HTP'>https://github.com/Minurte1/Application-Sell-Book-by-HTP</a></p></Col>
 
-          </div>
+            </Row>
 
-
-
-
-
-
-
-
+          </Container>
         </div>
       </section>
       <section id='Lienhe'>
