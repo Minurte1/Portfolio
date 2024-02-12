@@ -14,6 +14,12 @@
 
 }
 
+.About-3-Download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .Container-About-Box {
     width: 90%;
     height: 90%;

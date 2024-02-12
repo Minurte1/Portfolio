@@ -243,7 +243,10 @@ const App = () => {
               I'm a <strong >Hồ Hoàng Phúc</strong>
               <p className='sec-text'></p>
               <p className='text-small'>
-                I am a passionate web developer, committed to creating high-quality websites with the best user experience. With extensive knowledge of programming languages and meticulous attention to detail, I specialize in turning complex ideas into powerful and effective web applications.
+                Tôi là một lập trình viên web với niềm đam mê sâu sắc đối với việc tạo
+                ra các ứng dụng web độc đáo và chất lượng cao. Với một sự kết hợp giữa
+                sự sáng tạo và kiến thức kỹ thuật vững vàng, tôi luôn tìm kiếm
+                cơ hội để thử thách bản thân và mang lại giá trị đích thực thông qua công việc của mình.
               </p>
               <button className='downloadCV'>  <a href='Chuong1_TongquanveTMDT.pdf' download="Chuong1_TongquanveTMDT.pdf">Download CV <i className="fa-solid fa-download" ></i></a></button>
 
@@ -290,10 +293,9 @@ const App = () => {
             <Col md={6}>
               <Card className='About-1' data-aos="fade-right" data-aos-duration="2000">
 
-                <Card.Title className='About-1-Text'>ABOUT ME</Card.Title>
+                <Card.Title className='About-1-Text'>ĐỐI VỚI TÔI</Card.Title>
                 <Card.Text className='About-1-Text1'>
-                  Transforming visions into
-                  exceptional portfolios
+                  "Chuyên môn rất quan trọng, thái độ cũng vậy"
                 </Card.Text>
 
               </Card>
@@ -313,14 +315,18 @@ const App = () => {
               <Card className='About-3' data-aos="fade-up" data-aos-duration="2000">
                 <Card.Body>
                   <div className='About-3-thanhngang'></div>
-                  <span className='About-3-Text'>Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione
+                  <span className='About-3-Text'>Tôi tin rằng sự sáng tạo và
+                    sự đam mê là yếu tố quan trọng trong việc trở thành một lập trình viên web
+                    xuất sắc. Với tôi, mỗi dự án là một cơ hội để thể hiện khả năng sáng tạo của
+                    mình và tạo ra những điều mới mẻ và độc đáo. Đồng thời tôi cũng sẽ cố gắng thích nghi với môi trường
+                    làm việc của doanh nghiệp cùng với sự chuyên nghiệp của mình.
                   </span>
 
 
                 </Card.Body>
               </Card>
             </Col>   <Col md={6}>
-              <Card className='About-3' data-aos="fade-up" data-aos-duration="2000">
+              <Card className='About-3 About-3-Download' data-aos="fade-up" data-aos-duration="2000">
                 <Card.Body>
 
 
