@@ -348,7 +348,17 @@
 
     }
 
+    .setRieng {
+        margin-top: -10px;
+    }
 
+    .setRieng1 {
+        margin-top: 30px;
+    }
+
+    .setRieng3 {
+        margin-top: 30px;
+    }
 
     .skills-wrap-text {
         width: 100%;
