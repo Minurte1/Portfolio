@@ -214,4 +214,41 @@
         margin-top: 10%;
     }
 
+    .Skills-3-margin-Tablet {
+        margin-top: 10px;
+    }
+
+    .Skills-3-margin-bot-Table {
+        margin-top: 10px;
+    }
+
+    .skills-text-card {
+        background-color: #1b4242;
+        width: 32%;
+        height: 100%;
+        /* overflow: hidden; */
+        border-radius: 9px;
+        /* margin-top: 20px; */
+        font-size: 10px;
+        margin-top: 10%;
+        overflow: hidden;
+
+
+    }
+
+    .linkgit {
+        font-size: 10px;
+
+    }
+
+    #skills {
+        background-color: #09101a;
+        height: 1500px;
+        width: 100%;
+        text-align: center;
+
+
+    }
+
+
 }

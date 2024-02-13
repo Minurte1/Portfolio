@@ -431,13 +431,13 @@ const App = () => {
                 </Card>
               </Col>
               <Col xl={3} lg={4} md={6} sm={12}>
-                <Card className='Skills-3 Animation-Hover-CardSkills' data-aos="fade-right" data-aos-duration="2000">
+                <Card className='Skills-3 Animation-Hover-CardSkills Skills-3-margin-Tablet' data-aos="fade-right" data-aos-duration="2000">
                   <img className='img-nodejs' src={require('../src/public/image/icons8-javascript-480.png')} alt="Javascript" />
                   <p className='span-javascript'>Javascript</p>
                 </Card>
               </Col>
               <Col xl={3} lg={4} md={6} sm={12}>
-                <Card className='Skills-3 Animation-Hover-CardSkills' data-aos="fade-left" data-aos-duration="2000">
+                <Card className='Skills-3 Animation-Hover-CardSkills Skills-3-margin-Tablet' data-aos="fade-left" data-aos-duration="2000">
                   <img className='img-nodejs' src={require('../src/public/image/icons8-css-480.png')} alt="CSS" />
                   <p className='span-nodejs'>CSS</p>
                 </Card>
@@ -453,13 +453,14 @@ const App = () => {
                   <img className='img-nodejs' src={require('../src/public/image/c-sharp.png')} alt="C#" />
                   <p className='span-c' >C#</p>
                 </Card>
-              </Col>    <Col xl={3} lg={4} md={6} sm={12}>
+              </Col>
+              <Col xl={3} lg={4} md={6} sm={12} className='Skills-3-margin-bot-Table'>
                 <Card className='Skills-3 Skills-3-margin-bot Animation-Hover-CardSkills' data-aos="fade-left" data-aos-duration="2000">
                   <img className='img-nodejs' src={require('../src/public/image/sql-server.png')} alt="SQL" />
                   <p className='span-c' >SQL Server</p>
                 </Card>
               </Col>
-              <Col xl={3} lg={4} md={6} sm={12}>
+              <Col xl={3} lg={4} md={6} sm={12} className='Skills-3-margin-bot-Table'>
                 <Card className='Skills-3 Skills-3-margin-bot Animation-Hover-CardSkills' data-aos="fade-left" data-aos-duration="2000">
                   <img className='img-nodejs' src={require('../src/public/image/bootstrap.png')} alt="Boostrap" />
                   <p className='span-c' >Boostrap</p>
@@ -485,7 +486,7 @@ const App = () => {
                 <p> ReactJS và Node.js là hai công nghệ tôi đã dành nhiều thời
                   gian để hiểu rõ và áp dụng vào các dự án trên trường học và cá nhân.</p>
                 <p>Link dự án sử dụng Reactjs, Nodejs Express và CSDL MySQL:
-                  <a className='linkgit' href='https://github.com/Minurte1/csn-da21tta-hohoangphuc-bangiay-Javascript'>https://github.com/Minurte1/csn-da21tta-hohoangphuc-bangiay-Javascript</a></p></Col>
+                  <a className='linkgit' href='https://github.com/Minurte1/csn-da21tta-hohoangphuc-bangiay-Javascript'>https://github.com/Minurte1<br></br>/csn-da21tta-hohoangphuc-bangiay-Javascript</a></p></Col>
               <Col md={4} className='skills-text-card skills-text-card-bot'> <div className='Skills-3-thanhngang'></div>
                 <p>
                   Trong khoảng thời gian học tập trên nhà trường tôi đã có cơ hội làm việc nhóm
@@ -493,7 +494,8 @@ const App = () => {
                   Trong đó tôi đóng vai trò là người viết mã nguồn chính cho dự án
 
                 </p> <p>Link dự án sử dụng C# và CSDL SQL Server:
-                  <a className='linkgit' href='https://github.com/Minurte1/Application-Sell-Book-by-HTP'>https://github.com/Minurte1/Application-Sell-Book-by-HTP</a></p></Col>
+                  <a className='linkgit' href='https://github.com/Minurte1/Application-Sell-Book-by-HTP'>https://github.com/Minurte1<br></br>/Application-Sell-Book-by-HTP</a></p>
+              </Col>
 
             </Row>
 
