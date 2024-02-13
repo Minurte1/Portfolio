@@ -443,24 +443,24 @@ const App = () => {
                 </Card>
               </Col>
               <Col xl={3} lg={4} md={6} sm={12}>
-                <Card className='Skills-3' data-aos="fade-left" data-aos-duration="2000">
+                <Card className='Skills-3 Skills-3-margin-bot' data-aos="fade-left" data-aos-duration="2000">
                   <img className='img-nodejs' src={require('../src/public/image/mysql.png')} alt="MySQL" />
                   <p className='span-nodejs' >MySQL</p>
                 </Card>
               </Col>
               <Col xl={3} lg={4} md={6} sm={12}>
-                <Card className='Skills-3' data-aos="fade-left" data-aos-duration="2000">
+                <Card className='Skills-3 Skills-3-margin-bot' data-aos="fade-left" data-aos-duration="2000">
                   <img className='img-nodejs' src={require('../src/public/image/c-sharp.png')} alt="C#" />
                   <p className='span-c' >C#</p>
                 </Card>
               </Col>    <Col xl={3} lg={4} md={6} sm={12}>
-                <Card className='Skills-3' data-aos="fade-left" data-aos-duration="2000">
+                <Card className='Skills-3 Skills-3-margin-bot' data-aos="fade-left" data-aos-duration="2000">
                   <img className='img-nodejs' src={require('../src/public/image/sql-server.png')} alt="SQL" />
                   <p className='span-c' >SQL Server</p>
                 </Card>
               </Col>
               <Col xl={3} lg={4} md={6} sm={12}>
-                <Card className='Skills-3' data-aos="fade-left" data-aos-duration="2000">
+                <Card className='Skills-3 Skills-3-margin-bot' data-aos="fade-left" data-aos-duration="2000">
                   <img className='img-nodejs' src={require('../src/public/image/bootstrap.png')} alt="Boostrap" />
                   <p className='span-c' >Boostrap</p>
                 </Card>

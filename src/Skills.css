@@ -97,6 +97,11 @@
 
 }
 
+.Skills-3-margin-bot {
+    margin-top: 20px;
+
+}
+
 .Skills-3-thanhngang {
     /* position: absolute; */
     content: "";
@@ -188,6 +193,7 @@
     height: 100%;
     /* overflow: hidden; */
     border-radius: 9px;
+    margin-top: 20px;
 }
 
 .skills-text-card-middle {
@@ -211,27 +217,43 @@
 }
 
 .skills-text-card-top:hover {
-    margin-top: 30px;
+    margin-top: 50px;
     cursor: pointer;
+    transition: 1s ease;
+    background-color: #000000;
+    color: rgb(255, 253, 253);
 }
 
 .skills-text-card-middle:hover {
-    margin-top: 30px;
+    margin-top: 50px;
     cursor: pointer;
+    transition: 1s ease;
+    background-color: #000000;
+    color: rgb(255, 253, 253);
 }
 
 .skills-text-card-bot:hover {
-    margin-top: 30px;
+    margin-top: 50px;
     cursor: pointer;
     transition: 1s ease;
-    background-color: #1b4242;
+    background-color: #000000;
     color: rgb(255, 253, 253);
 
 }
 
 .skills-text-card-bot:hover>.Skills-3-thanhngang {
     transition: 1s ease;
-    background-color: black;
+    background-color: rgb(51, 177, 88);
+}
+
+.skills-text-card-middle:hover>.Skills-3-thanhngang {
+    transition: 1s ease;
+    background-color: rgb(51, 177, 88);
+}
+
+.skills-text-card-top:hover>.Skills-3-thanhngang {
+    transition: 1s ease;
+    background-color: rgb(51, 177, 88);
 }
 
 /* Sử dụng pseudo-element để tạo hiệu ứng animation */
@@ -253,17 +275,17 @@
 }
 
 .skills-text-card-top:hover::after {
-    top: calc(100% + 30px);
+    top: calc(100% + 50px);
     /* Di chuyển pseudo-element xuống 30px */
 }
 
 .skills-text-card-middle:hover::after {
-    top: calc(100% + 30px);
+    top: calc(100% + 50px);
     /* Di chuyển pseudo-element xuống 30px */
 }
 
 .skills-text-card-bot:hover::after {
-    top: calc(100% + 30px);
+    top: calc(100% + 50px);
     /* Di chuyển pseudo-element xuống 30px */
 }
 
