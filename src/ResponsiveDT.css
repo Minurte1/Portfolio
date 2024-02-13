@@ -303,6 +303,12 @@
         margin-right: 0px;
     }
 
+    #about {
+        width: 100%;
+        height: 900px;
+        background-color: #092635;
+    }
+
     .Education-1-time {
         width: 50%;
         font-size: 18px;
@@ -336,7 +342,7 @@
 
     #skills {
         background-color: #09101a;
-        height: 2200px;
+        height: 2500px;
         width: 100%;
         text-align: center;
 
@@ -346,7 +352,7 @@
 
     .skills-wrap-text {
         width: 100%;
-        height: 300px;
+        height: 450px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -357,4 +363,39 @@
         margin-top: 10px;
     }
 
+    .container-skills-wrap-text {
+        margin-top: 310px;
+    }
+}
+
+.container-skills-wrap-text {
+
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.skills-wrap-text {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-text-card {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 15px;
+}
+
+@media (min-width: 768px) {
+    .skills-text-card {
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .skills-text-card {
+        width: 33.333333%;
+    }
 }
