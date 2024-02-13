@@ -495,7 +495,7 @@ const App = () => {
                     Trong đó tôi đóng vai trò là người viết mã nguồn chính cho dự án.
                   </p>
                   <p>
-                    Link dự án sử dụng C# và CSDL SQL Server: <a className='linkgit' href='https://github.com/Minurte1/Application-Sell-Book-by-HTP'>https://github.com/Minurte1/Application-Sell-Book-by-HTP</a>
+                    Link dự án sử dụng C# và CSDL SQL Server: <a className='linkgit' href='https://github.com/Minurte1/Application-Sell-Book-by-HTP'>https://github.com/Minurte1/<br></br>Application-Sell-Book-by-HTP</a>
                   </p>
                 </Col>
               </Row>
