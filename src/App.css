@@ -448,6 +448,7 @@ body.menu-closed {
   padding-bottom: 20px;
   padding-top: 10px;
   font-family: "Roboto", sans-serif;
+  margin-left: -5px;
 }
 
 .NavbarShow-bottom-input {

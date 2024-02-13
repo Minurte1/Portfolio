@@ -195,7 +195,7 @@ const App = () => {
         </div>
         <div className='NavbarShow-bottom'>
 
-          <p className='NavbarShow-bottom-Tieude'>GET IN TOUCH</p>
+          <p className='NavbarShow-bottom-Tieude'>THÔNG TIN CỦA BẠN</p>
           <input
             className='NavbarShow-bottom-input'
             placeholder='Your Name'
@@ -221,7 +221,7 @@ const App = () => {
           />
           <br />
           <button className='NavbarShow-bottom-button' onClick={handleSubmit}>
-            Submit now
+            GỬI NGAY
           </button>
 
         </div>
@@ -261,30 +261,30 @@ const App = () => {
       </section>
 
       <section id='projects' >
-        <ScrollAnimation className='Container-project' animateIn="slideInRight" animateOut="fadeOut" duration={1} animateOnce={true} delay={500}>
+        <div className='Container-project' >
           <Container className='Container-project-wrap'>
-            <p className='Container-project-Text'>DỰ ÁN CỦA TÔI</p>
-            <p className='Container-project-Text-2'>"Học lý thuyết phải đi đôi với thực hành"</p>
+            <p className='Container-project-Text' data-aos="fade-down" data-aos-duration="2000">DỰ ÁN CỦA TÔI</p>
+            <p className='Container-project-Text-2' data-aos="fade-up" data-aos-duration="2000">"Học lý thuyết phải đi đôi với thực hành"</p>
 
             <Row className='Container-project-Box' >
               <Col sm={6} md={4}>
-                <div className='project-1' >
+                <div className='project-1' data-aos="fade-down" data-aos-duration="2000" >
                   {/* Nội dung cho project-1 */}
                 </div>
               </Col>
               <Col sm={6} md={4}>
-                <div className='project-2' >
+                <div className='project-2' data-aos="fade-up" data-aos-duration="2000" >
                   {/* Nội dung cho project-2 */}
                 </div>
               </Col>
               <Col md={4}>
-                <div className='project-3' >
+                <div className='project-3' data-aos="fade-down" data-aos-duration="2000" >
                   {/* Nội dung cho project-3 */}
                 </div>
               </Col>
             </Row>
           </Container>
-        </ScrollAnimation>
+        </div>
 
 
       </section>
@@ -342,8 +342,8 @@ const App = () => {
         </Container>
       </section>
       <section id='education'>
-        <p>HỌC VẤN</p>
-        <p >"Học để phát triển, thay đổi để hoàn thiện"</p>
+        <p data-aos="fade-down" data-aos-duration="2000">HỌC VẤN</p>
+        <p data-aos="fade-up" data-aos-duration="2000">"Học để phát triển, thay đổi để hoàn thiện"</p>
         <Container className='Container-Education-wrap'>
           <Row className='Container-Education-Box'>
             <Col md={6}>
@@ -411,56 +411,56 @@ const App = () => {
 
       <section id='skills'>
         <div className='gachngang1'>
-          <div className='gachngang'></div>
+          <div className='gachngang' data-aos="fade-down" data-aos-duration="2000"></div>
         </div>
-        <p>SKILLS</p>
+        <p data-aos="fade-down" data-aos-duration="2000">KĨ NĂNG</p>
         <div className='Kienthucdahoc'>
           <Container className='Container-Skills-wrap'>
             <Row className='Container-Skills-Box'>
               <Col xl={3} lg={4} md={6} sm={12}>
-                <Card className='Skills-1' data-aos="fade-right" data-aos-duration="2000">
+                <Card className='Skills-1 Animation-Hover-CardSkills' data-aos="fade-right" data-aos-duration="2000">
                   <img className='img-react' src={require('../src/public/image/logo512.png')} alt="Reactjs" />
                   <p className='span-logo'>Reactjs</p>
 
                 </Card>
               </Col>
               <Col xl={3} lg={4} md={6} sm={12}>
-                <Card className='Skills-2' data-aos="fade-left" data-aos-duration="2000">
+                <Card className='Skills-2 Animation-Hover-CardSkills' data-aos="fade-left" data-aos-duration="2000">
                   <img className='img-nodejs' src={require('../src/public/image/icons8-nodejs-480.png')} alt="Nodejs" />
                   <p className='span-nodejs'>Nodejs</p>
                 </Card>
               </Col>
               <Col xl={3} lg={4} md={6} sm={12}>
-                <Card className='Skills-3' data-aos="fade-right" data-aos-duration="2000">
+                <Card className='Skills-3 Animation-Hover-CardSkills' data-aos="fade-right" data-aos-duration="2000">
                   <img className='img-nodejs' src={require('../src/public/image/icons8-javascript-480.png')} alt="Javascript" />
                   <p className='span-javascript'>Javascript</p>
                 </Card>
               </Col>
               <Col xl={3} lg={4} md={6} sm={12}>
-                <Card className='Skills-3' data-aos="fade-left" data-aos-duration="2000">
+                <Card className='Skills-3 Animation-Hover-CardSkills' data-aos="fade-left" data-aos-duration="2000">
                   <img className='img-nodejs' src={require('../src/public/image/icons8-css-480.png')} alt="CSS" />
                   <p className='span-nodejs'>CSS</p>
                 </Card>
               </Col>
               <Col xl={3} lg={4} md={6} sm={12}>
-                <Card className='Skills-3 Skills-3-margin-bot' data-aos="fade-left" data-aos-duration="2000">
+                <Card className='Skills-3 Skills-3-margin-bot Animation-Hover-CardSkills' data-aos="fade-left" data-aos-duration="2000">
                   <img className='img-nodejs' src={require('../src/public/image/mysql.png')} alt="MySQL" />
                   <p className='span-nodejs' >MySQL</p>
                 </Card>
               </Col>
               <Col xl={3} lg={4} md={6} sm={12}>
-                <Card className='Skills-3 Skills-3-margin-bot' data-aos="fade-left" data-aos-duration="2000">
+                <Card className='Skills-3 Skills-3-margin-bot Animation-Hover-CardSkills' data-aos="fade-left" data-aos-duration="2000">
                   <img className='img-nodejs' src={require('../src/public/image/c-sharp.png')} alt="C#" />
                   <p className='span-c' >C#</p>
                 </Card>
               </Col>    <Col xl={3} lg={4} md={6} sm={12}>
-                <Card className='Skills-3 Skills-3-margin-bot' data-aos="fade-left" data-aos-duration="2000">
+                <Card className='Skills-3 Skills-3-margin-bot Animation-Hover-CardSkills' data-aos="fade-left" data-aos-duration="2000">
                   <img className='img-nodejs' src={require('../src/public/image/sql-server.png')} alt="SQL" />
                   <p className='span-c' >SQL Server</p>
                 </Card>
               </Col>
               <Col xl={3} lg={4} md={6} sm={12}>
-                <Card className='Skills-3 Skills-3-margin-bot' data-aos="fade-left" data-aos-duration="2000">
+                <Card className='Skills-3 Skills-3-margin-bot Animation-Hover-CardSkills' data-aos="fade-left" data-aos-duration="2000">
                   <img className='img-nodejs' src={require('../src/public/image/bootstrap.png')} alt="Boostrap" />
                   <p className='span-c' >Boostrap</p>
                 </Card>

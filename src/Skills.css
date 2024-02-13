@@ -303,3 +303,11 @@
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
+.Animation-Hover-CardSkills:hover {
+    transition: 0.5s ease;
+    background-color: #092635;
+
+    cursor: pointer;
+
+}
