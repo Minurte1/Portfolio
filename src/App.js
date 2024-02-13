@@ -424,19 +424,19 @@ const App = () => {
 
                 </Card>
               </Col>
-              <Col xl={3} lg={4} md={6} sm={12}>
+              <Col xl={3} lg={4} md={6} sm={12} className='Skills-3-margin-DT'>
                 <Card className='Skills-2 Animation-Hover-CardSkills' data-aos="fade-left" data-aos-duration="2000">
                   <img className='img-nodejs' src={require('../src/public/image/icons8-nodejs-480.png')} alt="Nodejs" />
                   <p className='span-nodejs'>Nodejs</p>
                 </Card>
               </Col>
-              <Col xl={3} lg={4} md={6} sm={12}>
+              <Col xl={3} lg={4} md={6} sm={12} className='Skills-3-margin-DT'>
                 <Card className='Skills-3 Animation-Hover-CardSkills Skills-3-margin-Tablet' data-aos="fade-right" data-aos-duration="2000">
                   <img className='img-nodejs' src={require('../src/public/image/icons8-javascript-480.png')} alt="Javascript" />
                   <p className='span-javascript'>Javascript</p>
                 </Card>
               </Col>
-              <Col xl={3} lg={4} md={6} sm={12}>
+              <Col xl={3} lg={4} md={6} sm={12} className='Skills-3-margin-DT'>
                 <Card className='Skills-3 Animation-Hover-CardSkills Skills-3-margin-Tablet' data-aos="fade-left" data-aos-duration="2000">
                   <img className='img-nodejs' src={require('../src/public/image/icons8-css-480.png')} alt="CSS" />
                   <p className='span-nodejs'>CSS</p>
@@ -448,7 +448,7 @@ const App = () => {
                   <p className='span-nodejs' >MySQL</p>
                 </Card>
               </Col>
-              <Col xl={3} lg={4} md={6} sm={12}>
+              <Col xl={3} lg={4} md={6} sm={12} className='Skills-3-margin-DT'>
                 <Card className='Skills-3 Skills-3-margin-bot Animation-Hover-CardSkills' data-aos="fade-left" data-aos-duration="2000">
                   <img className='img-nodejs' src={require('../src/public/image/c-sharp.png')} alt="C#" />
                   <p className='span-c' >C#</p>
@@ -460,7 +460,7 @@ const App = () => {
                   <p className='span-c' >SQL Server</p>
                 </Card>
               </Col>
-              <Col xl={3} lg={4} md={6} sm={12} className='Skills-3-margin-bot-Table'>
+              <Col xl={3} lg={4} md={6} sm={12} className='Skills-3-margin-bot-Table Skills-3-margin-DT'>
                 <Card className='Skills-3 Skills-3-margin-bot Animation-Hover-CardSkills' data-aos="fade-left" data-aos-duration="2000">
                   <img className='img-nodejs' src={require('../src/public/image/bootstrap.png')} alt="Boostrap" />
                   <p className='span-c' >Boostrap</p>
