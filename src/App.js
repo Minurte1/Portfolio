@@ -510,50 +510,41 @@ const App = () => {
         <div className='gachngang1'>
           <div className='gachngang' data-aos="fade-down" data-aos-duration="2000"></div>
         </div>
-        <Container className='Container-About-wrap'>
-          <Row className='Container-About-Box'>
+        <Container className='Container-Lienhe-wrap'>
+          <Row className='Container-Lienhe-Box'>
             <Col md={6}>
-              <Card className='About-1' data-aos="fade-right" data-aos-duration="2000">
+              <Card className='Lienhe-1' data-aos="fade-right" data-aos-duration="2000">
 
-                <Card.Title className='About-1-Text'>THAM VỌNG</Card.Title>
-                <Card.Text className='About-1-Text1'>
+                <Card.Title className='Lienhe-1-Text'>THAM VỌNG</Card.Title>
+                <Card.Text className='Lienhe-1-Text1'>
                   "Bản lĩnh của một con người được thể hiện qua sự tham vọng và trả giá"
                 </Card.Text>
 
               </Card>
             </Col>
-            <Col md={6}>
-              <Card className='About-2' data-aos="fade-left" data-aos-duration="2000">
-                <Card.Body className='About-2-Background'>
+            <Col md={6} className='wrap-Lienhe2'>
+              <Card className='Lienhe-2' data-aos="fade-left" data-aos-duration="2000">
+                <Card.Body className='Lienhe-2-Background'>
 
-                  <div className='About-2-Background1'></div>
-                  <img src={require('./public/image/logo.jpg')} alt='logo' className='About-2-Background-image' />
+
+
 
 
                 </Card.Body>
               </Card>
             </Col>
             <Col md={6}>
-              <Card className='About-3' data-aos="fade-up" data-aos-duration="2000">
+              <Card className='Lienhe-3' data-aos="fade-up" data-aos-duration="2000">
                 <Card.Body>
-                  <div className='About-3-thanhngang'></div>
-                  <span className='About-3-Text'>Tôi tin rằng sự chuyên nghiệp giúp chúng ta có thể thấu hiểu nhau và tôn trọng nhau, nó giúp chúng ta đi xa hơn trong các dự án làm việc nhóm ở trường học và doanh nghiệp.
+                  <div className='Lienhe-3-thanhngang'></div>
+                  <span className='Lienhe-3-Text'>Tôi tin rằng sự chuyên nghiệp giúp chúng ta có thể thấu hiểu nhau và tôn trọng nhau, nó giúp chúng ta đi xa hơn trong các dự án làm việc nhóm ở trường học và doanh nghiệp.
                   </span>
 
 
                 </Card.Body>
               </Card>
             </Col>
-            <Col md={6}>
-              <Card className='About-3 About-3-Download' data-aos="fade-up" data-aos-duration="2000">
-                <Card.Body>
 
-
-                  <button className='downloadCV'>  <a href='Chuong1_TongquanveTMDT.pdf' download="Chuong1_TongquanveTMDT.pdf">Download CV <i className="fa-solid fa-download" ></i></a></button>s
-
-                </Card.Body>
-              </Card>
-            </Col>
           </Row>
         </Container>
       </section>
