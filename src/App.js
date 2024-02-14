@@ -16,6 +16,7 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 import './Education.css'
 import './Skills.css'
 import './Lienhe.css'
+import './foolter.css'
 import './ResponsiveDT.css'
 import './ResponsiveTablet.css'
 
@@ -555,6 +556,68 @@ const App = () => {
         </Container>
       </section>
       <section id='foolter'>
+
+        <footer className="site-footer">
+          <div className="container">
+            <div className="row">
+              <div className="col-sm-12 col-md-6">
+                <h6>BẢN THÂN TÔI</h6>
+                <p className="text-justify">Tôi là <i>Hồ Hoàng Phúc </i> hiện là sinh viên năm 3 Công Nghệ Thông Tin trường Đại Học Trà Vinh, tôi đang cố gắng
+                  học tập rèn luyện để trở thành một lập trình viên Web giỏi trong tương lai,
+                  tôi sẽ mang theo khát vọng này và cố gắng vương ra biển lớn, dù có khó khăn,
+                  dù có vong bão, tôi vẫn sẵn sàng rời bến. Vì ước mơ của một con thuyền
+                  là sẽ chinh phục những con sóng hung tợn. </p>
+              </div>
+
+              <div className="col-xs-6 col-md-3">
+                <h6>CÔNG NGHỆ</h6>
+                <ul className="footer-links">
+                  <li><a href="/">C</a></li>
+                  <li><a href="/">HTML CSS</a></li>
+                  <li><a href="/">JS</a></li>
+                  <li><a href="/">C#</a></li>
+                  <li><a href="/">Reactjs</a></li>
+                  <li><a href="/">Nodejs</a></li>
+                </ul>
+              </div>
+
+              <div className="col-xs-6 col-md-3">
+                <h6>Quick Links</h6>
+                <ul className="footer-links">
+                  <li><a href="#home">Trang chủ</a></li>
+                  <li><a href="#projects">Dự án</a></li>
+                  <li><a href="#about">Bản thân tôi</a></li>
+                  <li><a href="#skills">Kĩ Năng</a></li>
+                  <li><a href="#education">Học Tập</a></li>
+                  <li><a href="#lienhe">Liên hệ</a></li>
+                </ul>
+              </div>
+            </div>
+            <hr />
+          </div>
+          <div className="container">
+            <div className="row">
+              <div className="col-md-8 col-sm-6 col-xs-12">
+                <p className="copyright-text">Copyright © 2024 All Rights Reserved by
+                  <a href="https://www.facebook.com/magin2px/">Hoàng Phúc.</a>
+                </p>
+              </div>
+
+              <div className="col-md-4 col-sm-6 col-xs-12">
+                <ul className="social-icons">
+                  <li><a className="facebook" href="https://www.facebook.com/magin2px/"><i class="fa-brands fa-facebook"></i></a></li>
+                  <li><a className="twitter" href="https://github.com/Minurte1"><i class="fa-brands fa-github"></i></a></li>
+                  <li><a className="dribbble" href="https://www.instagram.com/magin_phuc20px/"><i class="fa-brands fa-instagram"></i></a></li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+
+
+
 
       </section>
 
