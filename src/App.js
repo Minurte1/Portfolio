@@ -15,9 +15,10 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 import './Education.css'
 import './Skills.css'
+import './Lienhe.css'
 import './ResponsiveDT.css'
 import './ResponsiveTablet.css'
-import './Lienhe.css'
+
 // ..
 AOS.init();
 // Trong tệp src/index.js hoặc tệp nào đó mà bạn sử dụng Bootstrap
@@ -525,9 +526,14 @@ const App = () => {
             <Col md={6} className='wrap-Lienhe2'>
               <Card className='Lienhe-2' data-aos="fade-left" data-aos-duration="2000">
                 <Card.Body className='Lienhe-2-Background'>
+                  <div className='Lienhe-2-Background-Wrap'>
+                    <h4 data-aos="fade-up" data-aos-duration="2000">Liên hệ với tôi</h4>
+                    <input className='Lienhe-2-input' placeholder='Your Name'></input> <br></br>
+                    <input className='Lienhe-2-input Lienhe-2-input-middle' placeholder='Your Email'></input> <br></br>
+                    <input className='Lienhe-2-input' placeholder='Your Phone'></input> <br></br>
+                    <button className='Lienhe-2-button' data-aos="fade-right" data-aos-duration="2000" >GỬI NGAY</button>
 
-
-
+                  </div>
 
 
                 </Card.Body>
@@ -547,6 +553,9 @@ const App = () => {
 
           </Row>
         </Container>
+      </section>
+      <section id='foolter'>
+
       </section>
 
     </>

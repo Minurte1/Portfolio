@@ -373,9 +373,72 @@
         margin-top: 10px;
     }
 
-    /* .container-skills-wrap-text {
-        margin-top: 10px;
-    } */
+    .Container-Lienhe-Box {
+        width: 100%;
+        height: 100%;
+        background-color: #09101a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Lienhe-2-button {
+        color: rgb(255, 255, 255);
+        padding-left: 20px;
+        text-align: left;
+        margin-top: 20px;
+        background-color: #418787;
+        width: 100%;
+        height: 50px;
+        border-radius: 9px;
+        border: none;
+    }
+
+    .Lienhe-2-button:hover {
+        background-color: #092635;
+    }
+
+    .wrap-Lienhe2 {
+        width: 100%;
+        height: 55%;
+        margin-left: -45%;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+
+    }
+
+    .Lienhe-2-Background {
+        width: 100%;
+        height: auto;
+        /* position: relative; */
+        /* background-color: #a2a2a2; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .Lienhe-2-Background-Wrap {
+
+        width: 100%;
+        height: auto;
+    }
+
+    .Lienhe-2-input-middle {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .Lienhe-2-input {
+        width: 100%;
+        height: 50px;
+        border-radius: 9px;
+        border: none;
+        padding-left: 20px;
+        background-color: #092635;
+
+    }
 }
 
 .container-skills-wrap-text {
