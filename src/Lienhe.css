@@ -149,3 +149,28 @@ a {
     margin-left: 0%;
   
   } */
+.Container-Lienhe-wrap {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+
+}
+
+.Container-Lienhe-wrap {
+    padding-top: 50px;
+}
+
+@media (min-width: 768px) {
+    .col-md-4 {
+        width: 33.333333%;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-4 {
+        width: 25%;
+    }
+}

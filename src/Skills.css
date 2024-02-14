@@ -194,6 +194,8 @@
     height: auto;
     height: 100%;
     text-align: left;
+    display: flex;
+    justify-content: center;
 }
 
 

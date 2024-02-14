@@ -8,7 +8,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import './Appresponsive.css';
 import './Appproject.css';
 import './AboutUS.css'
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Container, Row, Col, Card, Form, Button } from 'react-bootstrap';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
@@ -510,57 +510,33 @@ const App = () => {
         <div className='gachngang1'>
           <div className='gachngang' data-aos="fade-down" data-aos-duration="2000"></div>
         </div>
-        <Container className='Container-About-wrap'>
-          <Row className='Container-About-Box'>
-            <Col md={6}>
-              <Card className='About-1' data-aos="fade-right" data-aos-duration="2000">
-
-                <Card.Title className='About-1-Text'>ĐỐI VỚI TÔI</Card.Title>
-                <Card.Text className='About-1-Text1'>
-                  "Chuyên môn rất quan trọng, thái độ cũng vậy"
-                </Card.Text>
-
-              </Card>
+        <Container className='Container-Lienhe-wrap'>
+          <Row>
+            <Col md={4}>
+              <Form.Group controlId="name">
+                <Form.Label>Tên của bạn</Form.Label>
+                <Form.Control type="text" placeholder="Nhập tên của bạn" />
+              </Form.Group>
             </Col>
-            <Col md={6}>
-              <Card className='About-2' data-aos="fade-left" data-aos-duration="2000">
-                <Card.Body className='About-2-Background'>
-
-                  <div className='About-2-Background1'></div>
-                  <img src={require('./public/image/logo.jpg')} alt='logo' className='About-2-Background-image' />
-
-
-                </Card.Body>
-              </Card>
+            <Col md={4}>
+              <Form.Group controlId="email">
+                <Form.Label>Email của bạn</Form.Label>
+                <Form.Control type="email" placeholder="Nhập địa chỉ email" />
+              </Form.Group>
             </Col>
-            <Col md={6}>
-              <Card className='About-3' data-aos="fade-up" data-aos-duration="2000">
-                <Card.Body>
-                  <div className='About-3-thanhngang'></div>
-                  <span className='About-3-Text'>Tôi tin rằng sự sáng tạo và
-                    sự đam mê là yếu tố quan trọng trong việc trở thành một lập trình viên web
-                    xuất sắc. Với tôi, mỗi dự án là một cơ hội để thể hiện khả năng sáng tạo của
-                    mình và tạo ra những điều mới mẻ và độc đáo. Đồng thời tôi cũng sẽ cố gắng thích nghi với môi trường
-                    làm việc của doanh nghiệp cùng với sự chuyên nghiệp của mình.
-                  </span>
-
-
-                </Card.Body>
-              </Card>
+            <Col md={4}>
+              <Form.Group controlId="phone">
+                <Form.Label>Số điện thoại của bạn</Form.Label>
+                <Form.Control type="text" placeholder="Nhập số điện thoại của bạn" />
+              </Form.Group>
             </Col>
-            <Col md={6}>
-              <Card className='About-3 About-3-Download' data-aos="fade-up" data-aos-duration="2000">
-                <Card.Body>
-
-
-                  <button className='downloadCV'>  <a href='Chuong1_TongquanveTMDT.pdf' download="Chuong1_TongquanveTMDT.pdf">Download CV <i className="fa-solid fa-download" ></i></a></button>s
-
-                </Card.Body>
-              </Card>
+            <Col md={12}>
+              <Button variant="primary" type="submit">Gửi</Button>
             </Col>
           </Row>
         </Container>
       </section>
+
     </>
   );
 };
