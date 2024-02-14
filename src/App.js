@@ -171,13 +171,13 @@ const App = () => {
             <p className='text-logo'>Hoàng Phúc </p>
           </div>
           <div className='Navbar-middle'>
-            <a href='#home'>Home <div className='Navbar-middle-Gach'></div></a>
-            <a href='#projects'>Projects <div className='Navbar-middle-Gach'></div></a>
-            <a href='#about'>About <div className='Navbar-middle-Gach'></div></a>
-            <a href='#education'>Education <div className='Navbar-middle-Gach'></div></a>
-            <a href='#skills'>Skills <div className='Navbar-middle-Gach'></div></a>
+            <a href='#home'>Trang chủ <div className='Navbar-middle-Gach'></div></a>
+            <a href='#projects'>Dự án <div className='Navbar-middle-Gach'></div></a>
+            <a href='#about'>Bản thân tôi <div className='Navbar-middle-Gach'></div></a>
+            <a href='#education'>Học tập<div className='Navbar-middle-Gach'></div></a>
+            <a href='#skills'>Kĩ năng <div className='Navbar-middle-Gach'></div></a>
 
-            <a href='#experience'>Work Experience <div className='Navbar-middle-Gach'></div></a>
+            <a href='#experience'>Liên hệ <div className='Navbar-middle-Gach'></div></a>
             {/* <a href='#project'>Projects</a> */}
           </div>
           <div className={`Navbar-right`}>
