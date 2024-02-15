@@ -582,7 +582,7 @@ const App = () => {
               </div>
 
               <div className="col-xs-6 col-md-3">
-                <h6>Quick Links</h6>
+                <h6>CHUYỂN HƯỚNG</h6>
                 <ul className="footer-links">
                   <li><a href="#home">Trang chủ</a></li>
                   <li><a href="#projects">Dự án</a></li>
