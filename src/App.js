@@ -363,36 +363,38 @@ const App = () => {
 
 
       </section>
-
-      <section id='about'>
+      <div className='gachngang1 BackgroundWhite'>
+        <div className='gachngang' data-aos="fade-down" data-aos-duration="2000"></div>
+      </div>
+      <section id='about' className='BackgroundWhite'>
         <Container className='Container-About-wrap'>
-          <Row className='Container-About-Box'>
+          <Row className='Container-About-Box  BackgroundWhite' >
             <Col md={6}>
-              <Card className='About-1' data-aos="fade-right" data-aos-duration="2000">
+              <Card className='About-1  BackgroundWhite' data-aos="fade-right" data-aos-duration="2000">
 
-                <Card.Title className='About-1-Text'>ĐỐI VỚI TÔI</Card.Title>
-                <Card.Text className='About-1-Text1'>
+                <Card.Title className='About-1-Text  BackgroundWhite colorTextBlack'>ĐỐI VỚI TÔI</Card.Title>
+                <Card.Text className='About-1-Text1  BackgroundWhite colorTextBlack'>
                   "Chuyên môn rất quan trọng, thái độ cũng vậy"
                 </Card.Text>
 
               </Card>
             </Col>
             <Col md={6}>
-              <Card className='About-2' data-aos="fade-left" data-aos-duration="2000">
+              <Card className='About-2  BackgroundWhite' data-aos="fade-left" data-aos-duration="2000">
                 <Card.Body className='About-2-Background'>
 
                   <div className='About-2-Background1'></div>
-                  <img src={require('./public/image/logo.jpg')} alt='logo' className='About-2-Background-image' />
+                  <img src={require('./public/image/logo.jpg')} alt='logo' className='About-2-Background-image  BackgroundWhite' />
 
 
                 </Card.Body>
               </Card>
             </Col>
             <Col md={6}>
-              <Card className='About-3' data-aos="fade-up" data-aos-duration="2000">
+              <Card className='About-3 BackgroundWhite' data-aos="fade-up" data-aos-duration="2000">
                 <Card.Body>
                   <div className='About-3-thanhngang'></div>
-                  <span className='About-3-Text'>Tôi tin rằng sự sáng tạo và
+                  <span className='About-3-Text colorTextBlack'>Tôi tin rằng sự sáng tạo và
                     sự đam mê là yếu tố quan trọng trong việc trở thành một lập trình viên web
                     xuất sắc. Với tôi, mỗi dự án là một cơ hội để thể hiện khả năng sáng tạo của
                     mình và tạo ra những điều mới mẻ và độc đáo. Đồng thời tôi cũng sẽ cố gắng thích nghi với môi trường
@@ -404,11 +406,11 @@ const App = () => {
               </Card>
             </Col>
             <Col md={6}>
-              <Card className='About-3 About-3-Download' data-aos="fade-up" data-aos-duration="2000">
+              <Card className='About-3 About-3-Download BackgroundWhite' data-aos="fade-up" data-aos-duration="2000">
                 <Card.Body>
 
 
-                  <button className='downloadCV'>  <a href='Chuong1_TongquanveTMDT.pdf' download="Chuong1_TongquanveTMDT.pdf">Download CV <i className="fa-solid fa-download" ></i></a></button>s
+                  <button className='downloadCV'>  <a href='Chuong1_TongquanveTMDT.pdf' download="Chuong1_TongquanveTMDT.pdf">Download CV <i className="fa-solid fa-download" ></i></a></button>
 
                 </Card.Body>
               </Card>
