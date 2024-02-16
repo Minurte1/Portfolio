@@ -171,6 +171,19 @@
         /* Đặt phía dưới tấm ảnh */
     }
 
+    .fa-palette {
+        margin-left: -30px;
+    }
+
+    #education {
+        background-color: #09101a;
+        height: 990px;
+        width: 100%;
+        text-align: center;
+        padding-top: 50px;
+
+    }
+
     .About-2-Background-image {
         width: 250px;
         height: 250px;

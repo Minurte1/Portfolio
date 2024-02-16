@@ -261,6 +261,66 @@ const App = () => {
       setIsOpen(!isOpen);
     }
 
+
+    if (color === "#092635") {
+      const elements = document.getElementsByClassName('colorText');
+      const elementsBlack = document.getElementsByClassName('colorTextBlack');
+      const colorNavbarleft1 = document.getElementById('Navbar-1');
+      const colorNavbarleft2 = document.getElementById('Navbar-2');
+      const colorNavbarleft3 = document.getElementById('Navbar-3');
+      const colorBackgroudBanner = document.getElementById('Home-banner');
+      const colorBackgroudprojects = document.getElementById('projects');
+      const backgroundColorBlack = document.getElementsByClassName('BackgroundBlack');
+      const backgroundColorWhite = document.getElementsByClassName('BackgroundWhite');
+      // Thêm lớp smooth-transition để kích hoạt hiệu ứng chuyển đổi
+      colorNavbarleft1.classList.add('smooth-transition');
+      colorNavbarleft2.classList.add('smooth-transition');
+      colorNavbarleft3.classList.add('smooth-transition');
+      colorBackgroudBanner.classList.add('smooth-transition');
+      colorBackgroudprojects.classList.add('smooth-transition');
+
+      // Xóa lớp smooth-transition sau một khoảng thời gian
+      setTimeout(() => {
+        colorNavbarleft1.classList.remove('smooth-transition');
+        colorNavbarleft2.classList.remove('smooth-transition');
+        colorNavbarleft3.classList.remove('smooth-transition');
+        colorBackgroudBanner.classList.remove('smooth-transition');
+        colorBackgroudprojects.classList.remove('smooth-transition');
+      }, 1000);
+
+
+
+      //Navbar-Background
+      colorNavbarleft1.style.backgroundColor = '#1b4242';
+      colorNavbarleft2.style.backgroundColor = '#1b4242';
+      colorNavbarleft3.style.backgroundColor = '#1b4242';
+      colorBackgroudBanner.style.backgroundColor = "#092635";
+
+      // Thực hiện thay đổi màu sắc của các phần tử
+
+      //Background Phu
+      Array.from(backgroundColorBlack).forEach(backgroundColorBlack => {
+        backgroundColorBlack.style.backgroundColor = "#ffffff";
+      });
+
+      //Background Main
+      Array.from(backgroundColorWhite).forEach(backgroundColorWhite => {
+        backgroundColorWhite.style.backgroundColor = "#092635";
+      });
+      //text Navbar
+      Array.from(elements).forEach(elements => {
+        elements.style.color = "#ffffff";
+      });
+      //text Main
+      Array.from(elementsBlack).forEach(element => {
+        element.style.color = '#ffffff';
+      });
+
+      // Thực hiện thay đổi màu sắc của phần projects
+      colorBackgroudprojects.style.backgroundColor = '#f5f5f5';
+      setIsOpen(!isOpen);
+    }
+
   };
 
   return (
@@ -286,6 +346,8 @@ const App = () => {
           <a href="#skills">Skills</a>
           <a href="#experience">Work Experience</a>
           <a href="#contact">Contact</a>
+
+
         </div>
       </ div>
       <div className={`container-Navbar`}>
@@ -301,7 +363,7 @@ const App = () => {
             <a href='#education' className='colorText'>Học tập<div className='Navbar-middle-Gach '></div></a>
             <a href='#skills' className='colorText'>Kĩ năng <div className='Navbar-middle-Gach '></div></a>
 
-            <a href='#experience'>Liên hệ <div className='Navbar-middle-Gach '></div></a>
+            <a href='#experience' className='colorText'>Liên hệ <div className='Navbar-middle-Gach '></div></a>
 
             {/* <a href='#project'>Projects</a> */}
           </div>
@@ -386,7 +448,7 @@ const App = () => {
         <div className='home-info'>
           {/* <p>I am Ho Hoang Phuc Developer Web</p> */}
           <div className='info-small ' >
-            <p data-aos="fade-up-right" data-aos-duration="2000" className='colorTextBlack'>
+            <p data-aos="fade-up-right" data-aos-duration="2000" className='colorTextBlack info-small-SetriengMoblie'>
               I'm a <strong className='colorTextBlack' >Hồ Hoàng Phúc</strong>
               <p className='sec-text colorTextBlack'></p>
               <p className='text-small colorTextBlack'>
@@ -395,7 +457,28 @@ const App = () => {
                 sự sáng tạo và kiến thức kỹ thuật vững vàng, tôi luôn tìm kiếm
                 cơ hội để thử thách bản thân và mang lại giá trị đích thực thông qua công việc của mình.
               </p>
-              <button className='downloadCV'>  <a href='Chuong1_TongquanveTMDT.pdf' download="Chuong1_TongquanveTMDT.pdf">Download CV <i className="fa-solid fa-download" ></i></a></button>
+
+              <button className='downloadCV downloadCV-1'>  <a href='Chuong1_TongquanveTMDT.pdf' download="Chuong1_TongquanveTMDT.pdf">Download CV <i className="fa-solid fa-download" ></i></a></button>
+
+
+              <div className="color-picker  setRiengMobile">
+                <i className="fa-solid fa-palette colorText downloadCV fa-palette-1" onClick={toggleDropdown}>
+                  {isOpen && (
+                    <div className="dropdown-content" style={{ display: isOpen ? 'block' : 'none' }}>
+
+                      {colors.map((color, index) => (
+                        <div
+                          key={index}
+                          className="color" title={color}
+                          style={{ backgroundColor: color }}
+                          onClick={() => handleColorClick(color)}
+                        ></div>
+                      ))}
+                    </div>
+                  )}
+                </i>
+
+              </div>
 
             </p>
           </div>
@@ -567,7 +650,7 @@ const App = () => {
         <p data-aos="fade-down" data-aos-duration="2000" className='colorTextBlack'>KĨ NĂNG</p>
         <div className='Kienthucdahoc'>
           <Container className='Container-Skills-wrap'>
-            <Row className='Container-Skills-Box '>
+            <Row className='Container-Skills-Box BackgroundWhite'>
               <Col xl={3} lg={4} md={6} sm={12} className='BackgroundWhite'>
                 <Card className='Skills-1 Animation-Hover-CardSkills BackgroundWhite' data-aos="fade-right" data-aos-duration="2000">
                   <img className='img-react' src={require('../src/public/image/logo512.png')} alt="Reactjs" />

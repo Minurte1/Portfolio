@@ -194,8 +194,13 @@
         /* Hiển thị khi active */
     }
 
+    .info-small-SetriengMoblie {
+        width: 100%;
+        height: 100%;
+    }
+
     .info-small {
-        height: 70%;
+        height: 90%;
         margin-top: -20%;
     }
 
@@ -333,7 +338,7 @@
 
     #education {
         background-color: #09101a;
-        height: 1450px;
+        height: 1700px;
         width: 100%;
         text-align: center;
         padding-top: 50px;
@@ -374,12 +379,29 @@
     }
 
     .Container-Lienhe-Box {
+
         width: 100%;
         height: 100%;
         background-color: #09101a;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .Lienhe-2 {
+        background-color: #09101a;
+        width: 100%;
+        height: 100%;
+        margin-left: 20%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+
+    #Lienhe {
+        width: 100%;
+        height: 1100px;
+        background-color: #09101a;
     }
 
     .Lienhe-2-button {
@@ -439,7 +461,67 @@
         background-color: #092635;
 
     }
+
+    .Lienhe-3 {
+        margin-top: 40px;
+        background-color: #09101a;
+        width: 100%;
+        height: 100%;
+        padding: 10px 10px 10px 10px;
+
+    }
+
+    .setRiengMoblie2 {
+        position: relative;
+    }
+
+    .setRiengMobile {
+
+        position: absolute;
+        font-size: 20px;
+        display: block;
+
+    }
+
+    .downloadCV-1 {
+        margin-left: 20%
+    }
+
+    .fa-palette-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20%;
+
+    }
+
+    .color-picker {
+        position: relative;
+        width: 100%;
+
+    }
+
+    .dropdown-content {
+
+        width: 50%;
+        display: none;
+        position: absolute;
+        z-index: 1;
+        background-color: chartreuse;
+        border-radius: 8px;
+        /* margin-right: 50px;
+        margin-left: -50px;
+        margin-top: 20px; */
+        margin-top: 130px;
+        margin-left: 30px;
+
+        background: #EF6CED;
+        background: linear-gradient(135deg, #EF6CED, #F210B2);
+    }
+
 }
+
+
 
 .container-skills-wrap-text {
 
