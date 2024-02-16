@@ -64,6 +64,15 @@ const App = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
+  const [isOpen, setIsOpen] = useState(false);
+  //Màu color
+  const toggleDropdown = () => {
+
+    setIsOpen(!isOpen); console.log(isOpen)
+  };
+
+  // Mảng chứa các màu
+  const colors = ['#ff0000', '#00ff00', '#0000ff']; // Thêm các màu khác nếu cần
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -178,9 +187,26 @@ const App = () => {
             <a href='#skills'>Kĩ năng <div className='Navbar-middle-Gach'></div></a>
 
             <a href='#experience'>Liên hệ <div className='Navbar-middle-Gach'></div></a>
+
             {/* <a href='#project'>Projects</a> */}
           </div>
           <div className={`Navbar-right`}>
+            <div className="color-picker">
+              <i className="fa-solid fa-palette" onClick={toggleDropdown}></i>
+              {isOpen && (
+                <div className="dropdown-content" style={{ display: isOpen ? 'block' : 'none' }}>
+
+                  {colors.map((color, index) => (
+                    <div
+                      key={index}
+                      className="color"
+                      style={{ backgroundColor: color }}
+                      onClick={() => console.log(`Selected color: ${color}`)}
+                    ></div>
+                  ))}
+                </div>
+              )}
+            </div>
             <i className={`fa-solid fa-bars  ${showMenu ? 'menu-open' : ''}`} onClick={toggleMenu}></i>
           </div>
         </div>

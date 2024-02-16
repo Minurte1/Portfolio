@@ -134,6 +134,16 @@ html {
   /* Di chuyển từ trái sang phải khi hover */
 }
 
+.fa-palette {
+  color: white;
+  margin-right: 50px;
+  margin-left: -50px;
+}
+
+.fa-palette:hover {
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
@@ -500,6 +510,27 @@ body.menu-closed {
   align-items: center;
   display: flex;
   background-color: #1d6c6c;
+}
+
+.color-picker {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #483d3d;
+
+}
+
+.color {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
 }
 
 /* ---------------RESPONSIVE------------------------ */
