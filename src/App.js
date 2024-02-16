@@ -64,15 +64,6 @@ const App = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
-  const [isOpen, setIsOpen] = useState(false);
-  //Màu color
-  const toggleDropdown = () => {
-
-    setIsOpen(!isOpen); console.log(isOpen)
-  };
-
-  // Mảng chứa các màu
-  const colors = ['#C4DFDF', '#E1F0DA', '#163020']; // Thêm các màu khác nếu cần
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -148,24 +139,52 @@ const App = () => {
   };
 
   const [selectedColor, setSelectedColor] = useState(null);
+  const [isOpen, setIsOpen] = useState(false);
+  //Màu color
+  const toggleDropdown = () => {
+
+    setIsOpen(!isOpen); console.log(isOpen)
+  };
+
+  // Mảng chứa các màu
+  const colors = ['#f5f5f5', '#000000', '#163020']; // Thêm các màu khác nếu cần
 
   const handleColorClick = (color) => {
     setSelectedColor(color);
-    if (color === "#C4DFDF") {
+    if (color === "#f5f5f5") {
       const elements = document.getElementsByClassName('colorText');
       const elementsBlack = document.getElementsByClassName('colorTextBlack');
       const colorNavbarleft1 = document.getElementById('Navbar-1')
       const colorNavbarleft2 = document.getElementById('Navbar-2')
       const colorNavbarleft3 = document.getElementById('Navbar-3')
       const colorBackgroudBanner = document.getElementById('Home-banner');
+      const backgroundColorBlack = document.getElementsByClassName('BackgroundBlack')
+      const backgroundColorWhite = document.getElementsByClassName('BackgroundWhite')
+      const colorBackgroudprojects = document.getElementById('projects');
+
+      colorNavbarleft1.classList.add('smooth-transition');
+      colorNavbarleft2.classList.add('smooth-transition');
+      colorNavbarleft3.classList.add('smooth-transition');
+      colorBackgroudBanner.classList.add('smooth-transition');
+      colorBackgroudprojects.classList.add('smooth-transition');
+
+      // Xóa lớp smooth-transition sau một khoảng thời gian
+      setTimeout(() => {
+        colorNavbarleft1.classList.remove('smooth-transition');
+        colorNavbarleft2.classList.remove('smooth-transition');
+        colorNavbarleft3.classList.remove('smooth-transition');
+        colorBackgroudBanner.classList.remove('smooth-transition');
+        colorBackgroudprojects.classList.remove('smooth-transition');
+      }, 1000);
+
+
       colorNavbarleft1.style.backgroundColor = "#000000"
       colorNavbarleft2.style.backgroundColor = "#000000"
       colorNavbarleft3.style.backgroundColor = "#000000"
 
       colorBackgroudBanner.style.backgroundColor = '#f5f5f5';
 
-      const backgroundColorBlack = document.getElementsByClassName('BackgroundBlack')
-      const backgroundColorWhite = document.getElementsByClassName('BackgroundWhite')
+
       Array.from(backgroundColorBlack).forEach(backgroundColorBlack => {
         // Thực hiện thay đổi màu cho từng phần tử
         backgroundColorBlack.style.backgroundColor = '#000000';
@@ -184,11 +203,62 @@ const App = () => {
         element.style.color = '#000000';
       });
 
-      const colorBackgroudprojects = document.getElementById('projects');
+
       colorBackgroudprojects.style.backgroundColor = '#f5f5f5';
 
 
     }
+    if (color === "#000000") {
+      const elements = document.getElementsByClassName('colorText');
+      const elementsBlack = document.getElementsByClassName('colorTextBlack');
+      const colorNavbarleft1 = document.getElementById('Navbar-1');
+      const colorNavbarleft2 = document.getElementById('Navbar-2');
+      const colorNavbarleft3 = document.getElementById('Navbar-3');
+      const colorBackgroudBanner = document.getElementById('Home-banner');
+      const colorBackgroudprojects = document.getElementById('projects');
+
+      // Thêm lớp smooth-transition để kích hoạt hiệu ứng chuyển đổi
+      colorNavbarleft1.classList.add('smooth-transition');
+      colorNavbarleft2.classList.add('smooth-transition');
+      colorNavbarleft3.classList.add('smooth-transition');
+      colorBackgroudBanner.classList.add('smooth-transition');
+      colorBackgroudprojects.classList.add('smooth-transition');
+
+      // Xóa lớp smooth-transition sau một khoảng thời gian
+      setTimeout(() => {
+        colorNavbarleft1.classList.remove('smooth-transition');
+        colorNavbarleft2.classList.remove('smooth-transition');
+        colorNavbarleft3.classList.remove('smooth-transition');
+        colorBackgroudBanner.classList.remove('smooth-transition');
+        colorBackgroudprojects.classList.remove('smooth-transition');
+      }, 1000);
+
+      // Thực hiện thay đổi màu sắc
+      colorNavbarleft1.style.backgroundColor = '#f5f5f5';
+      colorNavbarleft2.style.backgroundColor = '#f5f5f5';
+      colorNavbarleft3.style.backgroundColor = '#f5f5f5';
+      colorBackgroudBanner.style.backgroundColor = "#000000";
+
+      // Thực hiện thay đổi màu sắc của các phần tử
+      const backgroundColorBlack = document.getElementsByClassName('BackgroundBlack');
+      const backgroundColorWhite = document.getElementsByClassName('BackgroundWhite');
+      Array.from(backgroundColorBlack).forEach(backgroundColorBlack => {
+        backgroundColorBlack.style.backgroundColor = "#ffffff";
+      });
+      Array.from(backgroundColorWhite).forEach(backgroundColorWhite => {
+        backgroundColorWhite.style.backgroundColor = "#000000";
+      });
+      Array.from(elements).forEach(elements => {
+        elements.style.color = "#000000";
+      });
+      Array.from(elementsBlack).forEach(element => {
+        element.style.color = '#ffffff';
+      });
+
+      // Thực hiện thay đổi màu sắc của phần projects
+      colorBackgroudprojects.style.backgroundColor = '#f5f5f5';
+    }
+
   };
 
   return (
@@ -223,13 +293,13 @@ const App = () => {
             <p className='text-logo colorText'>Hoàng Phúc </p>
           </div>
           <div className='Navbar-middle' id='Navbar-2'>
-            <a href='#home'>Trang chủ <div className='Navbar-middle-Gach colorText'></div></a>
-            <a href='#projects'>Dự án <div className='Navbar-middle-Gach colorText'></div></a>
-            <a href='#about'>Bản thân tôi <div className='Navbar-middle-Gach colorText'></div></a>
-            <a href='#education'>Học tập<div className='Navbar-middle-Gach colorText'></div></a>
-            <a href='#skills'>Kĩ năng <div className='Navbar-middle-Gach colorText'></div></a>
+            <a href='#home' className='colorText'>Trang chủ <div className='Navbar-middle-Gach '></div></a>
+            <a href='#projects' className='colorText'>Dự án <div className='Navbar-middle-Gach '></div></a>
+            <a href='#about' className='colorText'>Bản thân tôi <div className='Navbar-middle-Gach '></div></a>
+            <a href='#education' className='colorText'>Học tập<div className='Navbar-middle-Gach '></div></a>
+            <a href='#skills' className='colorText'>Kĩ năng <div className='Navbar-middle-Gach '></div></a>
 
-            <a href='#experience'>Liên hệ <div className='Navbar-middle-Gach colorText'></div></a>
+            <a href='#experience'>Liên hệ <div className='Navbar-middle-Gach '></div></a>
 
             {/* <a href='#project'>Projects</a> */}
           </div>
@@ -242,7 +312,7 @@ const App = () => {
                   {colors.map((color, index) => (
                     <div
                       key={index}
-                      className="color"
+                      className="color" title={color}
                       style={{ backgroundColor: color }}
                       onClick={() => handleColorClick(color)}
                     ></div>
@@ -334,9 +404,9 @@ const App = () => {
       <div className='gachngang1 BackgroundWhite'>
         <div className='gachngang' data-aos="fade-down" data-aos-duration="2000"></div>
       </div>
-      <section id='projects' >
+      <section id='projects' className='BackgroundWhite'>
 
-        <div className='Container-project' >
+        <div className='Container-project BackgroundWhite' >
           <Container className='Container-project-wrap'>
             <p className='Container-project-Text colorTextBlack' data-aos="fade-down" data-aos-duration="2000">DỰ ÁN CỦA TÔI</p>
             <p className='Container-project-Text-2 colorTextBlack' data-aos="fade-up" data-aos-duration="2000">"Học lý thuyết phải đi đôi với thực hành"</p>
