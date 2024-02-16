@@ -143,11 +143,12 @@ const App = () => {
   //Màu color
   const toggleDropdown = () => {
 
-    setIsOpen(!isOpen); console.log(isOpen)
+    setIsOpen(!isOpen);
+    // console.log(isOpen)
   };
 
   // Mảng chứa các màu
-  const colors = ['#f5f5f5', '#000000', '#163020']; // Thêm các màu khác nếu cần
+  const colors = ['#f5f5f5', '#000000', '#092635']; // Thêm các màu khác nếu cần
 
   const handleColorClick = (color) => {
     setSelectedColor(color);
@@ -206,7 +207,7 @@ const App = () => {
 
       colorBackgroudprojects.style.backgroundColor = '#f5f5f5';
 
-
+      setIsOpen(!isOpen);
     }
     if (color === "#000000") {
       const elements = document.getElementsByClassName('colorText');
@@ -257,6 +258,7 @@ const App = () => {
 
       // Thực hiện thay đổi màu sắc của phần projects
       colorBackgroudprojects.style.backgroundColor = '#f5f5f5';
+      setIsOpen(!isOpen);
     }
 
   };
@@ -305,20 +307,22 @@ const App = () => {
           </div>
           <div className={`Navbar-right`} id='Navbar-3'>
             <div className="color-picker">
-              <i className="fa-solid fa-palette colorText" onClick={toggleDropdown}></i>
-              {isOpen && (
-                <div className="dropdown-content" style={{ display: isOpen ? 'block' : 'none' }}>
+              <i className="fa-solid fa-palette colorText" onClick={toggleDropdown}>
+                {isOpen && (
+                  <div className="dropdown-content" style={{ display: isOpen ? 'block' : 'none' }}>
 
-                  {colors.map((color, index) => (
-                    <div
-                      key={index}
-                      className="color" title={color}
-                      style={{ backgroundColor: color }}
-                      onClick={() => handleColorClick(color)}
-                    ></div>
-                  ))}
-                </div>
-              )}
+                    {colors.map((color, index) => (
+                      <div
+                        key={index}
+                        className="color" title={color}
+                        style={{ backgroundColor: color }}
+                        onClick={() => handleColorClick(color)}
+                      ></div>
+                    ))}
+                  </div>
+                )}
+              </i>
+
             </div>
             <i className={`fa-solid fa-bars colorText  ${showMenu ? 'menu-open' : ''}`} onClick={toggleMenu}></i>
           </div>

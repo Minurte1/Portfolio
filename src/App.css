@@ -515,18 +515,26 @@ body.menu-closed {
 
 .color-picker {
   position: relative;
+  width: 20%;
+
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
   z-index: 1;
-
+  background-color: chartreuse;
   border-radius: 8px;
-  margin-right: 50px;
+  /* margin-right: 50px;
   margin-left: -50px;
-  margin-top: 20px;
-
+  margin-top: 20px; */
+  margin-top: 40px;
+  /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=ef6ced&c2=f210b2&gt=l&gd=dtl
+*/
+  background: #EF6CED;
+  background: linear-gradient(135deg, #EF6CED, #F210B2);
 }
 
 .smooth-transition {
