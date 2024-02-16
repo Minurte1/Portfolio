@@ -418,47 +418,47 @@ const App = () => {
           </Row>
         </Container>
       </section>
-      <section id='education'>
-        <p data-aos="fade-down" data-aos-duration="2000">HỌC VẤN</p>
-        <p data-aos="fade-up" data-aos-duration="2000">"Học để phát triển, thay đổi để hoàn thiện"</p>
+      <section id='education' className='BackgroundWhite'>
+        <p data-aos="fade-down" data-aos-duration="2000" className='colorTextBlack'>HỌC VẤN</p>
+        <p data-aos="fade-up" data-aos-duration="2000" className='colorTextBlack'>"Học để phát triển, thay đổi để hoàn thiện"</p>
         <Container className='Container-Education-wrap'>
-          <Row className='Container-Education-Box'>
-            <Col md={6}>
-              <Card className='Education-1' data-aos="fade-right" data-aos-duration="2000">
-                <span className='Education-1-time'>2005 - 2009</span>
-                <Card.Title className='Education-1-Text'>ABOUT ME</Card.Title>
-                <Card.Text className='Education-1-Text1'>
+          <Row className='Container-Education-Box BackgroundWhite'>
+            <Col md={6} >
+              <Card className='Education-1 BackgroundWhite' data-aos="fade-right" data-aos-duration="2000">
+                <span className='Education-1-time colorTextBlack'>2005 - 2009</span>
+                <Card.Title className='Education-1-Text colorTextBlack'>ABOUT ME</Card.Title>
+                <Card.Text className='Education-1-Text1 colorTextBlack'>
                   Transforming visions into
                   exceptional portfolios
                 </Card.Text>
                 <div className='Education-3-thanhngang'></div>
-                <span className='Education-3-Text'>Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione
+                <span className='Education-3-Text colorTextBlack'>Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione
                 </span>
               </Card>
             </Col>
             <Col md={6}>
-              <Card className='Education-2' data-aos="fade-left" data-aos-duration="2000">
-                <span className='Education-1-time'>2005 - 2009</span>
-                <Card.Title className='Education-1-Text'>ABOUT ME</Card.Title>
-                <Card.Text className='Education-1-Text1'>
+              <Card className='Education-2 BackgroundWhite' data-aos="fade-left" data-aos-duration="2000">
+                <span className='Education-1-time colorTextBlack'>2005 - 2009</span>
+                <Card.Title className='Education-1-Text colorTextBlack'>ABOUT ME</Card.Title>
+                <Card.Text className='Education-1-Text1 colorTextBlack'>
                   Transforming visions into
                   exceptional portfolios
                 </Card.Text>
                 <div className='Education-3-thanhngang'></div>
-                <span className='Education-3-Text'>Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione
+                <span className='Education-3-Text colorTextBlack'>Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione
                 </span>
               </Card>
             </Col>
             <Col md={6}>
-              <Card className='Education-3' data-aos="fade-right" data-aos-duration="2000">
+              <Card className='Education-3 BackgroundWhite' data-aos="fade-right" data-aos-duration="2000">
                 <span className='Education-1-time' >2005 - 2009</span>
-                <Card.Title className='Education-1-Text'>ABOUT ME</Card.Title>
-                <Card.Text className='Education-1-Text1'>
+                <Card.Title className='Education-1-Text colorTextBlack'>ABOUT ME</Card.Title>
+                <Card.Text className='Education-1-Text1 colorTextBlack'>
                   Transforming visions into
                   exceptional portfolios
                 </Card.Text>
                 <div className='Education-3-thanhngang'></div>
-                <span className='Education-3-Text'>Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione
+                <span className='Education-3-Text colorTextBlack'>Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione
                 </span>
 
 
@@ -466,16 +466,16 @@ const App = () => {
               </Card>
             </Col>
             <Col md={6}>
-              <Card className='Education-3' data-aos="fade-left" data-aos-duration="2000">
+              <Card className='Education-3 BackgroundWhite' data-aos="fade-left" data-aos-duration="2000">
                 <span className='Education-1-time'>2005 - 2009</span>
-                <Card.Title className='Education-1-Text'>ABOUT ME</Card.Title>
-                <Card.Text className='Education-1-Text1'>
+                <Card.Title className='Education-1-Text colorTextBlack'>ABOUT ME</Card.Title>
+                <Card.Text className='Education-1-Text1 colorTextBlack'>
                   Transforming visions into
                   exceptional portfolios
                 </Card.Text>
 
                 <div className='Education-3-thanhngang'></div>
-                <span className='Education-3-Text'>1Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione
+                <span className='Education-3-Text colorTextBlack'>1Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione
                 </span>
 
 
@@ -486,61 +486,61 @@ const App = () => {
 
       </section>
 
-      <section id='skills'>
+      <section id='skills' className='BackgroundWhite'>
         <div className='gachngang1'>
           <div className='gachngang' data-aos="fade-down" data-aos-duration="2000"></div>
         </div>
-        <p data-aos="fade-down" data-aos-duration="2000">KĨ NĂNG</p>
+        <p data-aos="fade-down" data-aos-duration="2000" className='colorTextBlack'>KĨ NĂNG</p>
         <div className='Kienthucdahoc'>
           <Container className='Container-Skills-wrap'>
-            <Row className='Container-Skills-Box'>
-              <Col xl={3} lg={4} md={6} sm={12}>
-                <Card className='Skills-1 Animation-Hover-CardSkills' data-aos="fade-right" data-aos-duration="2000">
+            <Row className='Container-Skills-Box '>
+              <Col xl={3} lg={4} md={6} sm={12} className='BackgroundWhite'>
+                <Card className='Skills-1 Animation-Hover-CardSkills BackgroundWhite' data-aos="fade-right" data-aos-duration="2000">
                   <img className='img-react' src={require('../src/public/image/logo512.png')} alt="Reactjs" />
-                  <p className='span-logo'>Reactjs</p>
+                  <p className='span-logo colorTextBlack'>Reactjs</p>
 
                 </Card>
               </Col>
-              <Col xl={3} lg={4} md={6} sm={12} className='Skills-3-margin-DT'>
-                <Card className='Skills-2 Animation-Hover-CardSkills' data-aos="fade-left" data-aos-duration="2000">
+              <Col xl={3} lg={4} md={6} sm={12} className='Skills-3-margin-DT BackgroundWhite'>
+                <Card className='Skills-2 Animation-Hover-CardSkills BackgroundWhite' data-aos="fade-left" data-aos-duration="2000">
                   <img className='img-nodejs' src={require('../src/public/image/icons8-nodejs-480.png')} alt="Nodejs" />
-                  <p className='span-nodejs'>Nodejs</p>
+                  <p className='span-nodejs colorTextBlack'>Nodejs</p>
                 </Card>
               </Col>
-              <Col xl={3} lg={4} md={6} sm={12} className='Skills-3-margin-DT'>
-                <Card className='Skills-3 Animation-Hover-CardSkills Skills-3-margin-Tablet' data-aos="fade-right" data-aos-duration="2000">
+              <Col xl={3} lg={4} md={6} sm={12} className='Skills-3-margin-DT BackgroundWhite'>
+                <Card className='Skills-3 Animation-Hover-CardSkills Skills-3-margin-Tablet BackgroundWhite' data-aos="fade-right" data-aos-duration="2000">
                   <img className='img-nodejs' src={require('../src/public/image/icons8-javascript-480.png')} alt="Javascript" />
-                  <p className='span-javascript'>Javascript</p>
+                  <p className='span-javascript colorTextBlack'>Javascript</p>
                 </Card>
               </Col>
-              <Col xl={3} lg={4} md={6} sm={12} className='Skills-3-margin-DT'>
-                <Card className='Skills-3 Animation-Hover-CardSkills Skills-3-margin-Tablet' data-aos="fade-left" data-aos-duration="2000">
+              <Col xl={3} lg={4} md={6} sm={12} className='Skills-3-margin-DT BackgroundWhite'>
+                <Card className='Skills-3 Animation-Hover-CardSkills Skills-3-margin-Tablet BackgroundWhite' data-aos="fade-left" data-aos-duration="2000">
                   <img className='img-nodejs' src={require('../src/public/image/icons8-css-480.png')} alt="CSS" />
-                  <p className='span-nodejs'>CSS</p>
+                  <p className='span-nodejs colorTextBlack'>CSS</p>
                 </Card>
               </Col>
-              <Col xl={3} lg={4} md={6} sm={12} className='setRieng'>
-                <Card className='Skills-3 Skills-3-margin-bot Animation-Hover-CardSkills' data-aos="fade-left" data-aos-duration="2000">
+              <Col xl={3} lg={4} md={6} sm={12} className='setRieng BackgroundWhite'>
+                <Card className='Skills-3 Skills-3-margin-bot Animation-Hover-CardSkills BackgroundWhite' data-aos="fade-left" data-aos-duration="2000">
                   <img className='img-nodejs' src={require('../src/public/image/mysql.png')} alt="MySQL" />
-                  <p className='span-nodejs' >MySQL</p>
+                  <p className='span-nodejs colorTextBlack' >MySQL</p>
                 </Card>
               </Col>
-              <Col xl={3} lg={4} md={6} sm={12} className='Skills-3-margin-DT'>
-                <Card className='Skills-3 Skills-3-margin-bot Animation-Hover-CardSkills' data-aos="fade-left" data-aos-duration="2000">
+              <Col xl={3} lg={4} md={6} sm={12} className='Skills-3-margin-DT BackgroundWhite'>
+                <Card className='Skills-3 Skills-3-margin-bot Animation-Hover-CardSkills BackgroundWhite' data-aos="fade-left" data-aos-duration="2000">
                   <img className='img-nodejs' src={require('../src/public/image/c-sharp.png')} alt="C#" />
-                  <p className='span-c' >C#</p>
+                  <p className='span-c colorTextBlack' >C#</p>
                 </Card>
               </Col>
-              <Col xl={3} lg={4} md={6} sm={12} className='Skills-3-margin-bot-Table'>
-                <Card className='Skills-3 Skills-3-margin-bot Animation-Hover-CardSkills setRieng1' data-aos="fade-left" data-aos-duration="2000">
+              <Col xl={3} lg={4} md={6} sm={12} className='Skills-3-margin-bot-Table BackgroundWhite'>
+                <Card className='Skills-3 Skills-3-margin-bot Animation-Hover-CardSkills setRieng1 BackgroundWhite' data-aos="fade-left" data-aos-duration="2000">
                   <img className='img-nodejs' src={require('../src/public/image/sql-server.png')} alt="SQL" />
-                  <p className='span-c' >SQL Server</p>
+                  <p className='span-c colorTextBlack' >SQL Server</p>
                 </Card>
               </Col>
-              <Col xl={3} lg={4} md={6} sm={12} className='Skills-3-margin-bot-Table Skills-3-margin-DT'>
-                <Card className='Skills-3 Skills-3-margin-bot Animation-Hover-CardSkills setRieng3' data-aos="fade-left" data-aos-duration="2000">
+              <Col xl={3} lg={4} md={6} sm={12} className='Skills-3-margin-bot-Table Skills-3-margin-DT BackgroundWhite'>
+                <Card className='Skills-3 Skills-3-margin-bot Animation-Hover-CardSkills setRieng3 BackgroundWhite' data-aos="fade-left" data-aos-duration="2000">
                   <img className='img-nodejs' src={require('../src/public/image/bootstrap.png')} alt="Boostrap" />
-                  <p className='span-c' >Boostrap</p>
+                  <p className='span-c colorTextBlack' >Boostrap</p>
                 </Card>
               </Col>
             </Row>
@@ -583,17 +583,17 @@ const App = () => {
 
         </div>
       </section>
-      <section id='Lienhe'>
+      <section id='Lienhe' className='BackgroundWhite'>
         <div className='gachngang1'>
           <div className='gachngang' data-aos="fade-down" data-aos-duration="2000"></div>
         </div>
         <Container className='Container-Lienhe-wrap'>
-          <Row className='Container-Lienhe-Box'>
+          <Row className='Container-Lienhe-Box BackgroundWhite'>
             <Col md={6}>
-              <Card className='Lienhe-1' data-aos="fade-right" data-aos-duration="2000">
+              <Card className='Lienhe-1 BackgroundWhite' data-aos="fade-right" data-aos-duration="2000">
 
-                <Card.Title className='Lienhe-1-Text'>THAM VỌNG</Card.Title>
-                <Card.Text className='Lienhe-1-Text1'>
+                <Card.Title className='Lienhe-1-Text colorTextBlack'>THAM VỌNG</Card.Title>
+                <Card.Text className='Lienhe-1-Text1 colorTextBlack'>
                   "Bản lĩnh của một con người được thể hiện qua sự tham vọng và trả giá"
                 </Card.Text>
 
@@ -603,7 +603,7 @@ const App = () => {
               <Card className='Lienhe-2' data-aos="fade-left" data-aos-duration="2000">
                 <Card.Body className='Lienhe-2-Background'>
                   <div className='Lienhe-2-Background-Wrap'>
-                    <h4 data-aos="fade-up" data-aos-duration="2000">Liên hệ với tôi</h4>
+                    <h4 data-aos="fade-up" data-aos-duration="2000" >Liên hệ với tôi</h4>
                     <input className='Lienhe-2-input' placeholder='Your Name'></input> <br></br>
                     <input className='Lienhe-2-input Lienhe-2-input-middle' placeholder='Your Email'></input> <br></br>
                     <input className='Lienhe-2-input' placeholder='Your Phone'></input> <br></br>
@@ -616,10 +616,10 @@ const App = () => {
               </Card>
             </Col>
             <Col md={6}>
-              <Card className='Lienhe-3' data-aos="fade-up" data-aos-duration="2000">
+              <Card className='Lienhe-3 BackgroundWhite' data-aos="fade-up" data-aos-duration="2000">
                 <Card.Body>
                   <div className='Lienhe-3-thanhngang'></div>
-                  <span className='Lienhe-3-Text'>Tôi tin rằng sự chuyên nghiệp giúp chúng ta có thể thấu hiểu nhau và tôn trọng nhau, nó giúp chúng ta đi xa hơn trong các dự án làm việc nhóm ở trường học và doanh nghiệp.
+                  <span className='Lienhe-3-Text colorTextBlack'>Tôi tin rằng sự chuyên nghiệp giúp chúng ta có thể thấu hiểu nhau và tôn trọng nhau, nó giúp chúng ta đi xa hơn trong các dự án làm việc nhóm ở trường học và doanh nghiệp.
                   </span>
 
 

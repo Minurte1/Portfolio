@@ -35,7 +35,7 @@
 }
 
 .Education-1 {
-
+    padding-left: 15px;
     width: 100%;
     height: 90%;
     background-color: #09101a;
@@ -69,7 +69,7 @@
     width: 100%;
     height: 90%;
 
-
+    padding-left: 15px;
 }
 
 
@@ -80,6 +80,8 @@
     background-color: #09101a;
     width: 100%;
     height: 90%;
+    padding-left: 15px;
+
 
 }
 

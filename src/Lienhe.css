@@ -32,7 +32,7 @@
 }
 
 .Lienhe-1 {
-
+    padding: 10px 10px 10px 10px;
     width: 100%;
     height: 100%;
     background-color: #09101a;
@@ -54,11 +54,12 @@
     height: 100%;
     margin-left: 20%;
 
+
 }
 
 .wrap-Lienhe2 {
     width: 50%;
-    height: 60%;
+    height: 70%;
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -137,6 +138,7 @@
     background-color: #09101a;
     width: 100%;
     height: 100%;
+    padding: 10px 10px 10px 10px;
 
 }
 
