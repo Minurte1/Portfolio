@@ -520,8 +520,17 @@ body.menu-closed {
   display: none;
   position: absolute;
   z-index: 1;
-  background-color: #483d3d;
+  background-color: #000000;
+  border-radius: 8px;
+  margin-right: 50px;
+  margin-left: -50px;
+  margin-top: 20px;
 
+}
+
+.color:hover {
+  cursor: pointer;
+  filter: brightness(70%);
 }
 
 .color {

@@ -72,7 +72,7 @@ const App = () => {
   };
 
   // Mảng chứa các màu
-  const colors = ['#ff0000', '#00ff00', '#0000ff']; // Thêm các màu khác nếu cần
+  const colors = ['#C4DFDF', '#E1F0DA', '#163020']; // Thêm các màu khác nếu cần
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -147,6 +147,27 @@ const App = () => {
     window.open(pdfUrl);
   };
 
+  const [selectedColor, setSelectedColor] = useState(null);
+
+  const handleColorClick = (color) => {
+    setSelectedColor(color);
+    if (color === "#C4DFDF") {
+      const elements = document.getElementsByClassName('colorText');
+      const colorNavbarleft1 = document.getElementById('Navbar-1')
+      const colorNavbarleft2 = document.getElementById('Navbar-2')
+      const colorNavbarleft3 = document.getElementById('Navbar-3')
+      colorNavbarleft1.style.backgroundColor = "#000000"
+      colorNavbarleft2.style.backgroundColor = "#000000"
+      colorNavbarleft3.style.backgroundColor = "#000000"
+
+
+      Array.from(elements).forEach(element => {
+        // Thực hiện thay đổi màu cho từng phần tử
+        element.style.color = '#ffffff';
+      });
+
+    }
+  };
 
   return (
     <>
@@ -175,24 +196,24 @@ const App = () => {
       </ div>
       <div className={`container-Navbar`}>
         <div className='Navbar'>
-          <div className='Navbar-left'>
+          <div className='Navbar-left' id='Navbar-1'>
             <img src={require('../src/public/image/logo512.png')} className='img-logoreact' alt='Logo'></img>
-            <p className='text-logo'>Hoàng Phúc </p>
+            <p className='text-logo colorText'>Hoàng Phúc </p>
           </div>
-          <div className='Navbar-middle'>
-            <a href='#home'>Trang chủ <div className='Navbar-middle-Gach'></div></a>
-            <a href='#projects'>Dự án <div className='Navbar-middle-Gach'></div></a>
-            <a href='#about'>Bản thân tôi <div className='Navbar-middle-Gach'></div></a>
-            <a href='#education'>Học tập<div className='Navbar-middle-Gach'></div></a>
-            <a href='#skills'>Kĩ năng <div className='Navbar-middle-Gach'></div></a>
+          <div className='Navbar-middle' id='Navbar-2'>
+            <a href='#home'>Trang chủ <div className='Navbar-middle-Gach colorText'></div></a>
+            <a href='#projects'>Dự án <div className='Navbar-middle-Gach colorText'></div></a>
+            <a href='#about'>Bản thân tôi <div className='Navbar-middle-Gach colorText'></div></a>
+            <a href='#education'>Học tập<div className='Navbar-middle-Gach colorText'></div></a>
+            <a href='#skills'>Kĩ năng <div className='Navbar-middle-Gach colorText'></div></a>
 
-            <a href='#experience'>Liên hệ <div className='Navbar-middle-Gach'></div></a>
+            <a href='#experience'>Liên hệ <div className='Navbar-middle-Gach colorText'></div></a>
 
             {/* <a href='#project'>Projects</a> */}
           </div>
-          <div className={`Navbar-right`}>
+          <div className={`Navbar-right`} id='Navbar-3'>
             <div className="color-picker">
-              <i className="fa-solid fa-palette" onClick={toggleDropdown}></i>
+              <i className="fa-solid fa-palette colorText" onClick={toggleDropdown}></i>
               {isOpen && (
                 <div className="dropdown-content" style={{ display: isOpen ? 'block' : 'none' }}>
 
@@ -201,16 +222,16 @@ const App = () => {
                       key={index}
                       className="color"
                       style={{ backgroundColor: color }}
-                      onClick={() => console.log(`Selected color: ${color}`)}
+                      onClick={() => handleColorClick(color)}
                     ></div>
                   ))}
                 </div>
               )}
             </div>
-            <i className={`fa-solid fa-bars  ${showMenu ? 'menu-open' : ''}`} onClick={toggleMenu}></i>
+            <i className={`fa-solid fa-bars colorText  ${showMenu ? 'menu-open' : ''}`} onClick={toggleMenu}></i>
           </div>
         </div>
-      </div>
+      </div >
       <div className={`overlayne ${showMenuPhone ? 'active' : ''}`} onClick={handleMenuPhone}></div>
       <div className={`overlay ${showMenu ? 'active' : ''}`} onClick={toggleMenu}></div>
       <div className={`container-NavbarShow ${showMenu ? 'menu-open' : ''}`}>
