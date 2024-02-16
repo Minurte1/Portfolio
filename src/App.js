@@ -153,18 +153,40 @@ const App = () => {
     setSelectedColor(color);
     if (color === "#C4DFDF") {
       const elements = document.getElementsByClassName('colorText');
+      const elementsBlack = document.getElementsByClassName('colorTextBlack');
       const colorNavbarleft1 = document.getElementById('Navbar-1')
       const colorNavbarleft2 = document.getElementById('Navbar-2')
       const colorNavbarleft3 = document.getElementById('Navbar-3')
+      const colorBackgroudBanner = document.getElementById('Home-banner');
       colorNavbarleft1.style.backgroundColor = "#000000"
       colorNavbarleft2.style.backgroundColor = "#000000"
       colorNavbarleft3.style.backgroundColor = "#000000"
 
+      colorBackgroudBanner.style.backgroundColor = '#f5f5f5';
+
+      const backgroundColorBlack = document.getElementsByClassName('BackgroundBlack')
+      const backgroundColorWhite = document.getElementsByClassName('BackgroundWhite')
+      Array.from(backgroundColorBlack).forEach(backgroundColorBlack => {
+        // Thực hiện thay đổi màu cho từng phần tử
+        backgroundColorBlack.style.backgroundColor = '#000000';
+      });
+      Array.from(backgroundColorWhite).forEach(backgroundColorWhite => {
+        // Thực hiện thay đổi màu cho từng phần tử
+        backgroundColorWhite.style.backgroundColor = '#f5f5f5';
+      });
 
       Array.from(elements).forEach(element => {
         // Thực hiện thay đổi màu cho từng phần tử
-        element.style.color = '#ffffff';
+        element.style.color = '#f5f5f5';
       });
+      Array.from(elementsBlack).forEach(element => {
+        // Thực hiện thay đổi màu cho từng phần tử
+        element.style.color = '#000000';
+      });
+
+      const colorBackgroudprojects = document.getElementById('projects');
+      colorBackgroudprojects.style.backgroundColor = '#f5f5f5';
+
 
     }
   };
@@ -286,14 +308,14 @@ const App = () => {
 
       <section id='home' >
         {/* <img src={require('./public/image/banner-scaled.jpg')} alt="Banner" className='Home-banner' /> */}
-        <div className='Home-banner'></div>
+        <div className='Home-banner' id='Home-banner'></div>
         <div className='home-info'>
           {/* <p>I am Ho Hoang Phuc Developer Web</p> */}
-          <div className='info-small' >
-            <p data-aos="fade-up-right" data-aos-duration="2000">
-              I'm a <strong >Hồ Hoàng Phúc</strong>
-              <p className='sec-text'></p>
-              <p className='text-small'>
+          <div className='info-small ' >
+            <p data-aos="fade-up-right" data-aos-duration="2000" className='colorTextBlack'>
+              I'm a <strong className='colorTextBlack' >Hồ Hoàng Phúc</strong>
+              <p className='sec-text colorTextBlack'></p>
+              <p className='text-small colorTextBlack'>
                 Tôi là một lập trình viên web với niềm đam mê sâu sắc đối với việc tạo
                 ra các ứng dụng web độc đáo và chất lượng cao. Với một sự kết hợp giữa
                 sự sáng tạo và kiến thức kỹ thuật vững vàng, tôi luôn tìm kiếm
@@ -307,13 +329,17 @@ const App = () => {
         <div className='home-avt'>
           <img src={require('../src/public/image/banner_img_1.png')} data-aos="fade-up-left" data-aos-duration="2000" alt="Avatar" className='avt' />
         </div>
-      </section>
 
+      </section>
+      <div className='gachngang1 BackgroundWhite'>
+        <div className='gachngang' data-aos="fade-down" data-aos-duration="2000"></div>
+      </div>
       <section id='projects' >
+
         <div className='Container-project' >
           <Container className='Container-project-wrap'>
-            <p className='Container-project-Text' data-aos="fade-down" data-aos-duration="2000">DỰ ÁN CỦA TÔI</p>
-            <p className='Container-project-Text-2' data-aos="fade-up" data-aos-duration="2000">"Học lý thuyết phải đi đôi với thực hành"</p>
+            <p className='Container-project-Text colorTextBlack' data-aos="fade-down" data-aos-duration="2000">DỰ ÁN CỦA TÔI</p>
+            <p className='Container-project-Text-2 colorTextBlack' data-aos="fade-up" data-aos-duration="2000">"Học lý thuyết phải đi đôi với thực hành"</p>
 
             <Row className='Container-project-Box' >
               <Col sm={6} md={4}>
