@@ -853,10 +853,10 @@ const App = () => {
       </section>
       <section id='carousel'>
 
-        <div className="content">
+        {/* <div className="content">
           <h1>Gentle and cute</h1>
           <p>Sự dễ thương không nằm trên gò má, <br /> nó chỉ hiện lên trong đôi mắt kẻ see tình.</p>
-        </div>
+        </div> */}
         <div className="nav-container">
           <div className="layout">
             <img src={require('./public/image-image/1.jpg')} alt="image1" />

@@ -3,17 +3,11 @@
     height: auto;
 }
 
-.content {
-    position: relative;
-    height: auto;
-    width: 40%;
-    top: 150px;
-    margin-left: 62%
-}
 
 .nav-container {
-    width: auto;
-    height: auto;
+    width: 80%;
+    height: 200px;
+    position: relative;
 }
 
 .layout {
@@ -21,10 +15,16 @@
     display: flex;
     height: 200px;
     gap: 10px;
+    margin: 0px;
+    padding: 0px;
+    object-fit: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .layout>img {
-
+    z-index: 2;
     flex: 1;
     border-radius: 10px;
     background-position: center;
@@ -35,4 +35,7 @@
 
 .layout>img:hover {
     flex: 2;
+    z-index: 2;
+
+    /* thay đổi tỉ lệ scale tùy ý */
 }
