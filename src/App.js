@@ -17,6 +17,7 @@ import './Education.css'
 import './Skills.css'
 import './Lienhe.css'
 import './foolter.css'
+import './Carousel.css'
 import './ResponsiveDT.css'
 import './ResponsiveTablet.css'
 
@@ -541,7 +542,8 @@ const App = () => {
           </div>
         </div>
         <div className='home-avt'>
-          <img src={require('../src/public/image/banner_img_1.png')} data-aos="fade-up-left" data-aos-duration="2000" alt="Avatar" className='avt' />
+          <img src={require('../src/public/image/abc.png')} data-aos="fade-up-left" data-aos-duration="2000" alt="Avatar" className='avt' />
+          {/* <img src={require('../src/public/image/banner_img_1.png')} data-aos="fade-up-left" data-aos-duration="2000" alt="Avatar" className='avt' /> */}
         </div>
 
       </section>
@@ -632,6 +634,9 @@ const App = () => {
           </Row>
         </Container>
       </section>
+      <div className='gachngang1 BackgroundWhite'>
+        <div className='gachngang' data-aos="fade-down" data-aos-duration="2000"></div>
+      </div>
       <section id='education' className='BackgroundWhite'>
         <p data-aos="fade-down" data-aos-duration="2000" className='colorTextBlack'>HỌC VẤN</p>
         <p data-aos="fade-up" data-aos-duration="2000" className='colorTextBlack'>"Học để phát triển, thay đổi để hoàn thiện"</p>
@@ -699,7 +704,9 @@ const App = () => {
         </Container>
 
       </section>
-
+      {/* <div className='gachngang1 BackgroundWhite'>
+        <div className='gachngang' data-aos="fade-down" data-aos-duration="2000"></div>
+      </div> */}
       <section id='skills' className='BackgroundWhite'>
         <div className='gachngang1'>
           <div className='gachngang' data-aos="fade-down" data-aos-duration="2000"></div>
@@ -844,6 +851,24 @@ const App = () => {
           </Row>
         </Container>
       </section>
+      <section id='carousel'>
+
+        <div className="content">
+          <h1>Gentle and cute</h1>
+          <p>Sự dễ thương không nằm trên gò má, <br /> nó chỉ hiện lên trong đôi mắt kẻ see tình.</p>
+        </div>
+        <div className="nav-container">
+          <div className="layout">
+            <img src={require('./public/image-image/1.jpg')} alt="image1" />
+            <img src={require('./public/image-image/2.jpg')} alt="image2" />
+            <img src={require('./public/image-image/3.jpg')} alt="image3" />
+            <img src={require('./public/image-image/4.jpg')} alt="image4" />
+            <img src={require('./public/image-image/5.jpg')} alt="image5" />
+          </div>
+
+        </div>
+
+      </section>
       <section id='foolter'>
 
         <footer className="site-footer">
@@ -909,6 +934,7 @@ const App = () => {
 
 
       </section>
+
 
     </>
   );

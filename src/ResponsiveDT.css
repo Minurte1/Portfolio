@@ -543,13 +543,24 @@
     margin-top: 15px;
 }
 
+
+
 @media (min-width: 768px) {
     .skills-text-card {
+        width: 50%;
+    }
+
+    .col-md-4 {
+        margin-top: 20px;
         width: 50%;
     }
 }
 
 @media (min-width: 992px) {
+    .col-md-4 {
+        width: 33%;
+    }
+
     .skills-text-card {
         width: 32.333333%;
     }
