@@ -1,9 +1,19 @@
+#carousel {
+    width: 100%;
+    height: auto;
+}
+
 .content {
     position: relative;
     height: auto;
     width: 40%;
     top: 150px;
     margin-left: 62%
+}
+
+.nav-container {
+    width: auto;
+    height: auto;
 }
 
 .layout {
