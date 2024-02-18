@@ -17,7 +17,7 @@ import './Education.css'
 import './Skills.css'
 import './Lienhe.css'
 import './foolter.css'
-import './Carousel.css'
+// import './Carousel.css'
 import './ResponsiveDT.css'
 import './ResponsiveTablet.css'
 
@@ -193,7 +193,7 @@ const App = () => {
       });
       Array.from(backgroundColorWhite).forEach(backgroundColorWhite => {
         // Thực hiện thay đổi màu cho từng phần tử
-        backgroundColorWhite.style.backgroundColor = '#f5f5f5';
+        backgroundColorWhite.style.backgroundColor = '#EBF3E8';
       });
 
       Array.from(elements).forEach(element => {
@@ -910,12 +910,8 @@ const App = () => {
           </Row>
         </Container>
       </section>
-      <section id='carousel'>
+      {/* <section id='carousel'>
 
-        {/* <div className="content">
-          <h1>Gentle and cute</h1>
-          <p>Sự dễ thương không nằm trên gò má, <br /> nó chỉ hiện lên trong đôi mắt kẻ see tình.</p>
-        </div> */}
         <div className="nav-container">
           <div className="layout">
             <img src={require('./public/image-image/1.jpg')} alt="image1" />
@@ -927,7 +923,7 @@ const App = () => {
 
         </div>
 
-      </section>
+      </section> */}
       <section id='foolter'>
 
         <footer className="site-footer">
