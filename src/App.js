@@ -149,7 +149,7 @@ const App = () => {
   };
 
   // Mảng chứa các màu
-  const colors = ['#f5f5f5', '#000000', '#092635', '#A2D2FF']; // Thêm các màu khác nếu cần
+  const colors = ['#f5f5f5', '#000000', '#092635', '#A2D2FF', '#FBFADA']; // Thêm các màu khác nếu cần
 
   const handleColorClick = (color) => {
     setSelectedColor(color);
@@ -377,6 +377,65 @@ const App = () => {
 
       // Thực hiện thay đổi màu sắc của phần projects
       colorBackgroudprojects.style.backgroundColor = '#BDE0FE';
+      setIsOpen(!isOpen);
+    }
+
+    if (color === "#FBFADA") {
+      const elements = document.getElementsByClassName('colorText');
+      const elementsBlack = document.getElementsByClassName('colorTextBlack');
+      const colorNavbarleft1 = document.getElementById('Navbar-1');
+      const colorNavbarleft2 = document.getElementById('Navbar-2');
+      const colorNavbarleft3 = document.getElementById('Navbar-3');
+      const colorBackgroudBanner = document.getElementById('Home-banner');
+      const colorBackgroudprojects = document.getElementById('projects');
+      const backgroundColorBlack = document.getElementsByClassName('BackgroundBlack');
+      const backgroundColorWhite = document.getElementsByClassName('BackgroundWhite');
+      // Thêm lớp smooth-transition để kích hoạt hiệu ứng chuyển đổi
+      colorNavbarleft1.classList.add('smooth-transition');
+      colorNavbarleft2.classList.add('smooth-transition');
+      colorNavbarleft3.classList.add('smooth-transition');
+      colorBackgroudBanner.classList.add('smooth-transition');
+      colorBackgroudprojects.classList.add('smooth-transition');
+
+      // Xóa lớp smooth-transition sau một khoảng thời gian
+      setTimeout(() => {
+        colorNavbarleft1.classList.remove('smooth-transition');
+        colorNavbarleft2.classList.remove('smooth-transition');
+        colorNavbarleft3.classList.remove('smooth-transition');
+        colorBackgroudBanner.classList.remove('smooth-transition');
+        colorBackgroudprojects.classList.remove('smooth-transition');
+      }, 1000);
+
+
+
+      //Navbar-Background
+      colorNavbarleft1.style.backgroundColor = '#436850';
+      colorNavbarleft2.style.backgroundColor = '#436850';
+      colorNavbarleft3.style.backgroundColor = '#436850';
+      colorBackgroudBanner.style.backgroundColor = "#FBFADA";
+
+      // Thực hiện thay đổi màu sắc của các phần tử
+
+      //Background Phu
+      Array.from(backgroundColorBlack).forEach(backgroundColorBlack => {
+        backgroundColorBlack.style.backgroundColor = "#12372A";
+      });
+
+      //Background Main
+      Array.from(backgroundColorWhite).forEach(backgroundColorWhite => {
+        backgroundColorWhite.style.backgroundColor = "#ADBC9F";
+      });
+      //text Navbar
+      Array.from(elements).forEach(elements => {
+        elements.style.color = "#ffffff";
+      });
+      //text Main
+      Array.from(elementsBlack).forEach(element => {
+        element.style.color = '#000000';
+      });
+
+      // Thực hiện thay đổi màu sắc của phần projects
+      colorBackgroudprojects.style.backgroundColor = '#ADBC9F';
       setIsOpen(!isOpen);
     }
   };
