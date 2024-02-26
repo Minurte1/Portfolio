@@ -152,292 +152,297 @@ const App = () => {
   const colors = ['#f5f5f5', '#000000', '#092635', '#A2D2FF', '#FBFADA']; // Thêm các màu khác nếu cần
 
   const handleColorClick = (color) => {
+    try {
+      if (color === "#f5f5f5") {
+        const elements = document.getElementsByClassName('colorText');
+        const elementsBlack = document.getElementsByClassName('colorTextBlack');
+        const colorNavbarleft1 = document.getElementById('Navbar-1')
+        const colorNavbarleft2 = document.getElementById('Navbar-2')
+        const colorNavbarleft3 = document.getElementById('Navbar-3')
+        const colorBackgroudBanner = document.getElementById('Home-banner');
+        const backgroundColorBlack = document.getElementsByClassName('BackgroundBlack')
+        const backgroundColorWhite = document.getElementsByClassName('BackgroundWhite')
+        // const colorBackgroudprojects = document.getElementById('projects');
+
+        colorNavbarleft1.classList.add('smooth-transition');
+        colorNavbarleft2.classList.add('smooth-transition');
+        colorNavbarleft3.classList.add('smooth-transition');
+        colorBackgroudBanner.classList.add('smooth-transition');
+        // colorBackgroudprojects.classList.add('smooth-transition');
+
+        // Xóa lớp smooth-transition sau một khoảng thời gian
+        setTimeout(() => {
+          colorNavbarleft1.classList.remove('smooth-transition');
+          colorNavbarleft2.classList.remove('smooth-transition');
+          colorNavbarleft3.classList.remove('smooth-transition');
+          colorBackgroudBanner.classList.remove('smooth-transition');
+          // colorBackgroudprojects.classList.remove('smooth-transition');
+        }, 1000);
+
+
+        colorNavbarleft1.style.backgroundColor = "#000000"
+        colorNavbarleft2.style.backgroundColor = "#000000"
+        colorNavbarleft3.style.backgroundColor = "#000000"
+
+        colorBackgroudBanner.style.backgroundColor = '#f5f5f5';
+
+
+        Array.from(backgroundColorBlack).forEach(backgroundColorBlack => {
+          // Thực hiện thay đổi màu cho từng phần tử
+          backgroundColorBlack.style.backgroundColor = '#000000';
+        });
+        Array.from(backgroundColorWhite).forEach(backgroundColorWhite => {
+          // Thực hiện thay đổi màu cho từng phần tử
+          backgroundColorWhite.style.backgroundColor = '#EBF3E8';
+        });
+
+        Array.from(elements).forEach(element => {
+          // Thực hiện thay đổi màu cho từng phần tử
+          element.style.color = '#f5f5f5';
+        });
+        Array.from(elementsBlack).forEach(element => {
+          // Thực hiện thay đổi màu cho từng phần tử
+          element.style.color = '#000000';
+        });
+
+
+        //colorBackgroudprojects.style.backgroundColor = '#f5f5f5';
+
+        setIsOpen(!isOpen);
+      }
+      if (color === "#000000") {
+        const elements = document.getElementsByClassName('colorText');
+        const elementsBlack = document.getElementsByClassName('colorTextBlack');
+        const colorNavbarleft1 = document.getElementById('Navbar-1');
+        const colorNavbarleft2 = document.getElementById('Navbar-2');
+        const colorNavbarleft3 = document.getElementById('Navbar-3');
+        const colorBackgroudBanner = document.getElementById('Home-banner');
+        // const colorBackgroudprojects = document.getElementById('projects');
+
+        // Thêm lớp smooth-transition để kích hoạt hiệu ứng chuyển đổi
+        colorNavbarleft1.classList.add('smooth-transition');
+        colorNavbarleft2.classList.add('smooth-transition');
+        colorNavbarleft3.classList.add('smooth-transition');
+        colorBackgroudBanner.classList.add('smooth-transition');
+        // colorBackgroudprojects.classList.add('smooth-transition');
+
+        // Xóa lớp smooth-transition sau một khoảng thời gian
+        setTimeout(() => {
+          colorNavbarleft1.classList.remove('smooth-transition');
+          colorNavbarleft2.classList.remove('smooth-transition');
+          colorNavbarleft3.classList.remove('smooth-transition');
+          colorBackgroudBanner.classList.remove('smooth-transition');
+          //  colorBackgroudprojects.classList.remove('smooth-transition');
+        }, 1000);
+
+        // Thực hiện thay đổi màu sắc
+        colorNavbarleft1.style.backgroundColor = '#f5f5f5';
+        colorNavbarleft2.style.backgroundColor = '#f5f5f5';
+        colorNavbarleft3.style.backgroundColor = '#f5f5f5';
+        colorBackgroudBanner.style.backgroundColor = "#000000";
+
+        // Thực hiện thay đổi màu sắc của các phần tử
+        const backgroundColorBlack = document.getElementsByClassName('BackgroundBlack');
+        const backgroundColorWhite = document.getElementsByClassName('BackgroundWhite');
+        Array.from(backgroundColorBlack).forEach(backgroundColorBlack => {
+          backgroundColorBlack.style.backgroundColor = "#ffffff";
+        });
+        Array.from(backgroundColorWhite).forEach(backgroundColorWhite => {
+          backgroundColorWhite.style.backgroundColor = "#000000";
+        });
+        Array.from(elements).forEach(elements => {
+          elements.style.color = "#000000";
+        });
+        Array.from(elementsBlack).forEach(element => {
+          element.style.color = '#ffffff';
+        });
+
+        // Thực hiện thay đổi màu sắc của phần projects
+        //  colorBackgroudprojects.style.backgroundColor = '#f5f5f5';
+        setIsOpen(!isOpen);
+      }
+
+
+      if (color === "#092635") {
+        const elements = document.getElementsByClassName('colorText');
+        const elementsBlack = document.getElementsByClassName('colorTextBlack');
+        const colorNavbarleft1 = document.getElementById('Navbar-1');
+        const colorNavbarleft2 = document.getElementById('Navbar-2');
+        const colorNavbarleft3 = document.getElementById('Navbar-3');
+        const colorBackgroudBanner = document.getElementById('Home-banner');
+        //  const colorBackgroudprojects = document.getElementById('projects');
+        const backgroundColorBlack = document.getElementsByClassName('BackgroundBlack');
+        const backgroundColorWhite = document.getElementsByClassName('BackgroundWhite');
+        // Thêm lớp smooth-transition để kích hoạt hiệu ứng chuyển đổi
+        colorNavbarleft1.classList.add('smooth-transition');
+        colorNavbarleft2.classList.add('smooth-transition');
+        colorNavbarleft3.classList.add('smooth-transition');
+        colorBackgroudBanner.classList.add('smooth-transition');
+        //  colorBackgroudprojects.classList.add('smooth-transition');
+
+        // Xóa lớp smooth-transition sau một khoảng thời gian
+        setTimeout(() => {
+          colorNavbarleft1.classList.remove('smooth-transition');
+          colorNavbarleft2.classList.remove('smooth-transition');
+          colorNavbarleft3.classList.remove('smooth-transition');
+          colorBackgroudBanner.classList.remove('smooth-transition');
+          //  colorBackgroudprojects.classList.remove('smooth-transition');
+        }, 1000);
+
+
+
+        //Navbar-Background
+        colorNavbarleft1.style.backgroundColor = '#1b4242';
+        colorNavbarleft2.style.backgroundColor = '#1b4242';
+        colorNavbarleft3.style.backgroundColor = '#1b4242';
+        colorBackgroudBanner.style.backgroundColor = "#092635";
+
+        // Thực hiện thay đổi màu sắc của các phần tử
+
+        //Background Phu
+        Array.from(backgroundColorBlack).forEach(backgroundColorBlack => {
+          backgroundColorBlack.style.backgroundColor = "#ffffff";
+        });
+
+        //Background Main
+        Array.from(backgroundColorWhite).forEach(backgroundColorWhite => {
+          backgroundColorWhite.style.backgroundColor = "#092635";
+        });
+        //text Navbar
+        Array.from(elements).forEach(elements => {
+          elements.style.color = "#ffffff";
+        });
+        //text Main
+        Array.from(elementsBlack).forEach(element => {
+          element.style.color = '#ffffff';
+        });
+
+        // Thực hiện thay đổi màu sắc của phần projects
+        //  colorBackgroudprojects.style.backgroundColor = '#f5f5f5';
+        setIsOpen(!isOpen);
+      }
+      if (color === "#A2D2FF") {
+        const elements = document.getElementsByClassName('colorText');
+        const elementsBlack = document.getElementsByClassName('colorTextBlack');
+        const colorNavbarleft1 = document.getElementById('Navbar-1');
+        const colorNavbarleft2 = document.getElementById('Navbar-2');
+        const colorNavbarleft3 = document.getElementById('Navbar-3');
+        const colorBackgroudBanner = document.getElementById('Home-banner');
+        //  const colorBackgroudprojects = document.getElementById('projects');
+        const backgroundColorBlack = document.getElementsByClassName('BackgroundBlack');
+        const backgroundColorWhite = document.getElementsByClassName('BackgroundWhite');
+        // Thêm lớp smooth-transition để kích hoạt hiệu ứng chuyển đổi
+        colorNavbarleft1.classList.add('smooth-transition');
+        colorNavbarleft2.classList.add('smooth-transition');
+        colorNavbarleft3.classList.add('smooth-transition');
+        colorBackgroudBanner.classList.add('smooth-transition');
+        // colorBackgroudprojects.classList.add('smooth-transition');
+
+        // Xóa lớp smooth-transition sau một khoảng thời gian
+        setTimeout(() => {
+          colorNavbarleft1.classList.remove('smooth-transition');
+          colorNavbarleft2.classList.remove('smooth-transition');
+          colorNavbarleft3.classList.remove('smooth-transition');
+          colorBackgroudBanner.classList.remove('smooth-transition');
+          //    colorBackgroudprojects.classList.remove('smooth-transition');
+        }, 1000);
+
+
+
+        //Navbar-Background
+        colorNavbarleft1.style.backgroundColor = '#023047';
+        colorNavbarleft2.style.backgroundColor = '#023047';
+        colorNavbarleft3.style.backgroundColor = '#023047';
+        colorBackgroudBanner.style.backgroundColor = "#A2D2FF";
+
+        // Thực hiện thay đổi màu sắc của các phần tử
+
+        //Background Phu
+        Array.from(backgroundColorBlack).forEach(backgroundColorBlack => {
+          backgroundColorBlack.style.backgroundColor = "#BDE0FE";
+        });
+
+        //Background Main
+        Array.from(backgroundColorWhite).forEach(backgroundColorWhite => {
+          backgroundColorWhite.style.backgroundColor = "#BDE0FE";
+        });
+        //text Navbar
+        Array.from(elements).forEach(elements => {
+          elements.style.color = "#ffffff";
+        });
+        //text Main
+        Array.from(elementsBlack).forEach(element => {
+          element.style.color = '#000000';
+        });
+
+        // Thực hiện thay đổi màu sắc của phần projects
+        //  colorBackgroudprojects.style.backgroundColor = '#BDE0FE';
+        setIsOpen(!isOpen);
+      }
+
+      if (color === "#FBFADA") {
+        const elements = document.getElementsByClassName('colorText');
+        const elementsBlack = document.getElementsByClassName('colorTextBlack');
+        const colorNavbarleft1 = document.getElementById('Navbar-1');
+        const colorNavbarleft2 = document.getElementById('Navbar-2');
+        const colorNavbarleft3 = document.getElementById('Navbar-3');
+        const colorBackgroudBanner = document.getElementById('Home-banner');
+        //    const colorBackgroudprojects = document.getElementById('projects');
+        const backgroundColorBlack = document.getElementsByClassName('BackgroundBlack');
+        const backgroundColorWhite = document.getElementsByClassName('BackgroundWhite');
+        // Thêm lớp smooth-transition để kích hoạt hiệu ứng chuyển đổi
+        colorNavbarleft1.classList.add('smooth-transition');
+        colorNavbarleft2.classList.add('smooth-transition');
+        colorNavbarleft3.classList.add('smooth-transition');
+        colorBackgroudBanner.classList.add('smooth-transition');
+        // colorBackgroudprojects.classList.add('smooth-transition');
+
+        // Xóa lớp smooth-transition sau một khoảng thời gian
+        setTimeout(() => {
+          colorNavbarleft1.classList.remove('smooth-transition');
+          colorNavbarleft2.classList.remove('smooth-transition');
+          colorNavbarleft3.classList.remove('smooth-transition');
+          colorBackgroudBanner.classList.remove('smooth-transition');
+          //      colorBackgroudprojects.classList.remove('smooth-transition');
+        }, 1000);
+
+
+
+        //Navbar-Background
+        colorNavbarleft1.style.backgroundColor = '#436850';
+        colorNavbarleft2.style.backgroundColor = '#436850';
+        colorNavbarleft3.style.backgroundColor = '#436850';
+        colorBackgroudBanner.style.backgroundColor = "#FBFADA";
+
+        // Thực hiện thay đổi màu sắc của các phần tử
+
+        //Background Phu
+        Array.from(backgroundColorBlack).forEach(backgroundColorBlack => {
+          backgroundColorBlack.style.backgroundColor = "#12372A";
+        });
+
+        //Background Main
+        Array.from(backgroundColorWhite).forEach(backgroundColorWhite => {
+          backgroundColorWhite.style.backgroundColor = "#ADBC9F";
+        });
+        //text Navbar
+        Array.from(elements).forEach(elements => {
+          elements.style.color = "#ffffff";
+        });
+        //text Main
+        Array.from(elementsBlack).forEach(element => {
+          element.style.color = '#000000';
+        });
+
+        // Thực hiện thay đổi màu sắc của phần projects
+        //  colorBackgroudprojects.style.backgroundColor = '#ADBC9F';
+        setIsOpen(!isOpen);
+      }
+    } catch (error) {
+
+    }
     setSelectedColor(color);
-    if (color === "#f5f5f5") {
-      const elements = document.getElementsByClassName('colorText');
-      const elementsBlack = document.getElementsByClassName('colorTextBlack');
-      const colorNavbarleft1 = document.getElementById('Navbar-1')
-      const colorNavbarleft2 = document.getElementById('Navbar-2')
-      const colorNavbarleft3 = document.getElementById('Navbar-3')
-      const colorBackgroudBanner = document.getElementById('Home-banner');
-      const backgroundColorBlack = document.getElementsByClassName('BackgroundBlack')
-      const backgroundColorWhite = document.getElementsByClassName('BackgroundWhite')
-      const colorBackgroudprojects = document.getElementById('projects');
 
-      colorNavbarleft1.classList.add('smooth-transition');
-      colorNavbarleft2.classList.add('smooth-transition');
-      colorNavbarleft3.classList.add('smooth-transition');
-      colorBackgroudBanner.classList.add('smooth-transition');
-      colorBackgroudprojects.classList.add('smooth-transition');
-
-      // Xóa lớp smooth-transition sau một khoảng thời gian
-      setTimeout(() => {
-        colorNavbarleft1.classList.remove('smooth-transition');
-        colorNavbarleft2.classList.remove('smooth-transition');
-        colorNavbarleft3.classList.remove('smooth-transition');
-        colorBackgroudBanner.classList.remove('smooth-transition');
-        colorBackgroudprojects.classList.remove('smooth-transition');
-      }, 1000);
-
-
-      colorNavbarleft1.style.backgroundColor = "#000000"
-      colorNavbarleft2.style.backgroundColor = "#000000"
-      colorNavbarleft3.style.backgroundColor = "#000000"
-
-      colorBackgroudBanner.style.backgroundColor = '#f5f5f5';
-
-
-      Array.from(backgroundColorBlack).forEach(backgroundColorBlack => {
-        // Thực hiện thay đổi màu cho từng phần tử
-        backgroundColorBlack.style.backgroundColor = '#000000';
-      });
-      Array.from(backgroundColorWhite).forEach(backgroundColorWhite => {
-        // Thực hiện thay đổi màu cho từng phần tử
-        backgroundColorWhite.style.backgroundColor = '#EBF3E8';
-      });
-
-      Array.from(elements).forEach(element => {
-        // Thực hiện thay đổi màu cho từng phần tử
-        element.style.color = '#f5f5f5';
-      });
-      Array.from(elementsBlack).forEach(element => {
-        // Thực hiện thay đổi màu cho từng phần tử
-        element.style.color = '#000000';
-      });
-
-
-      colorBackgroudprojects.style.backgroundColor = '#f5f5f5';
-
-      setIsOpen(!isOpen);
-    }
-    if (color === "#000000") {
-      const elements = document.getElementsByClassName('colorText');
-      const elementsBlack = document.getElementsByClassName('colorTextBlack');
-      const colorNavbarleft1 = document.getElementById('Navbar-1');
-      const colorNavbarleft2 = document.getElementById('Navbar-2');
-      const colorNavbarleft3 = document.getElementById('Navbar-3');
-      const colorBackgroudBanner = document.getElementById('Home-banner');
-      const colorBackgroudprojects = document.getElementById('projects');
-
-      // Thêm lớp smooth-transition để kích hoạt hiệu ứng chuyển đổi
-      colorNavbarleft1.classList.add('smooth-transition');
-      colorNavbarleft2.classList.add('smooth-transition');
-      colorNavbarleft3.classList.add('smooth-transition');
-      colorBackgroudBanner.classList.add('smooth-transition');
-      colorBackgroudprojects.classList.add('smooth-transition');
-
-      // Xóa lớp smooth-transition sau một khoảng thời gian
-      setTimeout(() => {
-        colorNavbarleft1.classList.remove('smooth-transition');
-        colorNavbarleft2.classList.remove('smooth-transition');
-        colorNavbarleft3.classList.remove('smooth-transition');
-        colorBackgroudBanner.classList.remove('smooth-transition');
-        colorBackgroudprojects.classList.remove('smooth-transition');
-      }, 1000);
-
-      // Thực hiện thay đổi màu sắc
-      colorNavbarleft1.style.backgroundColor = '#f5f5f5';
-      colorNavbarleft2.style.backgroundColor = '#f5f5f5';
-      colorNavbarleft3.style.backgroundColor = '#f5f5f5';
-      colorBackgroudBanner.style.backgroundColor = "#000000";
-
-      // Thực hiện thay đổi màu sắc của các phần tử
-      const backgroundColorBlack = document.getElementsByClassName('BackgroundBlack');
-      const backgroundColorWhite = document.getElementsByClassName('BackgroundWhite');
-      Array.from(backgroundColorBlack).forEach(backgroundColorBlack => {
-        backgroundColorBlack.style.backgroundColor = "#ffffff";
-      });
-      Array.from(backgroundColorWhite).forEach(backgroundColorWhite => {
-        backgroundColorWhite.style.backgroundColor = "#000000";
-      });
-      Array.from(elements).forEach(elements => {
-        elements.style.color = "#000000";
-      });
-      Array.from(elementsBlack).forEach(element => {
-        element.style.color = '#ffffff';
-      });
-
-      // Thực hiện thay đổi màu sắc của phần projects
-      colorBackgroudprojects.style.backgroundColor = '#f5f5f5';
-      setIsOpen(!isOpen);
-    }
-
-
-    if (color === "#092635") {
-      const elements = document.getElementsByClassName('colorText');
-      const elementsBlack = document.getElementsByClassName('colorTextBlack');
-      const colorNavbarleft1 = document.getElementById('Navbar-1');
-      const colorNavbarleft2 = document.getElementById('Navbar-2');
-      const colorNavbarleft3 = document.getElementById('Navbar-3');
-      const colorBackgroudBanner = document.getElementById('Home-banner');
-      const colorBackgroudprojects = document.getElementById('projects');
-      const backgroundColorBlack = document.getElementsByClassName('BackgroundBlack');
-      const backgroundColorWhite = document.getElementsByClassName('BackgroundWhite');
-      // Thêm lớp smooth-transition để kích hoạt hiệu ứng chuyển đổi
-      colorNavbarleft1.classList.add('smooth-transition');
-      colorNavbarleft2.classList.add('smooth-transition');
-      colorNavbarleft3.classList.add('smooth-transition');
-      colorBackgroudBanner.classList.add('smooth-transition');
-      colorBackgroudprojects.classList.add('smooth-transition');
-
-      // Xóa lớp smooth-transition sau một khoảng thời gian
-      setTimeout(() => {
-        colorNavbarleft1.classList.remove('smooth-transition');
-        colorNavbarleft2.classList.remove('smooth-transition');
-        colorNavbarleft3.classList.remove('smooth-transition');
-        colorBackgroudBanner.classList.remove('smooth-transition');
-        colorBackgroudprojects.classList.remove('smooth-transition');
-      }, 1000);
-
-
-
-      //Navbar-Background
-      colorNavbarleft1.style.backgroundColor = '#1b4242';
-      colorNavbarleft2.style.backgroundColor = '#1b4242';
-      colorNavbarleft3.style.backgroundColor = '#1b4242';
-      colorBackgroudBanner.style.backgroundColor = "#092635";
-
-      // Thực hiện thay đổi màu sắc của các phần tử
-
-      //Background Phu
-      Array.from(backgroundColorBlack).forEach(backgroundColorBlack => {
-        backgroundColorBlack.style.backgroundColor = "#ffffff";
-      });
-
-      //Background Main
-      Array.from(backgroundColorWhite).forEach(backgroundColorWhite => {
-        backgroundColorWhite.style.backgroundColor = "#092635";
-      });
-      //text Navbar
-      Array.from(elements).forEach(elements => {
-        elements.style.color = "#ffffff";
-      });
-      //text Main
-      Array.from(elementsBlack).forEach(element => {
-        element.style.color = '#ffffff';
-      });
-
-      // Thực hiện thay đổi màu sắc của phần projects
-      colorBackgroudprojects.style.backgroundColor = '#f5f5f5';
-      setIsOpen(!isOpen);
-    }
-    if (color === "#A2D2FF") {
-      const elements = document.getElementsByClassName('colorText');
-      const elementsBlack = document.getElementsByClassName('colorTextBlack');
-      const colorNavbarleft1 = document.getElementById('Navbar-1');
-      const colorNavbarleft2 = document.getElementById('Navbar-2');
-      const colorNavbarleft3 = document.getElementById('Navbar-3');
-      const colorBackgroudBanner = document.getElementById('Home-banner');
-      const colorBackgroudprojects = document.getElementById('projects');
-      const backgroundColorBlack = document.getElementsByClassName('BackgroundBlack');
-      const backgroundColorWhite = document.getElementsByClassName('BackgroundWhite');
-      // Thêm lớp smooth-transition để kích hoạt hiệu ứng chuyển đổi
-      colorNavbarleft1.classList.add('smooth-transition');
-      colorNavbarleft2.classList.add('smooth-transition');
-      colorNavbarleft3.classList.add('smooth-transition');
-      colorBackgroudBanner.classList.add('smooth-transition');
-      colorBackgroudprojects.classList.add('smooth-transition');
-
-      // Xóa lớp smooth-transition sau một khoảng thời gian
-      setTimeout(() => {
-        colorNavbarleft1.classList.remove('smooth-transition');
-        colorNavbarleft2.classList.remove('smooth-transition');
-        colorNavbarleft3.classList.remove('smooth-transition');
-        colorBackgroudBanner.classList.remove('smooth-transition');
-        colorBackgroudprojects.classList.remove('smooth-transition');
-      }, 1000);
-
-
-
-      //Navbar-Background
-      colorNavbarleft1.style.backgroundColor = '#023047';
-      colorNavbarleft2.style.backgroundColor = '#023047';
-      colorNavbarleft3.style.backgroundColor = '#023047';
-      colorBackgroudBanner.style.backgroundColor = "#A2D2FF";
-
-      // Thực hiện thay đổi màu sắc của các phần tử
-
-      //Background Phu
-      Array.from(backgroundColorBlack).forEach(backgroundColorBlack => {
-        backgroundColorBlack.style.backgroundColor = "#BDE0FE";
-      });
-
-      //Background Main
-      Array.from(backgroundColorWhite).forEach(backgroundColorWhite => {
-        backgroundColorWhite.style.backgroundColor = "#BDE0FE";
-      });
-      //text Navbar
-      Array.from(elements).forEach(elements => {
-        elements.style.color = "#ffffff";
-      });
-      //text Main
-      Array.from(elementsBlack).forEach(element => {
-        element.style.color = '#000000';
-      });
-
-      // Thực hiện thay đổi màu sắc của phần projects
-      colorBackgroudprojects.style.backgroundColor = '#BDE0FE';
-      setIsOpen(!isOpen);
-    }
-
-    if (color === "#FBFADA") {
-      const elements = document.getElementsByClassName('colorText');
-      const elementsBlack = document.getElementsByClassName('colorTextBlack');
-      const colorNavbarleft1 = document.getElementById('Navbar-1');
-      const colorNavbarleft2 = document.getElementById('Navbar-2');
-      const colorNavbarleft3 = document.getElementById('Navbar-3');
-      const colorBackgroudBanner = document.getElementById('Home-banner');
-      const colorBackgroudprojects = document.getElementById('projects');
-      const backgroundColorBlack = document.getElementsByClassName('BackgroundBlack');
-      const backgroundColorWhite = document.getElementsByClassName('BackgroundWhite');
-      // Thêm lớp smooth-transition để kích hoạt hiệu ứng chuyển đổi
-      colorNavbarleft1.classList.add('smooth-transition');
-      colorNavbarleft2.classList.add('smooth-transition');
-      colorNavbarleft3.classList.add('smooth-transition');
-      colorBackgroudBanner.classList.add('smooth-transition');
-      colorBackgroudprojects.classList.add('smooth-transition');
-
-      // Xóa lớp smooth-transition sau một khoảng thời gian
-      setTimeout(() => {
-        colorNavbarleft1.classList.remove('smooth-transition');
-        colorNavbarleft2.classList.remove('smooth-transition');
-        colorNavbarleft3.classList.remove('smooth-transition');
-        colorBackgroudBanner.classList.remove('smooth-transition');
-        colorBackgroudprojects.classList.remove('smooth-transition');
-      }, 1000);
-
-
-
-      //Navbar-Background
-      colorNavbarleft1.style.backgroundColor = '#436850';
-      colorNavbarleft2.style.backgroundColor = '#436850';
-      colorNavbarleft3.style.backgroundColor = '#436850';
-      colorBackgroudBanner.style.backgroundColor = "#FBFADA";
-
-      // Thực hiện thay đổi màu sắc của các phần tử
-
-      //Background Phu
-      Array.from(backgroundColorBlack).forEach(backgroundColorBlack => {
-        backgroundColorBlack.style.backgroundColor = "#12372A";
-      });
-
-      //Background Main
-      Array.from(backgroundColorWhite).forEach(backgroundColorWhite => {
-        backgroundColorWhite.style.backgroundColor = "#ADBC9F";
-      });
-      //text Navbar
-      Array.from(elements).forEach(elements => {
-        elements.style.color = "#ffffff";
-      });
-      //text Main
-      Array.from(elementsBlack).forEach(element => {
-        element.style.color = '#000000';
-      });
-
-      // Thực hiện thay đổi màu sắc của phần projects
-      colorBackgroudprojects.style.backgroundColor = '#ADBC9F';
-      setIsOpen(!isOpen);
-    }
   };
 
   return (
@@ -461,7 +466,7 @@ const App = () => {
           <a href="#about">About</a>
           <a href="#education">Education</a>
           <a href="#skills">Skills</a>
-          <a href="#experience">Work Experience</a>
+          <a href="#Lienhe">Work Experience</a>
           <a href="#contact">Contact</a>
 
 
@@ -475,12 +480,12 @@ const App = () => {
           </div>
           <div className='Navbar-middle' id='Navbar-2'>
             <a href='#home' className='colorText'>Trang chủ <div className='Navbar-middle-Gach '></div></a>
-            <a href='#projects' className='colorText'>Dự án <div className='Navbar-middle-Gach '></div></a>
+            {/* <a href='#projects' className='colorText'>Dự án <div className='Navbar-middle-Gach '></div></a> */}
             <a href='#about' className='colorText'>Bản thân tôi <div className='Navbar-middle-Gach '></div></a>
             <a href='#education' className='colorText'>Học tập<div className='Navbar-middle-Gach '></div></a>
             <a href='#skills' className='colorText'>Kĩ năng <div className='Navbar-middle-Gach '></div></a>
 
-            <a href='#experience' className='colorText'>Liên hệ <div className='Navbar-middle-Gach '></div></a>
+            <a href='#Lienhe' className='colorText'>Liên hệ <div className='Navbar-middle-Gach '></div></a>
 
             {/* <a href='#project'>Projects</a> */}
           </div>
@@ -609,7 +614,7 @@ const App = () => {
       <div className='gachngang1 BackgroundWhite'>
         <div className='gachngang' data-aos="fade-down" data-aos-duration="2000"></div>
       </div>
-      <section id='projects' className='BackgroundWhite'>
+      {/* <section id='projects' className='BackgroundWhite'>
 
         <div className='Container-project BackgroundWhite' >
           <Container className='Container-project-wrap'>
@@ -619,17 +624,17 @@ const App = () => {
             <Row className='Container-project-Box' >
               <Col sm={6} md={4}>
                 <div className='project-1' data-aos="fade-down" data-aos-duration="2000" >
-                  {/* Nội dung cho project-1 */}
+                  
                 </div>
               </Col>
               <Col sm={6} md={4}>
                 <div className='project-2' data-aos="fade-up" data-aos-duration="2000" >
-                  {/* Nội dung cho project-2 */}
+               
                 </div>
               </Col>
               <Col md={4}>
                 <div className='project-3' data-aos="fade-down" data-aos-duration="2000" >
-                  {/* Nội dung cho project-3 */}
+                 
                 </div>
               </Col>
             </Row>
@@ -637,7 +642,7 @@ const App = () => {
         </div>
 
 
-      </section>
+      </section>   */}
       <div className='gachngang1 BackgroundWhite'>
         <div className='gachngang' data-aos="fade-down" data-aos-duration="2000"></div>
       </div>
