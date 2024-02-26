@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
 import './App.css';
-import ScrollAnimation from 'react-animate-on-scroll';
+// import ScrollAnimation from 'react-animate-on-scroll';
 import './Appresponsive.css';
 import './Appproject.css';
 import './AboutUS.css'
