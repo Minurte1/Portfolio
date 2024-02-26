@@ -543,7 +543,29 @@
     margin-top: 15px;
 }
 
+@media (min-width:375px) {
+    #about {
+        width: 100%;
+        height: 1100px;
+        background-color: #092635;
+    }
 
+    .Education-1-time {
+        text-align: center;
+        width: 65%;
+        font-size: 18px;
+        display: inline-block;
+        border: 1px solid #55e6a5;
+        padding: 11px 24px;
+        color: #55e6a5;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    .info-small {
+        margin-left: 20%;
+    }
+}
 
 @media (min-width: 768px) {
     .skills-text-card {
