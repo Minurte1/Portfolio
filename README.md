@@ -4,9 +4,6 @@ Chào mừng bạn đến với trang Portfolio của tôi! Đây là nơi tôi 
 
 ## Demo
 https://portfolio-phuc2px.vercel.app/
-
-Bạn có thể xem trực tiếp trang Portfolio của tôi tại [đây](https://link-to-your-portfolio.com).
-
 ## Các Kỹ Năng và Ngôn Ngữ Sử Dụng
 - ReactJS
 - HTML
