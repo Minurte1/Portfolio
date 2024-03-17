@@ -1,8 +1,8 @@
 /* Cursor.css */
 .cursor {
     position: fixed;
-    width: 20px;
-    height: 20px;
+    width: 5px;
+    height: 5px;
     border: 2px solid #ff0000;
     border-radius: 50%;
     background-color: transparent;

@@ -1,6 +1,6 @@
 // Cursor.js
 import React, { useEffect, useState } from 'react';
-import './curs or.css';
+import './cursor.css';
 
 const Cursor = () => {
     const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });

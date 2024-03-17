@@ -1,5 +1,5 @@
 
-// import Cursor from './public/component/cursor';
+import Cursor from './public/component/cursor';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
@@ -447,7 +447,8 @@ const App = () => {
 
   return (
     <>
-      {/* <Cursor></Cursor> */}
+
+      <Cursor></Cursor>
       < div div className={`mobile-navbar ${showMenuPhone ? 'open' : ''}`
       }>
         <div className="mobile-navbar-toggle" onClick={handleMenuPhone}>
@@ -643,6 +644,7 @@ const App = () => {
 
 
       </section>   */}
+     
       <div className='gachngang1 BackgroundWhite'>
         <div className='gachngang' data-aos="fade-down" data-aos-duration="2000"></div>
       </div>
@@ -659,6 +661,7 @@ const App = () => {
 
               </Card>
             </Col>
+            
             <Col md={6}>
               <Card className='About-2  BackgroundWhite' data-aos="fade-left" data-aos-duration="2000">
                 <Card.Body className='About-2-Background'>

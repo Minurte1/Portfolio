@@ -27,7 +27,7 @@
         height: 100%;
         overflow: hidden;
         z-index: 103;
-
+        pointer-events: none;
     }
 
     .mobile-navbar.active {
