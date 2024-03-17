@@ -3,10 +3,7 @@
 Chào mừng bạn đến với trang Portfolio của tôi! Đây là nơi tôi chia sẻ về các dự án của mình và kỹ năng lập trình. 
 
 ## Demo
-[![Demo](https://link-to-your-demo.com)](https://link-to-your-demo.com)
-
-Bạn có thể xem trực tiếp trang Portfolio của tôi tại [đây](https://link-to-your-portfolio.com).
-
+https://portfolio-phuc2px.vercel.app/
 ## Các Kỹ Năng và Ngôn Ngữ Sử Dụng
 - ReactJS
 - HTML
