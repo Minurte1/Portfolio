@@ -12,7 +12,7 @@ import { Container, Row, Col, Card, Form, Button } from 'react-bootstrap';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
-
+import './cursor.css'
 import './Education.css'
 import './Skills.css'
 import './Lienhe.css'
@@ -444,11 +444,53 @@ const App = () => {
     setSelectedColor(color);
 
   };
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+  const [isHovered, setIsHovered] = useState(false);
+  
+  const handleHover = () => {
+    setIsHovered(true);
+};
 
+const handleUnhover = () => {
+    setIsHovered(false);
+};
+
+  useEffect(() => {
+      const updateCursorPosition = (e) => {
+          setCursorPosition({ x: e.clientX, y: e.clientY });
+      };
+
+      const updateScrollPosition = () => {
+          setCursorPosition(prevPosition => ({
+              ...prevPosition,
+              y: window.scrollY + prevPosition.y
+          }));
+      };
+
+      document.addEventListener('mousemove', updateCursorPosition);
+
+      const hoverElements = document.querySelectorAll('.hoverable');
+        hoverElements.forEach(element => {
+            element.addEventListener('mouseenter', handleHover);
+            element.addEventListener('mouseleave', handleUnhover);
+    
+    });
+   return()=>{
+    document.removeEventListener('mousemove', updateCursorPosition);
+            window.removeEventListener('scroll', updateScrollPosition);
+            hoverElements.forEach(element => {
+                element.removeEventListener('mouseenter', handleHover);
+                element.removeEventListener('mouseleave', handleUnhover);
+            });
+   }
+  }, []);
   return (
     <>
-
-      <Cursor></Cursor>
+    <div
+                className={`cursor ${isHovered ? 'hovered' : ''}`}
+                style={{ left: `${cursorPosition.x}px`, top: `${cursorPosition.y}px` }}
+            />
+      {/* <Cursor></Cursor> */}
       < div div className={`mobile-navbar ${showMenuPhone ? 'open' : ''}`
       }>
         <div className="mobile-navbar-toggle" onClick={handleMenuPhone}>
@@ -477,7 +519,7 @@ const App = () => {
         <div className='Navbar'>
           <div className='Navbar-left' id='Navbar-1'>
             <img src={require('../src/public/image/logo512.png')} className='img-logoreact' alt='Logo'></img>
-            <p className='text-logo colorText'>Hoàng Phúc </p>
+            <p className='text-logo colorText hoverable'>Hoàng Phúc </p>
           </div>
           <div className='Navbar-middle' id='Navbar-2'>
             <a href='#home' className='colorText'>Trang chủ <div className='Navbar-middle-Gach '></div></a>
@@ -572,7 +614,7 @@ const App = () => {
           {/* <p>I am Ho Hoang Phuc Developer Web</p> */}
           <div className='info-small ' >
             <p data-aos="fade-up-right" data-aos-duration="2000" className='colorTextBlack info-small-SetriengMoblie'>
-              I'm a <strong className='colorTextBlack' >Hồ Hoàng Phúc</strong>
+              I'm a <strong className='colorTextBlack hoverable' >Hồ Hoàng Phúc</strong>
               <p className='sec-text colorTextBlack'></p>
               <p className='text-small colorTextBlack'>
                 Tôi là một lập trình viên web với niềm đam mê sâu sắc đối với việc tạo
@@ -585,7 +627,7 @@ const App = () => {
 
 
               <div className="color-picker  setRiengMobile">
-                <i className="fa-solid fa-palette colorText downloadCV fa-palette-1" onClick={toggleDropdown}>
+                <i className="fa-solid fa-palette colorText downloadCV fa-palette-1 " onClick={toggleDropdown}>
                   {isOpen && (
                     <div className="dropdown-content" style={{ display: isOpen ? 'block' : 'none' }}>
 
@@ -606,7 +648,7 @@ const App = () => {
             </p>
           </div>
         </div>
-        <div className='home-avt'>
+        <div className='home-avt '>
           <img src={require('../src/public/image/abc.png')} data-aos="fade-up-left" data-aos-duration="2000" alt="Avatar" className='avt' />
           {/* <img src={require('../src/public/image/banner_img_1.png')} data-aos="fade-up-left" data-aos-duration="2000" alt="Avatar" className='avt' /> */}
         </div>
