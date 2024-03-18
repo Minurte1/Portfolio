@@ -534,7 +534,7 @@ const handleUnhover = () => {
           </div>
           <div className={`Navbar-right`} id='Navbar-3'>
             <div className="color-picker">
-              <i className="fa-solid fa-palette colorText" onClick={toggleDropdown}>
+              <i className="fa-solid fa-palette colorText hoverable" onClick={toggleDropdown}>
                 {isOpen && (
                   <div className="dropdown-content" style={{ display: isOpen ? 'block' : 'none' }}>
 
@@ -551,13 +551,13 @@ const handleUnhover = () => {
               </i>
 
             </div>
-            <i className={`fa-solid fa-bars colorText  ${showMenu ? 'menu-open' : ''}`} onClick={toggleMenu}></i>
+            <i className={`fa-solid fa-bars colorText hoverable  ${showMenu ? 'menu-open' : ''}`} onClick={toggleMenu}></i>
           </div>
         </div>
       </div >
       <div className={`overlayne ${showMenuPhone ? 'active' : ''}`} onClick={handleMenuPhone}></div>
       <div className={`overlay ${showMenu ? 'active' : ''}`} onClick={toggleMenu}></div>
-      <div className={`container-NavbarShow ${showMenu ? 'menu-open' : ''}`}>
+      <div className={`container-NavbarShow hoverable ${showMenu ? 'menu-open' : ''}`}>
         <div className='NavbarShow-top'><p className='text-logo'>Hoàng Phúc</p> <div className='NavbarShow-top-X' onClick={toggleMenu}><i class="fa-solid fa-x"></i></div></div>
         <div className='NavbarShow-middle'>
           <p className='NavbarShow-middle-AboutText'>ĐỐI VỚI TÔI</p>
@@ -592,7 +592,7 @@ const handleUnhover = () => {
             onChange={(e) => setPhone(e.target.value)}
           />
           <br />
-          <button className='NavbarShow-bottom-button' onClick={handleSubmit}>
+          <button className='NavbarShow-bottom-button hoverable' onClick={handleSubmit}>
             GỬI NGAY
           </button>
 
@@ -613,10 +613,10 @@ const handleUnhover = () => {
         <div className='home-info'>
           {/* <p>I am Ho Hoang Phuc Developer Web</p> */}
           <div className='info-small ' >
-            <p data-aos="fade-up-right" data-aos-duration="2000" className='colorTextBlack info-small-SetriengMoblie'>
+            <p data-aos="fade-up-right" data-aos-duration="2000" className='hoverable colorTextBlack info-small-SetriengMoblie'>
               I'm a <strong className='colorTextBlack hoverable' >Hồ Hoàng Phúc</strong>
               <p className='sec-text colorTextBlack'></p>
-              <p className='text-small colorTextBlack'>
+              <p className='text-small colorTextBlack hoverable'>
                 Tôi là một lập trình viên web với niềm đam mê sâu sắc đối với việc tạo
                 ra các ứng dụng web độc đáo và chất lượng cao. Với một sự kết hợp giữa
                 sự sáng tạo và kiến thức kỹ thuật vững vàng, tôi luôn tìm kiếm
@@ -648,8 +648,8 @@ const handleUnhover = () => {
             </p>
           </div>
         </div>
-        <div className='home-avt '>
-          <img src={require('../src/public/image/abc.png')} data-aos="fade-up-left" data-aos-duration="2000" alt="Avatar" className='avt' />
+        <div className='home-avt  '>
+          <img src={require('../src/public/image/abc.png')} data-aos="fade-up-left" data-aos-duration="2000" alt="Avatar" className='avt hoverable' />
           {/* <img src={require('../src/public/image/banner_img_1.png')} data-aos="fade-up-left" data-aos-duration="2000" alt="Avatar" className='avt' /> */}
         </div>
 
@@ -696,8 +696,8 @@ const handleUnhover = () => {
             <Col md={6}>
               <Card className='About-1  BackgroundWhite' data-aos="fade-right" data-aos-duration="2000">
 
-                <Card.Title className='About-1-Text  BackgroundWhite colorTextBlack'>ĐỐI VỚI TÔI</Card.Title>
-                <Card.Text className='About-1-Text1  BackgroundWhite colorTextBlack'>
+                <Card.Title className='About-1-Text  BackgroundWhite colorTextBlack hoverable'>ĐỐI VỚI TÔI</Card.Title>
+                <Card.Text className='About-1-Text1  BackgroundWhite colorTextBlack hoverable'>
                   "Chuyên môn rất quan trọng, thái độ cũng vậy"
                 </Card.Text>
 
@@ -709,7 +709,7 @@ const handleUnhover = () => {
                 <Card.Body className='About-2-Background'>
 
                   <div className='About-2-Background1'></div>
-                  <img src={require('./public/image/logo.jpg')} alt='logo' className='About-2-Background-image  BackgroundWhite' />
+                  <img src={require('./public/image/logo.jpg')} alt='logo' className='About-2-Background-image BackgroundWhite hoverable' />
 
 
                 </Card.Body>
@@ -719,7 +719,7 @@ const handleUnhover = () => {
               <Card className='About-3 BackgroundWhite' data-aos="fade-up" data-aos-duration="2000">
                 <Card.Body>
                   <div className='About-3-thanhngang'></div>
-                  <span className='About-3-Text colorTextBlack'>Tôi tin rằng sự sáng tạo và
+                  <span className='About-3-Text colorTextBlack hoverable'>Tôi tin rằng sự sáng tạo và
                     sự đam mê là yếu tố quan trọng trong việc trở thành một lập trình viên web
                     xuất sắc. Với tôi, mỗi dự án là một cơ hội để thể hiện khả năng sáng tạo của
                     mình và tạo ra những điều mới mẻ và độc đáo. Đồng thời tôi cũng sẽ cố gắng thích nghi với môi trường
@@ -735,7 +735,7 @@ const handleUnhover = () => {
                 <Card.Body>
 
 
-                  <button className='downloadCV'>  <a href='Chuong1_TongquanveTMDT.pdf' download="Chuong1_TongquanveTMDT.pdf">Download CV <i className="fa-solid fa-download" ></i></a></button>
+                  <button className='downloadCV hoverable'>  <a href='Chuong1_TongquanveTMDT.pdf' download="Chuong1_TongquanveTMDT.pdf">Download CV <i className="fa-solid fa-download" ></i></a></button>
 
                 </Card.Body>
               </Card>
@@ -747,8 +747,8 @@ const handleUnhover = () => {
         <div className='gachngang' data-aos="fade-down" data-aos-duration="2000"></div>
       </div>
       <section id='education' className='BackgroundWhite'>
-        <p data-aos="fade-down" data-aos-duration="2000" className='colorTextBlack'>HỌC VẤN</p>
-        <p data-aos="fade-up" data-aos-duration="2000" className='colorTextBlack'>"Học để phát triển, thay đổi để hoàn thiện"</p>
+        <p data-aos="fade-down" data-aos-duration="2000" className='colorTextBlack hoverable'>HỌC VẤN</p>
+        <p data-aos="fade-up" data-aos-duration="2000" className='colorTextBlack hoverable'>"Học để phát triển, thay đổi để hoàn thiện"</p>
         <Container className='Container-Education-wrap'>
           <Row className='Container-Education-Box BackgroundWhite'>
             <Col md={6} >
