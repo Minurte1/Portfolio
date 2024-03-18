@@ -1,8 +1,8 @@
 /* Cursor.css */
 .cursor {
     position: fixed;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     /* border: 2px solid #ff0000; */
     background-image: radial-gradient( circle 311px at 8.6% 27.9%,  rgba(62,147,252,0.57) 12.9%, rgba(239,183,192,0.44) 91.2% );
     border-radius: 50%;
@@ -15,6 +15,6 @@
 }
 
 .cursor.hovered {
-    width: 115px;
-    height: 115px;
+    width: 80px;
+    height: 80px;
 }

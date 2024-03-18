@@ -522,13 +522,13 @@ const handleUnhover = () => {
             <p className='text-logo colorText hoverable'>Hoàng Phúc </p>
           </div>
           <div className='Navbar-middle' id='Navbar-2'>
-            <a href='#home' className='colorText'>Trang chủ <div className='Navbar-middle-Gach '></div></a>
+            <a href='#home' className='colorText hoverable'>Trang chủ <div className='Navbar-middle-Gach '></div></a>
             {/* <a href='#projects' className='colorText'>Dự án <div className='Navbar-middle-Gach '></div></a> */}
-            <a href='#about' className='colorText'>Bản thân tôi <div className='Navbar-middle-Gach '></div></a>
-            <a href='#education' className='colorText'>Học tập<div className='Navbar-middle-Gach '></div></a>
-            <a href='#skills' className='colorText'>Kĩ năng <div className='Navbar-middle-Gach '></div></a>
+            <a href='#about' className='colorText hoverable'>Bản thân tôi <div className='Navbar-middle-Gach '></div></a>
+            <a href='#education' className='colorText hoverable'>Học tập<div className='Navbar-middle-Gach '></div></a>
+            <a href='#skills' className='colorText hoverable'>Kĩ năng <div className='Navbar-middle-Gach '></div></a>
 
-            <a href='#Lienhe' className='colorText'>Liên hệ <div className='Navbar-middle-Gach '></div></a>
+            <a href='#Lienhe' className='colorText hoverable'>Liên hệ <div className='Navbar-middle-Gach '></div></a>
 
             {/* <a href='#project'>Projects</a> */}
           </div>
