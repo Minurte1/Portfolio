@@ -26,10 +26,10 @@
         width: 40%;
         height: 100%;
         overflow: hidden;
-        z-index: 103;
+        z-index: 140;
         pointer-events: none;
-    }
-
+        }
+      
     .mobile-navbar.active {
         display: block;
     }
@@ -46,7 +46,7 @@
         margin-left: 15px;
         margin-top: 15px;
         opacity: 0.5;
-
+pointer-events: auto;
 
     }
 
@@ -70,6 +70,7 @@
         height: 100%;
         transition: left 0.5s ease-in-out;
         z-index: 999;
+   pointer-events: auto;
 
     }
 
@@ -160,10 +161,12 @@
         height: 100%;
         background-color: rgba(0, 0, 0, 0.5);
         /* Màu tối */
-        z-index: 100;
+        z-index: 10000000000000;
         /* Đảm bảo nằm trên tất cả các phần tử khác */
         display: none;
         /* Ẩn mặc định */
+        z-index: 100;
+    
     }
 
     .overlayne.active {
@@ -518,6 +521,27 @@
         background: #EF6CED;
         background: linear-gradient(135deg, #EF6CED, #F210B2);
     }
+    .social-icons{
+    
+        margin-top: 10px;
+        margin-left: 90px;
+    }
+    .social-icons a {
+       
+        background-color: #000000;
+        color: #818a91;
+        font-size: 10px;
+        display: inline-block;
+        line-height: 28px;
+        width: 28px;
+        height: 28px;
+        text-align: center;
+        margin-right: 8px;
+        border-radius: 100%;
+        transition: all .2s linear;
+    
+    }
+
 
 }
 

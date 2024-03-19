@@ -628,13 +628,13 @@ const handleUnhover = () => {
           
               <div className="col-md-4 col-sm-6 col-xs-12">
                 <ul className="social-icons">
-                  <li><a className="facebook" href="https://www.facebook.com/magin2px/"><i class="fa-brands fa-facebook"></i></a></li>
-                  <li><a className="twitter" href="https://github.com/Minurte1"><i class="fa-brands fa-github"></i></a></li>
-                  <li><a className="dribbble" href="https://www.instagram.com/magin_phuc20px/"><i class="fa-brands fa-instagram"></i></a></li>
-                  <li><a className="linked" href="https://www.linkedin.com/in/ho%C3%A0ng-ph%C3%BAc-h%E1%BB%93-a59586267/"><i class="fa-brands fa-linkedin"></i></a></li>
+                  <li><a className="facebook hoverable" href="https://www.facebook.com/magin2px/"><i class="fa-brands fa-facebook"></i></a></li>
+                  <li><a className="twitter hoverable" href="https://github.com/Minurte1"><i class="fa-brands fa-github"></i></a></li>
+                  <li><a className="dribbble hoverable" href="https://www.instagram.com/magin_phuc20px/"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li><a className="linked hoverable" href="https://www.linkedin.com/in/ho%C3%A0ng-ph%C3%BAc-h%E1%BB%93-a59586267/"><i class="fa-brands fa-linkedin"></i></a></li>
                 </ul>
               </div>
-              <div className="color-picker  setRiengMobile">
+              <div className="color-picker  setRiengMobile hoverable">
                 <i className="fa-solid fa-palette colorText downloadCV fa-palette-1 " onClick={toggleDropdown}>
                   {isOpen && (
                     <div className="dropdown-content" style={{ display: isOpen ? 'block' : 'none' }}>
@@ -761,40 +761,40 @@ const handleUnhover = () => {
           <Row className='Container-Education-Box BackgroundWhite'>
             <Col md={6} >
               <Card className='Education-1 BackgroundWhite' data-aos="fade-right" data-aos-duration="2000">
-                <span className='Education-1-time colorTextBlack'>2005 - 2009</span>
-                <Card.Title className='Education-1-Text colorTextBlack'>ABOUT ME</Card.Title>
-                <Card.Text className='Education-1-Text1 colorTextBlack'>
+                <span className='Education-1-time colorTextBlack hoverable'>2005 - 2009</span>
+                <Card.Title className='Education-1-Text colorTextBlack hoverable'>ABOUT ME</Card.Title>
+                <Card.Text className='Education-1-Text1 colorTextBlack hoverable'>
                   Transforming visions into
                   exceptional portfolios
                 </Card.Text>
                 <div className='Education-3-thanhngang'></div>
-                <span className='Education-3-Text colorTextBlack'>Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione
+                <span className='Education-3-Text colorTextBlack hoverable'>Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione
                 </span>
               </Card>
             </Col>
             <Col md={6}>
               <Card className='Education-2 BackgroundWhite' data-aos="fade-left" data-aos-duration="2000">
-                <span className='Education-1-time colorTextBlack'>2005 - 2009</span>
-                <Card.Title className='Education-1-Text colorTextBlack'>ABOUT ME</Card.Title>
-                <Card.Text className='Education-1-Text1 colorTextBlack'>
+                <span className='Education-1-time colorTextBlack hoverable'>2005 - 2009</span>
+                <Card.Title className='Education-1-Text colorTextBlack hoverable'>ABOUT ME</Card.Title>
+                <Card.Text className='Education-1-Text1 colorTextBlack hoverable'>
                   Transforming visions into
                   exceptional portfolios
                 </Card.Text>
                 <div className='Education-3-thanhngang'></div>
-                <span className='Education-3-Text colorTextBlack'>Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione
+                <span className='Education-3-Text colorTextBlack hoverable'>Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione
                 </span>
               </Card>
             </Col>
             <Col md={6}>
               <Card className='Education-3 BackgroundWhite' data-aos="fade-right" data-aos-duration="2000">
-                <span className='Education-1-time' >2005 - 2009</span>
-                <Card.Title className='Education-1-Text colorTextBlack'>ABOUT ME</Card.Title>
-                <Card.Text className='Education-1-Text1 colorTextBlack'>
+                <span className='Education-1-time hoverable' >2005 - 2009</span>
+                <Card.Title className='Education-1-Text colorTextBlack hoverable'>ABOUT ME</Card.Title>
+                <Card.Text className='Education-1-Text1 colorTextBlack hoverable'>
                   Transforming visions into
                   exceptional portfolios
                 </Card.Text>
                 <div className='Education-3-thanhngang'></div>
-                <span className='Education-3-Text colorTextBlack'>Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione
+                <span className='Education-3-Text colorTextBlack hoverable'>Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione
                 </span>
 
 
@@ -803,15 +803,15 @@ const handleUnhover = () => {
             </Col>
             <Col md={6}>
               <Card className='Education-3 BackgroundWhite' data-aos="fade-left" data-aos-duration="2000">
-                <span className='Education-1-time'>2005 - 2009</span>
-                <Card.Title className='Education-1-Text colorTextBlack'>ABOUT ME</Card.Title>
-                <Card.Text className='Education-1-Text1 colorTextBlack'>
+                <span className='Education-1-time hoverable'>2005 - 2009</span>
+                <Card.Title className='Education-1-Text colorTextBlack hoverable'>ABOUT ME</Card.Title>
+                <Card.Text className='Education-1-Text1 colorTextBlack hoverable'>
                   Transforming visions into
                   exceptional portfolios
                 </Card.Text>
 
                 <div className='Education-3-thanhngang'></div>
-                <span className='Education-3-Text colorTextBlack'>1Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione
+                <span className='Education-3-Text colorTextBlack hoverable'>1Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione
                 </span>
 
 
@@ -828,57 +828,57 @@ const handleUnhover = () => {
         <div className='gachngang1'>
           <div className='gachngang' data-aos="fade-down" data-aos-duration="2000"></div>
         </div>
-        <p data-aos="fade-down" data-aos-duration="2000" className='colorTextBlack'>KĨ NĂNG</p>
+        <p data-aos="fade-down" data-aos-duration="2000" className='colorTextBlack hoverable'>KĨ NĂNG</p>
         <div className='Kienthucdahoc'>
           <Container className='Container-Skills-wrap'>
             <Row className='Container-Skills-Box BackgroundWhite'>
               <Col xl={3} lg={4} md={6} sm={12} className='BackgroundWhite'>
                 <Card className='Skills-1 Animation-Hover-CardSkills BackgroundWhite' data-aos="fade-right" data-aos-duration="2000">
-                  <img className='img-react' src={require('../src/public/image/logo512.png')} alt="Reactjs" />
-                  <p className='span-logo colorTextBlack'>Reactjs</p>
+                  <img className='img-react hoverable' src={require('../src/public/image/logo512.png')} alt="Reactjs" />
+                  <p className='span-logo colorTextBlack hoverable'>Reactjs</p>
 
                 </Card>
               </Col>
               <Col xl={3} lg={4} md={6} sm={12} className='Skills-3-margin-DT BackgroundWhite'>
                 <Card className='Skills-2 Animation-Hover-CardSkills BackgroundWhite' data-aos="fade-left" data-aos-duration="2000">
-                  <img className='img-nodejs' src={require('../src/public/image/icons8-nodejs-480.png')} alt="Nodejs" />
-                  <p className='span-nodejs colorTextBlack'>Nodejs</p>
+                  <img className='img-nodejs hoverable' src={require('../src/public/image/icons8-nodejs-480.png')} alt="Nodejs" />
+                  <p className='span-nodejs colorTextBlack hoverable'>Nodejs</p>
                 </Card>
               </Col>
               <Col xl={3} lg={4} md={6} sm={12} className='Skills-3-margin-DT BackgroundWhite'>
                 <Card className='Skills-3 Animation-Hover-CardSkills Skills-3-margin-Tablet BackgroundWhite' data-aos="fade-right" data-aos-duration="2000">
-                  <img className='img-nodejs' src={require('../src/public/image/icons8-javascript-480.png')} alt="Javascript" />
-                  <p className='span-javascript colorTextBlack'>Javascript</p>
+                  <img className='img-nodejs hoverable' src={require('../src/public/image/icons8-javascript-480.png')} alt="Javascript" />
+                  <p className='span-javascript colorTextBlack hoverable'>Javascript</p>
                 </Card>
               </Col>
               <Col xl={3} lg={4} md={6} sm={12} className='Skills-3-margin-DT BackgroundWhite'>
                 <Card className='Skills-3 Animation-Hover-CardSkills Skills-3-margin-Tablet BackgroundWhite' data-aos="fade-left" data-aos-duration="2000">
-                  <img className='img-nodejs' src={require('../src/public/image/icons8-css-480.png')} alt="CSS" />
-                  <p className='span-nodejs colorTextBlack'>CSS</p>
+                  <img className='img-nodejs hoverable' src={require('../src/public/image/icons8-css-480.png')} alt="CSS" />
+                  <p className='span-nodejs colorTextBlack hoverable'>CSS</p>
                 </Card>
               </Col>
               <Col xl={3} lg={4} md={6} sm={12} className='setRieng BackgroundWhite'>
                 <Card className='Skills-3 Skills-3-margin-bot Animation-Hover-CardSkills BackgroundWhite' data-aos="fade-left" data-aos-duration="2000">
-                  <img className='img-nodejs' src={require('../src/public/image/mysql.png')} alt="MySQL" />
-                  <p className='span-nodejs colorTextBlack' >MySQL</p>
+                  <img className='img-nodejs hoverable' src={require('../src/public/image/mysql.png')} alt="MySQL" />
+                  <p className='span-nodejs colorTextBlack hoverable' >MySQL</p>
                 </Card>
               </Col>
               <Col xl={3} lg={4} md={6} sm={12} className='Skills-3-margin-DT BackgroundWhite'>
                 <Card className='Skills-3 Skills-3-margin-bot Animation-Hover-CardSkills BackgroundWhite' data-aos="fade-left" data-aos-duration="2000">
-                  <img className='img-nodejs' src={require('../src/public/image/c-sharp.png')} alt="C#" />
-                  <p className='span-c colorTextBlack' >C#</p>
+                  <img className='img-nodejs hoverable' src={require('../src/public/image/c-sharp.png')} alt="C#" />
+                  <p className='span-c colorTextBlack hoverable' >C#</p>
                 </Card>
               </Col>
               <Col xl={3} lg={4} md={6} sm={12} className='Skills-3-margin-bot-Table BackgroundWhite'>
                 <Card className='Skills-3 Skills-3-margin-bot Animation-Hover-CardSkills setRieng1 BackgroundWhite' data-aos="fade-left" data-aos-duration="2000">
-                  <img className='img-nodejs' src={require('../src/public/image/sql-server.png')} alt="SQL" />
-                  <p className='span-c colorTextBlack' >SQL Server</p>
+                  <img className='img-nodejs hoverable' src={require('../src/public/image/sql-server.png')} alt="SQL" />
+                  <p className='span-c colorTextBlack hoverable' >SQL Server</p>
                 </Card>
               </Col>
               <Col xl={3} lg={4} md={6} sm={12} className='Skills-3-margin-bot-Table Skills-3-margin-DT BackgroundWhite'>
                 <Card className='Skills-3 Skills-3-margin-bot Animation-Hover-CardSkills setRieng3 BackgroundWhite' data-aos="fade-left" data-aos-duration="2000">
-                  <img className='img-nodejs' src={require('../src/public/image/bootstrap.png')} alt="Boostrap" />
-                  <p className='span-c colorTextBlack' >Boostrap</p>
+                  <img className='img-nodejs hoverable' src={require('../src/public/image/bootstrap.png')} alt="Boostrap" />
+                  <p className='span-c colorTextBlack hoverable' >Boostrap</p>
                 </Card>
               </Col>
             </Row>
@@ -886,16 +886,16 @@ const handleUnhover = () => {
           </Container>
           <div className='container-skills-wrap-text'>
             <Container className='skills-wrap-text'>
-              <Row className='skills-text'>
-                <Col xs={12} md={4} className='skills-text-card skills-text-card-top'>
-                  <div className='Skills-3-thanhngang'></div>
+              <Row className='skills-text '>
+                <Col xs={12} md={4} className='skills-text-card skills-text-card-top hoverable'>
+                  <div className='Skills-3-thanhngang hoverable'></div>
                   <p>
                     Tôi là một người học hỏi tích cực và luôn nỗ lực để nắm vững và phát triển kỹ năng trong lĩnh vực công nghệ thông tin.
                     Trong quá trình học tập và làm việc, tôi đã có cơ hội làm quen và làm việc với một số công nghệ quan trọng như ReactJS, Node.js, MySQL, C#, SQL, Bootstrap, HTML, CSS và JavaScript.
                   </p>
                 </Col>
-                <Col xs={12} md={4} className='skills-text-card skills-text-card-middle'>
-                  <div className='Skills-3-thanhngang'></div>
+                <Col xs={12} md={4} className='skills-text-card skills-text-card-middle hoverable'>
+                  <div className='Skills-3-thanhngang hoverable'></div>
                   <p>
                     ReactJS và Node.js là hai công nghệ tôi đã dành nhiều thời gian để hiểu rõ và áp dụng vào các dự án trên trường học và cá nhân.
                   </p>
@@ -903,8 +903,8 @@ const handleUnhover = () => {
                     Link dự án sử dụng Reactjs, Nodejs Express và CSDL MySQL: <a className='linkgit' href='https://github.com/Minurte1/csn-da21tta-hohoangphuc-bangiay-Javascript'>https://github.com/Minurte1/csn-da21tta-hohoangphuc-bangiay-Javascript</a>
                   </p>
                 </Col>
-                <Col xs={12} md={4} className='skills-text-card skills-text-card-bot'>
-                  <div className='Skills-3-thanhngang'></div>
+                <Col xs={12} md={4} className='skills-text-card skills-text-card-bot hoverable'>
+                  <div className='Skills-3-thanhngang hoverable'></div>
                   <p>
                     Trong khoảng thời gian học tập trên nhà trường tôi đã có cơ hội làm việc nhóm học tập được ngôn ngữ C# ứng dụng làm dự án phần mềm bằng công nghệ .Net (WinForms) kết nối CSDL SQL Server.
                     Trong đó tôi đóng vai trò là người viết mã nguồn chính cho dự án.
@@ -930,8 +930,8 @@ const handleUnhover = () => {
             <Col md={6}>
               <Card className='Lienhe-1 BackgroundWhite' data-aos="fade-right" data-aos-duration="2000">
 
-                <Card.Title className='Lienhe-1-Text colorTextBlack'>THAM VỌNG</Card.Title>
-                <Card.Text className='Lienhe-1-Text1 colorTextBlack'>
+                <Card.Title className='Lienhe-1-Text colorTextBlack hoverable'>THAM VỌNG</Card.Title>
+                <Card.Text className='Lienhe-1-Text1 colorTextBlack hoverable'>
                   "Bản lĩnh của một con người được thể hiện qua sự tham vọng và trả giá"
                 </Card.Text>
 
@@ -942,10 +942,10 @@ const handleUnhover = () => {
                 <Card.Body className='Lienhe-2-Background'>
                   <div className='Lienhe-2-Background-Wrap'>
                     <h4 data-aos="fade-up" data-aos-duration="2000" >Liên hệ với tôi</h4>
-                    <input className='Lienhe-2-input' placeholder='Your Name'></input> <br></br>
-                    <input className='Lienhe-2-input Lienhe-2-input-middle' placeholder='Your Email'></input> <br></br>
-                    <input className='Lienhe-2-input' placeholder='Your Phone'></input> <br></br>
-                    <button className='Lienhe-2-button' data-aos="fade-right" data-aos-duration="2000" >GỬI NGAY</button>
+                    <input className='Lienhe-2-input hoverable' placeholder='Your Name'></input> <br></br>
+                    <input className='Lienhe-2-input Lienhe-2-input-middle hoverable' placeholder='Your Email'></input> <br></br>
+                    <input className='Lienhe-2-input hoverable' placeholder='Your Phone'></input> <br></br>
+                    <button className='Lienhe-2-button hoverable' data-aos="fade-right" data-aos-duration="2000" >GỬI NGAY</button>
 
                   </div>
 
@@ -957,7 +957,7 @@ const handleUnhover = () => {
               <Card className='Lienhe-3 BackgroundWhite' data-aos="fade-up" data-aos-duration="2000">
                 <Card.Body>
                   <div className='Lienhe-3-thanhngang'></div>
-                  <span className='Lienhe-3-Text colorTextBlack'>Tôi tin rằng sự chuyên nghiệp giúp chúng ta có thể thấu hiểu nhau và tôn trọng nhau, nó giúp chúng ta đi xa hơn trong các dự án làm việc nhóm ở trường học và doanh nghiệp.
+                  <span className='Lienhe-3-Text colorTextBlack hoverable'>Tôi tin rằng sự chuyên nghiệp giúp chúng ta có thể thấu hiểu nhau và tôn trọng nhau, nó giúp chúng ta đi xa hơn trong các dự án làm việc nhóm ở trường học và doanh nghiệp.
                   </span>
 
 
@@ -987,9 +987,9 @@ const handleUnhover = () => {
         <footer className="site-footer">
           <div className="container">
             <div className="row">
-              <div className="col-sm-12 col-md-6">
+              <div className="col-sm-12 col-md-6 hoverable">
                 <h6>BẢN THÂN TÔI</h6>
-                <p className="text-justify">Tôi là <i>Hồ Hoàng Phúc </i> hiện là sinh viên năm 3 Công Nghệ Thông Tin trường Đại Học Trà Vinh, tôi đang cố gắng
+                <p className="text-justify hoverable">Tôi là <i>Hồ Hoàng Phúc </i> hiện là sinh viên năm 3 Công Nghệ Thông Tin trường Đại Học Trà Vinh, tôi đang cố gắng
                   học tập rèn luyện để trở thành một lập trình viên Web giỏi trong tương lai,
                   tôi sẽ mang theo khát vọng này và cố gắng vương ra biển lớn, dù có khó khăn,
                   dù có vong bão, tôi vẫn sẵn sàng rời bến. Vì ước mơ của một con thuyền
@@ -999,24 +999,24 @@ const handleUnhover = () => {
               <div className="col-xs-6 col-md-3">
                 <h6>CÔNG NGHỆ</h6>
                 <ul className="footer-links">
-                  <li><a href="/">C</a></li>
-                  <li><a href="/">HTML CSS</a></li>
-                  <li><a href="/">JS</a></li>
-                  <li><a href="/">C#</a></li>
-                  <li><a href="/">Reactjs</a></li>
-                  <li><a href="/">Nodejs</a></li>
+                  <li><a href="/" className='hoverable'>C</a></li>
+                  <li><a href="/" className='hoverable'>HTML CSS</a></li>
+                  <li><a href="/" className='hoverable'>JS</a></li>
+                  <li><a href="/" className='hoverable'>C#</a></li>
+                  <li><a href="/" className='hoverable'>Reactjs</a></li>
+                  <li><a href="/" className='hoverable'>Nodejs</a></li>
                 </ul>
               </div>
 
               <div className="col-xs-6 col-md-3">
                 <h6>CHUYỂN HƯỚNG</h6>
                 <ul className="footer-links">
-                  <li><a href="#home">Trang chủ</a></li>
-                  <li><a href="#projects">Dự án</a></li>
-                  <li><a href="#about">Bản thân tôi</a></li>
-                  <li><a href="#skills">Kĩ Năng</a></li>
-                  <li><a href="#education">Học Tập</a></li>
-                  <li><a href="#lienhe">Liên hệ</a></li>
+                  <li><a href="#home" className='hoverable'>Trang chủ</a></li>
+                  <li><a href="#projects" className='hoverable'>Dự án</a></li>
+                  <li><a href="#about" className='hoverable'>Bản thân tôi</a></li>
+                  <li><a href="#skills" className='hoverable'>Kĩ Năng</a></li>
+                  <li><a href="#education" className='hoverable'>Học Tập</a></li>
+                  <li><a href="#lienhe" className='hoverable'>Liên hệ</a></li>
                 </ul>
               </div>
             </div>
@@ -1026,19 +1026,19 @@ const handleUnhover = () => {
             <div className="row">
               <div className="col-md-8 col-sm-6 col-xs-12">
                 <p className="copyright-text">Copyright © 2024 All Rights Reserved by
-                  <a href="https://www.facebook.com/magin2px/">Hoàng Phúc.</a>
+                  <a href="https://www.facebook.com/magin2px/" className='hoverable'>Hoàng Phúc.</a>
                 </p>
               </div>
 
               <div className="col-md-4 col-sm-6 col-xs-12">
                 <ul className="social-icons">
-                  <li><a className="facebook" href="https://www.facebook.com/magin2px/"><i class="fa-brands fa-facebook"></i></a></li>
-                  <li><a className="twitter" href="https://github.com/Minurte1"><i class="fa-brands fa-github"></i></a></li>
-                  <li><a className="dribbble" href="https://www.instagram.com/magin_phuc20px/"><i class="fa-brands fa-instagram"></i></a></li>
-                  <li><a className="linked" href="https://www.linkedin.com/in/ho%C3%A0ng-ph%C3%BAc-h%E1%BB%93-a59586267/"><i class="fa-brands fa-linkedin"></i></a></li>
+                  <li><a className="facebook hoverable" href="https://www.facebook.com/magin2px/"><i class="fa-brands fa-facebook"></i></a></li>
+                  <li><a className="twitter hoverable" href="https://github.com/Minurte1"><i class="fa-brands fa-github"></i></a></li>
+                  <li><a className="dribbble hoverable" href="https://www.instagram.com/magin_phuc20px/"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li><a className="linked hoverable" href="https://www.linkedin.com/in/ho%C3%A0ng-ph%C3%BAc-h%E1%BB%93-a59586267/"><i class="fa-brands fa-linkedin"></i></a></li>
                 </ul>
               </div>
-            </div>
+            </div> 
           </div>
         </footer>
 

@@ -9,6 +9,7 @@
 
     .mobile-navbar {
         display: none;
+       
     }
 
     .text-logo {
@@ -49,11 +50,13 @@
 
     .menu-open {
         right: 0;
-    }
+      
+    } 
 
     .NavbarShow-top-X {
         width: 10%;
         height: 30px;
+
     }
 
     .NavbarShow-middle-AboutText {
@@ -274,6 +277,20 @@
 
     .Lienhe-2-button:hover {
         background-color: #092635;
+    }
+    .social-icons a {
+        background-color: #000000;
+        color: #818a91;
+        font-size: 13px;
+        display: inline-block;
+        line-height: 33px;
+        width: 33px;
+        height: 33px;
+        text-align: center;
+        margin-right: 8px;
+        border-radius: 100%;
+        transition: all .2s linear;
+    
     }
 
 }
