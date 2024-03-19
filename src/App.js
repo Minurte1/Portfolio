@@ -475,6 +475,7 @@ const handleUnhover = () => {
             element.addEventListener('mouseleave', handleUnhover);
     
     });
+
    return()=>{
     document.removeEventListener('mousemove', updateCursorPosition);
             window.removeEventListener('scroll', updateScrollPosition);
@@ -484,12 +485,42 @@ const handleUnhover = () => {
             });
    }
   }, []);
+
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+      const handleResize = () => {
+          setIsSmallScreen(window.innerWidth <= 768);
+      };
+
+      window.addEventListener('resize', handleResize);
+
+      return () => {
+          window.removeEventListener('resize', handleResize);
+      };
+  }, []);
+
+
+
+  const handleLeave = () => {
+      setIsHovered(false);
+  };
+
+  const handleMove = (e) => {
+      setCursorPosition({ x: e.clientX, y: e.clientY });
+  };
   return (
     <>
-    <div
+  <div>
+            {/* Your other content */}
+            <div
                 className={`cursor ${isHovered ? 'hovered' : ''}`}
                 style={{ left: `${cursorPosition.x}px`, top: `${cursorPosition.y}px` }}
+                onMouseEnter={handleHover}
+                onMouseLeave={handleLeave}
+                onMouseMove={handleMove}
             />
+        </div>
       {/* <Cursor></Cursor> */}
       < div div className={`mobile-navbar ${showMenuPhone ? 'open' : ''}`
       }>

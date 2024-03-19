@@ -1,3 +1,9 @@
+@media (max-width: 768px) { /* Thay 768px bằng ngưỡng phù hợp cho tablet và điện thoại */
+    .cursor {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
 
     /* Thêm các quy tắc CSS cho màn hình trung bình ở đây */

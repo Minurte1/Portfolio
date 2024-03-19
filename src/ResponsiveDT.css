@@ -6,7 +6,9 @@
         /* Ví dụ: điều chỉnh kích thước container hoặc bố cục */
         display: none;
     }
-
+.cursor{
+    display: none;
+}
     .mobile-navbar {
         display: block;
     }
@@ -589,6 +591,7 @@ pointer-events: auto;
     .info-small {
         margin-left: 20%;
     }
+
 }
 
 @media (min-width: 768px) {
@@ -610,4 +613,11 @@ pointer-events: auto;
     .skills-text-card {
         width: 32.333333%;
     }
+}
+@media (max-width: 320px) {
+    /* Thêm các quy tắc CSS dành cho màn hình nhỏ hơn hoặc bằng 320px ở đây */
+    
+.social-icons{
+    margin-left: 50px;
+}
 }
