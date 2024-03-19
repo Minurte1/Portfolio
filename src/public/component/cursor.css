@@ -3,15 +3,18 @@
     position: fixed;
     width: 50px;
     height: 50px;
-    /* border: 2px solid #ff0000; */
-    background-image: radial-gradient( circle 311px at 8.6% 27.9%,  rgba(62,147,252,0.57) 12.9%, rgba(239,183,192,0.44) 91.2% );
+    
+    border: 2px solid #016820;
+    background-color: #f9ff8d;
+    /* background-image: radial-gradient( circle 311px at 8.6% 27.9%,  rgba(62,147,252,0.57) 12.9%, rgba(239,183,192,0.44) 91.2% ); */
     border-radius: 50%;
-    background-color: transparent;
-    mix-blend-mode: difference;
+    /* background-color: transparent; */
+    /* mix-blend-mode: difference; */
     pointer-events: none;
     transform: translate(-50%, -50%);
     transition: width 0.2s, height 0.2s;
     z-index: 9999999;
+    box-shadow: 0 4px 8px 0 rgb(249, 255, 141), 0 6px 20px 0 rgb(249, 255, 141);
 }
 
 .cursor.hovered {

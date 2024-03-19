@@ -625,7 +625,15 @@ const handleUnhover = () => {
 
               <button className='downloadCV downloadCV-1'>  <a href='Chuong1_TongquanveTMDT.pdf' download="Chuong1_TongquanveTMDT.pdf">Download CV <i className="fa-solid fa-download" ></i></a></button>
 
-
+          
+              <div className="col-md-4 col-sm-6 col-xs-12">
+                <ul className="social-icons">
+                  <li><a className="facebook" href="https://www.facebook.com/magin2px/"><i class="fa-brands fa-facebook"></i></a></li>
+                  <li><a className="twitter" href="https://github.com/Minurte1"><i class="fa-brands fa-github"></i></a></li>
+                  <li><a className="dribbble" href="https://www.instagram.com/magin_phuc20px/"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li><a className="linked" href="https://www.linkedin.com/in/ho%C3%A0ng-ph%C3%BAc-h%E1%BB%93-a59586267/"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+              </div>
               <div className="color-picker  setRiengMobile">
                 <i className="fa-solid fa-palette colorText downloadCV fa-palette-1 " onClick={toggleDropdown}>
                   {isOpen && (
@@ -1027,7 +1035,7 @@ const handleUnhover = () => {
                   <li><a className="facebook" href="https://www.facebook.com/magin2px/"><i class="fa-brands fa-facebook"></i></a></li>
                   <li><a className="twitter" href="https://github.com/Minurte1"><i class="fa-brands fa-github"></i></a></li>
                   <li><a className="dribbble" href="https://www.instagram.com/magin_phuc20px/"><i class="fa-brands fa-instagram"></i></a></li>
-
+                  <li><a className="linked" href="https://www.linkedin.com/in/ho%C3%A0ng-ph%C3%BAc-h%E1%BB%93-a59586267/"><i class="fa-brands fa-linkedin"></i></a></li>
                 </ul>
               </div>
             </div>
