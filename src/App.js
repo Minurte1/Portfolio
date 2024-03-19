@@ -645,7 +645,7 @@ const handleUnhover = () => {
           {/* <p>I am Ho Hoang Phuc Developer Web</p> */}
           <div className='info-small ' >
             <p data-aos="fade-up-right" data-aos-duration="2000" className='hoverable colorTextBlack info-small-SetriengMoblie'>
-              I'm a <strong className='colorTextBlack hoverable' >Hồ Hoàng Phúc</strong>
+              I'm <strong className='colorTextBlack hoverable' >Hồ Hoàng Phúc</strong>
               <p className='sec-text colorTextBlack'></p>
               <p className='text-small colorTextBlack hoverable'>
                 Tôi là một lập trình viên web với niềm đam mê sâu sắc đối với việc tạo
