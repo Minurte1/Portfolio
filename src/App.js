@@ -180,9 +180,9 @@ const App = () => {
         }, 1000);
 
 
-        colorNavbarleft1.style.backgroundColor = "#000000"
-        colorNavbarleft2.style.backgroundColor = "#000000"
-        colorNavbarleft3.style.backgroundColor = "#000000"
+        colorNavbarleft1.style.backgroundColor = "#31363F"
+        colorNavbarleft2.style.backgroundColor = "#31363F"
+        colorNavbarleft3.style.backgroundColor = "#31363F"
 
         colorBackgroudBanner.style.backgroundColor = '#f5f5f5';
 
@@ -236,9 +236,9 @@ const App = () => {
         }, 1000);
 
         // Thực hiện thay đổi màu sắc
-        colorNavbarleft1.style.backgroundColor = '#f5f5f5';
-        colorNavbarleft2.style.backgroundColor = '#f5f5f5';
-        colorNavbarleft3.style.backgroundColor = '#f5f5f5';
+        colorNavbarleft1.style.backgroundColor ='#31363F';
+        colorNavbarleft2.style.backgroundColor = '#31363F';
+        colorNavbarleft3.style.backgroundColor = '#31363F';
         colorBackgroudBanner.style.backgroundColor = "#000000";
 
         // Thực hiện thay đổi màu sắc của các phần tử
@@ -250,8 +250,10 @@ const App = () => {
         Array.from(backgroundColorWhite).forEach(backgroundColorWhite => {
           backgroundColorWhite.style.backgroundColor = "#000000";
         });
+
+        //text Navbar
         Array.from(elements).forEach(elements => {
-          elements.style.color = "#000000";
+          elements.style.color = "#f5f5f5";
         });
         Array.from(elementsBlack).forEach(element => {
           element.style.color = '#ffffff';

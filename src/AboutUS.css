@@ -65,6 +65,7 @@
 }
 
 .About-2-Background1 {
+    /* -webkit-mask-image: url(../src/public/image/logo.jpg); */
     width: 350px;
     height: 350px;
     background-color: rgba(0, 128, 128, 0.5);
