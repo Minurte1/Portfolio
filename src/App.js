@@ -19,6 +19,7 @@ import "./foolter.css";
 // import './Carousel.css'
 import "./ResponsiveDT.css";
 import "./ResponsiveTablet.css";
+import ImageModal from "./public/component/ChatImdage";
 
 // ..
 AOS.init();
@@ -674,10 +675,7 @@ const App = () => {
               </p>
               <button className="downloadCV downloadCV-1">
                 {" "}
-                <a
-                  href="Chuong1_TongquanveTMDT.pdf"
-                  download="Chuong1_TongquanveTMDT.pdf"
-                >
+                <a href="CV.pdf" download="CV.pdf">
                   Download CV <i className="fa-solid fa-download"></i>
                 </a>
               </button>
@@ -886,7 +884,7 @@ const App = () => {
           data-aos-duration="2000"
           className="colorTextBlack hoverable"
         >
-          HỌC VẤN
+          HỌC TẬP
         </p>
         <p
           data-aos="fade-up"
@@ -928,37 +926,7 @@ const App = () => {
                 </Card>
               </a>
             </Col>
-            <Col md={6}>
-              <a
-                href="https://github.com/Minurte1/Chat-Messanger-Nodejs-Socket-Reactjs.git"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Card
-                  className="Education-1 BackgroundWhite"
-                  data-aos="fade-right"
-                  data-aos-duration="2000"
-                >
-                  <span className="Education-1-time colorTextBlack hoverable">
-                    3/4/2024 - 15/7/2024
-                  </span>
-                  <Card.Title className="Education-1-Text colorTextBlack hoverable">
-                    THÔNG TIN
-                  </Card.Title>
-                  <Card.Text className="Education-1-Text1 colorTextBlack hoverable">
-                    Ứng dụng Chat Messenger React.js, Nodejs
-                  </Card.Text>
-                  <div className="Education-3-thanhngang"></div>
-                  <span className="Education-3-Text colorTextBlack hoverable">
-                    Thiết lập backend với Node.js và Express, bao gồm API cho
-                    quản lý người dùng và tin nhắn. Sử dụng Socket.IO để cung
-                    cấp chức năng trò chuyện thời gian thực. Lưu trữ dữ liệu tin
-                    nhắn trong MongoDB. Triển khai chức năng đăng nhập và đăng
-                    ký người dùng. Github Project:
-                  </span>
-                </Card>
-              </a>
-            </Col>
+
             <Col md={6}>
               <a
                 href="https://github.com/BaoQuocZero/DA_CongNghePhanMem_ShopShoe_JS.git"
@@ -981,8 +949,8 @@ const App = () => {
                   </Card.Text>
                   <div className="Education-3-thanhngang"></div>
                   <span className="Education-3-Text colorTextBlack hoverable">
-                    hát triển ứng dụng web cho cửa hàng giày sử dụng ReactJS cho
-                    frontend và Node.js với Express cho backend. Triển khai
+                    Phát triển ứng dụng web cho cửa hàng giày sử dụng ReactJS
+                    cho frontend và Node.js với Express cho backend. Triển khai
                     MySQL làm cơ sở dữ liệu và sử dụng JWT để thực hiện xác thực
                     và phân quyền người dùng. Tính năng nổi bật:Hệ thống xác
                     thực và phân quyền người dùng an toàn. Quản lý sản phẩm cho
@@ -993,11 +961,11 @@ const App = () => {
                     phiên bản và JIRA cho quản lý dự án.
                   </span>
                 </Card>
-              </a>
+              </a>{" "}
             </Col>
             <Col md={6}>
               <a
-                href="https://github.com/Minurte1/Chat-Messanger-Nodejs-Socket-Reactjs.git"
+                href="https://github.com/Minurte1/Portfolio.git"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -1007,21 +975,19 @@ const App = () => {
                   data-aos-duration="2000"
                 >
                   <span className="Education-1-time colorTextBlack hoverable">
-                    3/4/2024 - 15/7/2024
+                    3/2/2024 - Nay
                   </span>
                   <Card.Title className="Education-1-Text colorTextBlack hoverable">
                     THÔNG TIN
                   </Card.Title>
                   <Card.Text className="Education-1-Text1 colorTextBlack hoverable">
-                    Ứng dụng Chat Messenger React.js, Nodejs
+                    Portfolio Cá Nhân
                   </Card.Text>
                   <div className="Education-3-thanhngang"></div>
                   <span className="Education-3-Text colorTextBlack hoverable">
-                    Thiết lập backend với Node.js và Express, bao gồm API cho
-                    quản lý người dùng và tin nhắn. Sử dụng Socket.IO để cung
-                    cấp chức năng trò chuyện thời gian thực. Lưu trữ dữ liệu tin
-                    nhắn trong MongoDB. Triển khai chức năng đăng nhập và đăng
-                    ký người dùng. Github Project:
+                    {" "}
+                    Website portfolio cá nhân giới thiệu bản thân, sử dụng
+                    reactjs, bootsrap để xây dựng giao diện{" "}
                   </span>
                 </Card>
               </a>
