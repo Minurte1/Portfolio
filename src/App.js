@@ -858,10 +858,7 @@ const App = () => {
                 <Card.Body>
                   <button className="downloadCV hoverable">
                     {" "}
-                    <a
-                      href="Chuong1_TongquanveTMDT.pdf"
-                      download="Chuong1_TongquanveTMDT.pdf"
-                    >
+                    <a href="CV.pdf" download="CV.pdf">
                       Download CV <i className="fa-solid fa-download"></i>
                     </a>
                   </button>
@@ -1344,7 +1341,7 @@ const App = () => {
               <div className="col-sm-12 col-md-6 hoverable">
                 <h6>BẢN THÂN TÔI</h6>
                 <p className="text-justify hoverable">
-                  Tôi là <i>Hồ Hoàng Phúc </i> hiện là sinh viên năm 3 Công Nghệ
+                  Tôi là <i>Hồ Hoàng Phúc </i> hiện là sinh viên năm 4 Công Nghệ
                   Thông Tin trường Đại Học Trà Vinh, tôi đang cố gắng học tập
                   rèn luyện để trở thành một lập trình viên Web giỏi trong tương
                   lai, tôi sẽ mang theo khát vọng này và cố gắng vương ra biển
